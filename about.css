@@ -26,7 +26,7 @@ body{
   border: 1px solid #ccc;
   background-color: white;
   width: 30%;
-  height: auto;
+  height: 300px;
 }
 .tab button{
   display: block;
