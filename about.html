@@ -93,12 +93,52 @@
   <div class="panel" id="cs">
     <h4><b><u>My Connections:</u></b></h4>
     <br />
+    <!-- https://github.com/RandomKiddo https://www.hackerrank.com/nghugare2 -->
+    <div class="tab">
+      <button class="tablinks" onmouseover="expTab('git')">Github</button>
+      <button class="tablinks" onmouseover="expTab('hr')">HackerRank</button>
+      <button class="tablinks" onmouseover="expTab('dis')">Discord</button>
+    </div>
+    <div id="git" class="tabcontent">
+      <h3><b><u>Github:</u></b></h3>
+      <br />
+      <p>Github is where I host repositories for things like my Java projects, my PyPI project influence, and more!</p>
+      <br />
+      <input type="button" onclick="window.open('https://github.com/RandomKiddo');" value="Go To Github">
+    </div>
+    <div id="hr" class="tabcontent">
+      <h3><b><u>HackerRank:</u></b></h3>
+      <br />
+      <p>HackerRank is where I earn programming certifications, and practive competitive programming. It also teaches me how to make efficient code with RAM and time!</p>
+      <br />
+      <input type="button" onclick="window.open(https://www.hackerrank.com/nghugare2);" value="Go To HackerRank">
+    </div>
+    <div id="dis" class="tabcontent">
+      <h3><b><u>Discord:</u></b></h3>
+      <br />
+      <p>I use discord for things like hosting my bot (SourceCode) and chatting with friends</p>
+      <br />
+      <p>My Username: firsttry#1574</p>
+      <br />
+      <input type="button" onclick="window.open('https://discord.com/api/oauth2/authorize?client_id=715705992821735534&permissions=2147482871&scope=bot');" value="Preferred SourceCode Invite Link">
+      <input type="button" onclick="window.open('https://discord.com/api/oauth2/authorize?client_id=715705992821735534&permissions=8&scope=bot');" value="Administrative SourceCode Invite Link">
+      <input type="button" onclick="window.open('https://discord.gg/rHApaMm');" value="SourceCode Support Server">
+      <p>Note That Admin Permissions For SourceCode Mess With Some Features, Like Channel Disabling</p>
+    </div>
   </div>
   <script>
   function expAcc(id){
     var panel = document.getElementById(id);
     if (panel.style.display === "block"){ panel.style.display = "none"; }
     else { panel.style.display = "block"; }
+  }
+  function expTab(id){
+    var content = document.getElementById(id);
+    var contents = document.getElementsByClassName("tabcontent");
+    for (var i = 0; i < contents.length; i++){
+      contents[i].style.display = "none";
+    }
+    content.style.display = "block";
   }
   </script>
 </body>
