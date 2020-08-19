@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" type="text/css" href="about.css">
-<script src="aboutrunner.js"></script>
 <head>
   <title>Neil G's Programming Website - About</title>
 </head>
@@ -14,15 +13,93 @@
     <a href="bot.html">Discord Bot</a>
   </div>
   <br />
-  <div class="tab">
-    <button class="tablinks" onmouseover="open(event, 'About')">About</button>
-    <button class="tablinks" onmouseover="open(event, 'Connections')">Connections</button>
+  <button class="accordion" onclick="expAcc('abt')">About</button>
+  <div class="panel" id="abt">
+    <h4><b><u>About Me:</u></b></h4>
+    <br />
+    <p>
+      Hi! My name is Neil! I am an avid programmer, but I do other things!
+      I play tennis, as I have been since 9 years old!
+      I love photography, and I mainly take pictures of the night sky, landscapes, and animals!
+      I also enjoy hiking, bicycling, and social interaction with friends through gaming and more!
+    </p>
+    <br />
+    <p>In terms of coding, here is my history:</p>
+    <br />
+    <div class="timeline">
+      <div class="container left">
+        <div class="content">
+          <h2>Starting Off</h2>
+          <p>First I started Python when I was eight but had to stop due to school, so I never really learned it</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>Middle School</h2>
+          <p>Then, in middle school, I learned Scratch coding (if that counts)</p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h2>Around There</h2>
+          <p>Also around that time I learned HTML & CSS for web design, but quickly learned that I can do it, but it's not my favorite passion</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>Starting High School</h2>
+          <p>In 9th grade I took an Intro to Computer Science class and learned the basics of Java. I was also the master of that class :)</p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h2>In Between</h2>
+          <p>In between 9th and 10th grade I finished learning Python, and was extremely useful!</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>College Level</h2>
+          <p>In 10th grade, I took AP Computer Science A, and was the master of that class too! It was also my favorite class! I got a 5 on that AP test!</p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h2>Discord Time</h2>
+          <p>In the middle of 10th grade, I started coding SourceCode, my discord bot!</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>Language Cram</h2>
+          <p>During the summer leading to my 11th grade year, I learned C and C++, both of which I enjoy. I also learned JavaScript, but didn't like it too much. I only use it today for things like this website.</p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h2>A Project With Friends</h2>
+          <p>Around that time, a group of friends and I learned Swift (and some learned Python) to create a game. Unfortunately, we ended up ditching Swift and focusing on Python. So even though I know Swift, I have most likely forgotten it at this point</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>Current Day</h2>
+          <p>Currently, I am learning and finishing the FORTRAN programming language. Also I have done a bit of competitive programming on HackerRank, and have gotten a few certificates from them!</p>
+        </div>
+      </div>
+    </div>
   </div>
-  <div id="About" class="tabcontent">
-    <h3>About</h3>
+  <button class="accordion" onclick="expAcc('cs')">Connections</button>
+  <div class="panel" id="cs">
+    <h4><b><u>My Connections:</u></b></h4>
+    <br />
   </div>
-  <div id="About" class="tabcontent">
-    <h3>About</h3>
-  </div>
+  <script>
+  function expAcc(id){
+    var panel = document.getElementById(id);
+    if (panel.style.display === "block"){ panel.style.display = "none"; }
+    else { panel.style.display = "block"; }
+  }
+  </script>
 </body>
 </html>
