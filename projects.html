@@ -12,5 +12,32 @@
     <a href="about.html">About</a>
     <a href="bot.html">Discord Bot</a>
   </div>
+    <br />
+    <button class="accordion" onclick="expAcc('java')">Java</button>
+    <div class="panel" id="java">
+        <h3><b><u>Java Projects: </u></b></h3>
+    </div>
+    <button class="accordion" onclick="expAcc('py')">Python</button>
+    <div class="panel" id="py">
+        <h3><b><u>Python Projects: </u></b></h3>
+    </div>
+    <button class="accordion" onclick="expAcc('cpp')">C++</button>
+    <div clas="panel" id="cpp">
+        <h3><b><u>C++ Projects: </u></b></h3>
+    </div>
+    <button class="accordion" onclick="expAcc('misc')">Miscellaneous</button>
+    <div class="panel" id="misc">
+        <h3><b><u>Miscellaneous Projects: </u></b></h3>
+    </div>
+    <script>
+        function expAcc(id){
+            var panel = document.getElementById(id);
+            if (panel.style.display === "block"){
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>

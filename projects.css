@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 .topnav{
   background-color: darkblue;
   overflow: hidden;
@@ -18,6 +21,36 @@
   background-color: #1ac42d;
   color: white;
 }
+.accordion{
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+.active, .accordion:hover{
+  background-color: #ccc;
+}
+.panel{
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+input[type="button"]{
+  background-color: #1ac42d;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px
+  cursor: pointer;
+}
 body{
   background-color: #1d1f1d;
+  overflow-y: scroll;
 }
