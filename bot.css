@@ -24,6 +24,9 @@ tr:nth-child(even){
 tr:nth-child(odd){
     background-color: lightgray;
 }
+table{
+    width: 500px;
+}
 body{
   background-color: #1d1f1d;
 }
