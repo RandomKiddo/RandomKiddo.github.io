@@ -12,10 +12,6 @@
     <a class="active" href="projects.html">Projects & Repos</a>
     <a href="about.html">About</a>
     <a href="bot.html">Discord Bot</a>
-      <form>
-          <button class="sub" type="submit" onclick="search();" id="sbutton">Submit</button>
-    <input type="text" placeholder="Search..." id="sbar">
-      </form>
   </div>
     <br />
     <button class="accordion" onclick="expAcc('java')">Java</button>
@@ -64,11 +60,19 @@
     </div>
     <button class="accordion" onclick="expAcc('cpp')">C++</button>
     <div class="panel" id="cpp">
-        <h3><b><u>C++ Projects: </u></b></h3>
+        <h3><b><u>C / C++ Projects: </u></b></h3>
+        <br />
+        <h1>Nothing To See Here :/</h1>
+        <br />
+        <p>As of right now, I do not have any C / C++ projects, nor do I have a Github repository for said projects. I will update this part once I have a repository with my C / C++ projects</p>
     </div>
     <button class="accordion" onclick="expAcc('misc')">Miscellaneous</button>
     <div class="panel" id="misc">
         <h3><b><u>Miscellaneous Projects: </u></b></h3>
+        <br />
+        <h1>Nothing To See Here :/</h1>
+        <br />
+        <p>As of right now, I do not have any miscellaneous projects.</p>
     </div>
     <script>
         function expAcc(id){
@@ -78,37 +82,6 @@
                 panel.style.display = "none";
             } else {
                 panel.style.display = "block";
-            }
-        }
-        function search(){
-            var input = document.getElementById("sbar");
-            var button = document.getElementById("sbutton");
-            
-            var p = document.getElementsByTagName("p");
-            var h3 = document.getElementsByTagName("h3");
-            var h5 = document.getElementsByTagName("h5");
-            
-            var ins = [];
-            
-            for (var i = 0; i < p.length; i++){
-                if (input.text in p[i].text){
-                    ins.push(p[i])
-                }
-            }
-            for (var i = 0; i < h3.length; i++){
-                if (input.text in h3[i].text){
-                    ins.push(h3[i]);
-                }
-            }
-            for (var i = 0; i < h5.length; i++){
-                if (input.text in h5[i].text){
-                    ins.push(h5[i]);
-                }
-            }
-            
-            for (var i = 0; i < ins.length; i++){
-                var curr = "<mark>" + ins[i].text + "</mark>";
-                $ (ins[i]).html(curr);
             }
         }
     </script>
