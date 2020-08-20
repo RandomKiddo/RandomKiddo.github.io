@@ -21,6 +21,23 @@
   background-color: #1ac42d;
   color: white;
 }
+.topnav input[type=text]{
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    font-size: 17px;
+}
+.sub{
+    float: right;
+    background-color: #ccc;
+    text-decoration: none;
+    color: white;
+    border: none;
+    height: 32px;
+    margin-top: 8px;
+    margin-right: 10px;
+}
 .accordion{
   background-color: #eee;
   color: #444;

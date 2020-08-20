@@ -3,6 +3,7 @@
 <link rel="stylesheet" type="text/css" href="projects.css">
 <head>
   <title>Neil G's Programming Website - Projects</title>
+    <script src="jquery-3.5.1.min.js"></script>
 </head>
 <body>
   <img src="LOGO.jpg" alt="SC" style="height:48px; width:48px; float:left;">
@@ -11,6 +12,10 @@
     <a class="active" href="projects.html">Projects & Repos</a>
     <a href="about.html">About</a>
     <a href="bot.html">Discord Bot</a>
+      <form>
+          <button class="sub" type="submit" onclick="search();" id="sbutton">Submit</button>
+    <input type="text" placeholder="Search..." id="sbar">
+      </form>
   </div>
     <br />
     <button class="accordion" onclick="expAcc('java')">Java</button>
@@ -68,10 +73,42 @@
     <script>
         function expAcc(id){
             var panel = document.getElementById(id);
+            
             if (panel.style.display === "block"){
                 panel.style.display = "none";
             } else {
                 panel.style.display = "block";
+            }
+        }
+        function search(){
+            var input = document.getElementById("sbar");
+            var button = document.getElementById("sbutton");
+            
+            var p = document.getElementsByTagName("p");
+            var h3 = document.getElementsByTagName("h3");
+            var h5 = document.getElementsByTagName("h5");
+            
+            var ins = [];
+            
+            for (var i = 0; i < p.length; i++){
+                if (input.text in p[i].text){
+                    ins.push(p[i])
+                }
+            }
+            for (var i = 0; i < h3.length; i++){
+                if (input.text in h3[i].text){
+                    ins.push(h3[i]);
+                }
+            }
+            for (var i = 0; i < h5.length; i++){
+                if (input.text in h5[i].text){
+                    ins.push(h5[i]);
+                }
+            }
+            
+            for (var i = 0; i < ins.length; i++){
+                var curr = "<mark>" + ins[i].text + "</mark>";
+                $ (ins[i]).html(curr);
             }
         }
     </script>
