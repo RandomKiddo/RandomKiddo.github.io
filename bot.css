@@ -18,6 +18,9 @@
   background-color: #1ac42d;
   color: white;
 }
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
 body{
   background-color: #1d1f1d;
 }
