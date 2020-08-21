@@ -18,14 +18,18 @@
   background-color: #1ac42d;
   color: white;
 }
-tr:nth-child(even){
-    background-color: #f2f2f2;
+td{
+    text-align: center;
 }
-tr:nth-child(odd){
-    background-color: lightgray;
+a{
+    color: #1ac42d;
+    text-decoration: none;
 }
 table{
     width: 1000px;
+    color: red;
+    background-color: darkblue;
+    border: 2px dashed red
 }
 input[type="button"]{
   background-color: #1ac42d;
