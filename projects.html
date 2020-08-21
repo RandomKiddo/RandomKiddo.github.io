@@ -4,6 +4,7 @@
 <head>
   <title>Neil G's Programming Website - Projects</title>
     <script src="jquery-3.5.1.min.js"></script>
+    <script src="projects.js"></script>
 </head>
 <body>
   <img src="LOGO.jpg" alt="SC" style="height:48px; width:48px; float:left;">
@@ -12,6 +13,8 @@
     <a class="active" href="projects.html">Projects & Repos</a>
     <a href="about.html">About</a>
     <a href="bot.html">Discord Bot</a>
+      <input type="submit" value="Submit" onclick="highlight();">
+      <input type="text" placeholder="Search..." id="searchbar">
   </div>
     <br />
     <button class="accordion" onclick="expAcc('java')">Java</button>
@@ -74,16 +77,5 @@
         <br />
         <p>As of right now, I do not have any miscellaneous projects.</p>
     </div>
-    <script>
-        function expAcc(id){
-            var panel = document.getElementById(id);
-            
-            if (panel.style.display === "block"){
-                panel.style.display = "none";
-            } else {
-                panel.style.display = "block";
-            }
-        }
-    </script>
 </body>
 </html>
