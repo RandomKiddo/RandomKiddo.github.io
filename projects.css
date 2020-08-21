@@ -64,8 +64,23 @@ input[type="button"]{
   color: white;
   padding: 16px 32px;
   text-decoration: none;
-  margin: 4px 2px
+  margin: 4px 2px;
   cursor: pointer;
+}
+input[type="text"]{
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  font-size: 17px;
+}
+input[type="submit"]{
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
 }
 body{
   background-color: #1d1f1d;
