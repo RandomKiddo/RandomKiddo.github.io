@@ -9,68 +9,35 @@ function expAcc(id){
 }
 function highlight(){
     var input = document.getElementById("searchbar").value.toLowerCase();
-    var elems = document.getElementsByTagName("p");
-    var h3 = document.getElementsByTagName("h3");
-    var h5 = document.getElementsByTagName("h5");
-    var h1 = document.getElementsByTagName("h1");
+    var p = document.getElementsByTagName("p");
     
-    for (var i = 0; i < elems.length; i++){
-        var content = elems[i].textContent.toLowerCase();
+    //unhighlight all regions
+    for (var i = 0; i < p.length; i++){
+        var inner = p[i].innerHTML;
         
-        if (content.indexOf(input) > -1){
-            var inner = elems[i].innerHTML;
+        while (inner.indexOf('<mark>') > -1){
+            var indexStart = inner.indexOf('<mark>');
+            var indexEnd = inner.indexOf('</mark>');
             
-            elems[i].innerHTML = '<mark>' + inner + '</mark>'
-        } else if (elems[i].innerHTML.indexOf('mark') > -1){
-            var postmark = elems[i].innerHTML.substring(6);
-            var dualmark = postmark.substring(0, postmark.length - 7);
-            
-            elems[i].innerHTML = dualmark;
+            inner = inner.substring(0, indexStart) + inner.substring(indexStart + 6, indexEnd) + inner.substring(indexEnd + 7);
         }
+        
+        p[i].innerHTML = inner;
     }
     
-    for (var i = 0; i < h3.length; i++){
-        var content = h3[i].textContent.toLowerCase();
+    //highlight key words
+    for (var i = 0; i < p.length; i++){
+        var content = p[i].value.toLowerCase();
         
-        if (content.indexOf(input) > -1){
-            var inner = h3[i].innerHTML;
+        while (content.indexOf(input) > -1){
+            var inner = p[i].innerHTML;
+            var index = inner.indexOf(input);
             
-            h3[i].innerHTML = '<mark>' + inner + '</mark>'
-        } else if (h3[i].innerHTML.indexOf('mark') > -1){
-            var postmark = h3[i].innerHTML.substring(6);
-            var dualmark = postmark.substring(0, postmark.length - 7);
+            content = content.substring(index + input.length);
             
-            h3[i].innerHTML = dualmark;
-        }
-    }
-    
-    for (var i = 0; i < h5.length; i++){
-        var content = h5[i].textContent.toLowerCase();
-        
-        if (content.indexOf(input) > -1){
-            var inner = h5[i].innerHTML;
+            inner = inner.substring(0, index) + '<mark>' + inner.substring(index, index + input.length) + '</mark>' + inner.substring(index + input.length);
             
-            h5[i].innerHTML = '<mark>' + inner + '</mark>'
-        } else if (h5[i].innerHTML.indexOf('mark') > -1){
-            var postmark = h5[i].innerHTML.substring(6);
-            var dualmark = postmark.substring(0, postmark.length - 7);
-            
-            h5[i].innerHTML = dualmark;
-        }
-    }
-    
-    for (var i = 0; i < h1.length; i++){
-        var content = h1[i].textContent.toLowerCase();
-        
-        if (content.indexOf(input) > -1){
-            var inner = h1[i].innerHTML;
-            
-            h1[i].innerHTML = '<mark>' + inner + '</mark>'
-        } else if (h1[i].innerHTML.indexOf('mark') > -1){
-            var postmark = h1[i].innerHTML.substring(6);
-            var dualmark = postmark.substring(0, postmark.length - 7);
-            
-            h1[i].innerHTML = dualmark;
+            p[i].innerHTML = inner;
         }
     }
 }
