@@ -7,37 +7,110 @@ function expAcc(id){
         panel.style.display = "block";
     }
 }
-function highlight(){
-    var input = document.getElementById("searchbar").value.toLowerCase();
-    var p = document.getElementsByTagName("p");
-    
-    //unhighlight all regions
-    for (var i = 0; i < p.length; i++){
-        var inner = p[i].innerHTML;
+class Highlight{
+    constructor(){
+        this._input = document.getElementById("searchbar").textContent.toLowerCase();
+        this._p = document.getElementsByTagName("p");
+        this._flooredP = floorAll(this._p);
+    }
+    get input(){
+        return this._input;
+    }
+    get p(){
+        return this._p;
+    }
+    run(){
+        revertHighlighting();
+        highlight();
+    }
+    floorAll(p){
+    	var floored = [];
         
-        while (inner.indexOf('<mark>') > -1){
-            var indexStart = inner.indexOf('<mark>');
-            var indexEnd = inner.indexOf('</mark>');
-            
-            inner = inner.substring(0, indexStart) + inner.substring(indexStart + 6, indexEnd) + inner.substring(indexEnd + 7);
+    	for (var i = 0; i < p.length; i++){
+        	floored.append(p[i].toString().toLowerCase());
         }
         
-        p[i].innerHTML = inner;
+        return floored;
     }
-    
-    //highlight key words
-    for (var i = 0; i < p.length; i++){
-        var content = p[i].value.toLowerCase();
+    revertHighlighting(){
+        for (var i = 0; i < this._p.length; i++){
+            var inner = this._p[i].innerHTML;
+            
+            inner = inner.replaceAll('<mark>', '');
+            inner = inner.replaceAll('</mark>', '');
+            
+            this._p[i].innerHTML = inner;
+        }
+    }
+    contains(){
+        var array = [];
         
-        while (content.indexOf(input) > -1){
-            var inner = p[i].innerHTML;
-            var index = inner.indexOf(input);
+        for (var i = 0; i < this._flooredP.length; i++){
+            if (this._flooredP[i].indexOf(this._input) > -1){
+                array.append(this._p[i]);
+            }
+        }
+        
+        return array;
+    }
+    instances(){
+        var array = contains();
+        var map = new Map();
+        
+        for (var i = 0; i < array.length; i++){
+            map.set(array[i], amountFound(array[i]));
+        }
+        
+        return map;
+    }
+    amountFound(string){
+        var amount = 0;
+        var copy = string.toLowerCase();
+        
+        while (copy.indexOf(this._input) > -1){
+            var index = copy.indexOf(this._input);
+            copy = copy.substring(index + this._input.length);
+            amount++;
+        }
+        
+        return amount;
+    }
+    highlight(){
+        var instances = instances();
+        
+        instances.forEach((key, value) => {
+            var indices = findIndices(key, value);
+            addMarkTag(key, indices);
+        });
+    }
+    findIndices(key, value){
+    	var found = 0;
+        var indices = [];
+        var copy = key.toLowerCase();
+        
+        while (found < value){
+        	var index = copy.indexOf(this._input);
             
-            content = content.substring(index + input.length);
+            indices.append(index);
+            found++;
             
-            inner = inner.substring(0, index) + '<mark>' + inner.substring(index, index + input.length) + '</mark>' + inner.substring(index + input.length);
+            copy = copy.substring(index + this._input.length);
+        }
+        
+        return indices;
+    }
+    addMarkTag(key, indices){
+    	var added = 0;
+        var inner = key.innerHTML;
+        
+        while (added < indices.length){
+            var index = indices[added];
             
-            p[i].innerHTML = inner;
+            inner = inner.substring(0, index) + '<mark>' + inner.substring(index, index + this._input.length) + '</mark>' + inner.substring(index + this._input.length);
+            
+            key.innerHTML = inner;
+            
+            added++;
         }
     }
 }
