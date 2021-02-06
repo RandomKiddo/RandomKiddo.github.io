@@ -12,6 +12,3 @@ function openConnect(connection, element, color){
     document.getElementById(connection).style.display = "block";
     element.style.backgroundColor = color;
 }
-function openLink(url){
-    window.open(url, '_blank');
-}
