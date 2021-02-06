@@ -51,6 +51,5 @@ a {
     color: black;
 }
 .yt {
-    border: 2px;
-    border-color: black;
+    border: 3px solid black;
 }
