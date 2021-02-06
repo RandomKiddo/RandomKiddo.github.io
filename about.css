@@ -22,3 +22,27 @@ body {
 font {
     font-family: 'Trebuchet MS', sans-serif;
 }
+.tablink {
+    background-color: #a9a9a9;
+    color: #333;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+.tablink:hover {
+    background-color: #d3d3d3;
+}
+.tabcontent {
+    color: #333;
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+#YouTube { background-color: #ff0000; }
+#Twitch { background-color: #6441A4; }
+#Github { background-color: #d3d3d3; }
+#Discord { background-color: #738ADB; }

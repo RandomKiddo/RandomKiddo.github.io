@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="about.css">
+        <script src="about.js"></script>
         <title>Firsttry - About Page</title>
     </head>
     <body>
@@ -16,6 +17,27 @@
                 <br />
                 <font size="10">Hello! I'm firsttry!</font>
             </center>
+        </div>
+        <br />
+        <div>
+            <font size="5">Connections:</font>
+            <br />
+            <div id="YouTube" class="tabcontent">
+                <font size="8">YouTube</font>
+            </div>
+            <div id="Twitch" class="tabcontent">
+                <font size="8">Twitch</font>
+            </div>
+            <div id="Github" class="tabcontent">
+                <font size="8">Github</font>
+            </div>
+            <div id="Discord" class="tabcontent">
+                <font size="8">Discord</font>
+            </div>
+            <button class="tablink" onclick="openConnect('YouTube', this, '#ff0000')" id="defaultOpen">YouTube</button>
+            <button class="tablink" onclick="openConnect('Twitch', this, '#6441A4')">Twitch</button>
+            <button class="tablink" onclick="openConnect('Github', this, '#d3d3d3')">Github</button>
+            <button class="tablink" onclick="openConnect('Discord', this, '#738ADB')">Discord</button>
         </div>
     </body>
 </html>
