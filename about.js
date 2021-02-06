@@ -13,4 +13,6 @@ function openConnect(connection, element, color){
     element.style.backgroundColor = color;
 }
 
-document.getElementById("defaultOpen").click();
+var evt = document.createEvent('MouseEvents')
+evt.initMouseEvent('mousedown', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+document.getElementById("defaultOpen").dispatchEvent(evt)
