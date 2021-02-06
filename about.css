@@ -52,4 +52,5 @@ a {
 }
 .yt {
     border: 3px solid black;
+    vertical-align: middle;
 }
