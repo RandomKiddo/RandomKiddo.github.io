@@ -12,7 +12,6 @@ function openConnect(connection, element, color){
     document.getElementById(connection).style.display = "block";
     element.style.backgroundColor = color;
 }
-function load(){
-    var defaultOpen = document.querySelector("#defaultOpen");
-    $(defaultOpen).click();
-}
+$(function() {
+    $('#defaultOpen').click();
+});
