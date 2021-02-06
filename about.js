@@ -13,6 +13,6 @@ function openConnect(connection, element, color){
     element.style.backgroundColor = color;
 }
 function load(){
-    var defaultOpen = document.getElementById("defaultOpen");
+    var defaultOpen = document.querySelector("#defaultOpen");
     $(defaultOpen).click();
 }
