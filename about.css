@@ -52,7 +52,6 @@ a {
 }
 a:hover {
     color: white;
-    text-decoration: underline;
 }
 .yt {
     border: 3px solid black;
