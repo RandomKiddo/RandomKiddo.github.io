@@ -1,12 +1,12 @@
 body {
     background-color: white;
 }
-.navbar {
+.topnav {
     border: #ff0000;
     overflow: hidden;
     background-color: #a9a9a9;
 }
-.navbar a {
+.topnav a {
     float: left;
     color: #333;
     text-align: center;
@@ -14,7 +14,7 @@ body {
     text-decoration: none;
     font-size: 17px;
 }
-.navbar a:hover {
+.topnav a:hover {
     background-color: #d3d3d3;
     color: #333;
 }
