@@ -3,6 +3,7 @@ body {
 }
 .topnav {
     border: #ff0000;
+    border-width: 2px;
     overflow: hidden;
     background-color: #a9a9a9;
 }
