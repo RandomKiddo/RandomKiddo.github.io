@@ -46,3 +46,7 @@ font {
 #Twitch { background-color: #6441A4; }
 #Github { background-color: #d3d3d3; }
 #Discord { background-color: #738ADB; }
+a {
+    text-decoration: none;
+    color: black;
+}
