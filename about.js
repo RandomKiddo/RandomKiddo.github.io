@@ -12,3 +12,6 @@ function openConnect(connection, element, color){
     document.getElementById(connection).style.display = "block";
     element.style.backgroundColor = color;
 }
+
+const defaultOpen = document.getElementById("defaultOpen");
+defaultOpen.addEventListener('onload', openConnect('YouTube', defaultOpen, '#ff0000'));
