@@ -62,3 +62,17 @@ body {
   display: none;
   text-align: center;
 }
+.container {
+    width: 100%;
+    background-color: #ddd;
+}
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+.yt { width: 30%; background-color: #ff0000; }
+.twitch { width: 20%; background-color: #6441A4; }
+.git { width: 5%; background-color: #d3d3d3; }
+.dis { width: 50%; background-color: #738ADB; }
