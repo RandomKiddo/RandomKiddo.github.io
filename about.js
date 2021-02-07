@@ -12,3 +12,6 @@ function openConnect(connection, element, color){
     document.getElementById(connection).style.display = "block";
     element.style.backgroundColor = color;
 }
+$(document).ready(function(){
+    $("#defaultOpen").click();
+});
