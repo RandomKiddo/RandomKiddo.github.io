@@ -7,59 +7,62 @@
         <script src="jquery-3.5.1.min.js"></script>
         <title>Firsttry - About Page</title>
     </head>
-    <body>
-        <div class="topnav">
-            <a href="index.html">Home</a>
-            <a class="active" href="about.html">About</a>
-        </div>
-        <br />
-        <div>
-            <center>
-                <img src="Images/logo.jpeg" alt="Firsttry's Logo" width="175" height="175">
-                <br />
-                <font size="10">Hello! I'm firsttry!</font>
-            </center>
-        </div>
-        <br />
-        <div>
-            <font size="5">Connections:</font>
+    <body onload="buffer()" style="margin: 0;">
+        <div id="loader"></div>
+        <div id="buffer" class="animate-bottom" style="display: none;">
+            <div class="topnav">
+                <a href="index.html">Home</a>
+                <a class="active" href="about.html">About</a>
+            </div>
             <br />
-            <div id="YouTube" class="tabcontent">
-                <font size="8">YouTube</font>
-                <br />
-                <a href="https://www.youtube.com/channel/UCqORid7DP0chFER0SkjCb1A" target="_blank">
-                    <font size="4">Main YouTube</font>
-                </a>
-                <br />
-                <a href="https://www.youtube.com/channel/UCvErjJxLRFq4t9d4iydRLVQ" target="_blank">
-                    <font size="4">VOD YouTube</font>
-                </a>
+            <div>
+                <center>
+                    <img src="Images/logo.jpeg" alt="Firsttry's Logo" width="175" height="175">
+                    <br />
+                    <font size="10">Hello! I'm firsttry!</font>
+                </center>
             </div>
-            <div id="Twitch" class="tabcontent">
-                <font size="8">Twitch</font>
+            <br />
+            <div>
+                <font size="5">Connections:</font>
                 <br />
-                <a href="https://www.twitch.tv/notfirsttry" target="_blank">
-                    <font size="4">Twitch</font>
-                </a>
+                <div id="YouTube" class="tabcontent">
+                    <font size="8">YouTube</font>
+                    <br />
+                    <a href="https://www.youtube.com/channel/UCqORid7DP0chFER0SkjCb1A" target="_blank">
+                        <font size="4">Main YouTube</font>
+                    </a>
+                    <br />
+                    <a href="https://www.youtube.com/channel/UCvErjJxLRFq4t9d4iydRLVQ" target="_blank">
+                        <font size="4">VOD YouTube</font>
+                    </a>
+                </div>
+                <div id="Twitch" class="tabcontent">
+                    <font size="8">Twitch</font>
+                    <br />
+                    <a href="https://www.twitch.tv/notfirsttry" target="_blank">
+                        <font size="4">Twitch</font>
+                    </a>
+                </div>
+                <div id="Github" class="tabcontent">
+                    <font size="8">Github</font>
+                    <br />
+                    <a href="https://github.com/RandomKiddo/youtubeplugins" target="_blank">
+                        <font size="4">YouTube Plugins Github</font>
+                    </a>
+                </div>
+                <div id="Discord" class="tabcontent">
+                    <font size="8">Discord</font>
+                    <br />
+                    <a href="https://discord.com/invite/Hg6aaqkzBy" target="_blank">
+                        <font size="4">Discord Server Invite</font>
+                    </a>
+                </div>
+                <button class="tablink" onclick="openConnect('YouTube', this, '#ff0000')" id="defaultOpen">YouTube</button>
+                <button class="tablink" onclick="openConnect('Twitch', this, '#6441A4')">Twitch</button>
+                <button class="tablink" onclick="openConnect('Github', this, '#d3d3d3')">Github</button>
+                <button class="tablink" onclick="openConnect('Discord', this, '#738ADB')">Discord</button>
             </div>
-            <div id="Github" class="tabcontent">
-                <font size="8">Github</font>
-                <br />
-                <a href="https://github.com/RandomKiddo/youtubeplugins" target="_blank">
-                    <font size="4">YouTube Plugins Github</font>
-                </a>
-            </div>
-            <div id="Discord" class="tabcontent">
-                <font size="8">Discord</font>
-                <br />
-                <a href="https://discord.com/invite/Hg6aaqkzBy" target="_blank">
-                    <font size="4">Discord Server Invite</font>
-                </a>
-            </div>
-            <button class="tablink" onclick="openConnect('YouTube', this, '#ff0000')" id="defaultOpen">YouTube</button>
-            <button class="tablink" onclick="openConnect('Twitch', this, '#6441A4')">Twitch</button>
-            <button class="tablink" onclick="openConnect('Github', this, '#d3d3d3')">Github</button>
-            <button class="tablink" onclick="openConnect('Discord', this, '#738ADB')">Discord</button>
         </div>
     </body>
 </html>

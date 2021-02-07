@@ -12,3 +12,10 @@ function openConnect(connection, element, color){
     document.getElementById(connection).style.display = "block";
     element.style.backgroundColor = color;
 }
+function buffer(){
+    var timeout = setTimeout(showPage, 3000); 
+}
+function showPage(){
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("buffer").style.display = "block";
+}
