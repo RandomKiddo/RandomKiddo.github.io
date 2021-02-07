@@ -3,5 +3,5 @@ function buffer(){
 }
 function showPage(){
     document.getElementById("loader").style.display = "none";
-    document.getElementById("buffer").style.display = "inline";
+    document.getElementById("buffer").style.display = "block";
 }
