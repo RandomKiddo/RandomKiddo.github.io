@@ -76,3 +76,4 @@ body {
 .twitch { width: 20%; background-color: #6441A4; }
 .git { width: 5%; background-color: #d3d3d3; }
 .dis { width: 50%; background-color: #738ADB; }
+* { box-sizing: border-box; }
