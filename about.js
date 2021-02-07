@@ -13,5 +13,5 @@ function openConnect(connection, element, color){
     element.style.backgroundColor = color;
 }
 $(document).ready(function(){
-    $("#defaultOpen").click();
+    $("#defaultOpen").trigger('click');
 });
