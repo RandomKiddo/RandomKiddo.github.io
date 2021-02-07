@@ -13,5 +13,7 @@ function openConnect(connection, element, color){
     element.style.backgroundColor = color;
 }
 $(document).ready(function(){
-    $(document).on(load, openConnect('YouTube', $("#defaultOpen"), '#ff0000'));
+    $("#defaultOpen").click(function() {
+        openConnect('YouTube', this, '#ff0000');
+    });
 });
