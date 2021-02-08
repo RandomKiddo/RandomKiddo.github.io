@@ -51,29 +51,43 @@ body {
     animation-duration: 1s;
 }
 @-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0; } 
-  to { bottom:0px; opacity:1; }
+    from { bottom:-100px; opacity:0; } 
+    to { bottom:0px; opacity:1; }
 }
 @keyframes animatebottom { 
-  from { bottom:-100px; opacity:0; } 
-  to{ bottom:0; opacity:1; }
+    from { bottom:-100px; opacity:0; } 
+    to{ bottom:0; opacity:1; }
 }
 #buffer {
-  display: none;
-  text-align: center;
+    display: none;
+    text-align: center;
 }
-.container {
-    width: 100%;
-    background-color: #ddd;
+.* {
+    box-sizing: border-box;
 }
-.skills {
-    text-align: right;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 5px;
+}
+.row { margin: 0 -5px; }
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #ff0000;
     color: white;
 }
-.yt { width: 30%; background-color: #ff0000; }
-.twitch { width: 20%; background-color: #6441A4; }
-.git { width: 5%; background-color: #d3d3d3; }
-.dis { width: 50%; background-color: #738ADB; }
-* { box-sizing: border-box; }
+.fa { font-size: 50px; }
