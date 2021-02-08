@@ -67,10 +67,12 @@ body {
 }
 .column {
     float: left;
-    width: 25%;
+    width: 20%;
     padding: 0 5px;
 }
-.row { margin: 0 -5px; }
+.row { 
+    margin-left: 14%;
+}
 .row:after {
     content: "";
     display: table;
