@@ -58,3 +58,6 @@ a:hover {
     vertical-align: middle;
     border-radius: 25px;
 }
+a {
+    text-decoration: none;
+}
