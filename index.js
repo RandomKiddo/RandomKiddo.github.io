@@ -21,3 +21,15 @@ function countdown(date){
         }
     }, 1000);
 }
+function getLatestVideo() {
+    $.ajax({
+        type: "POST",
+        url: "index.py",
+        data: { param: input },
+        sucess: callback
+    });
+}
+function callback(response) {
+    var embed = document.getElementById("latest");
+    embed.src = response.toString();
+}
