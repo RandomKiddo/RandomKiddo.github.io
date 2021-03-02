@@ -1,0 +1,22 @@
+body {
+    background-color: white;
+}
+.topnav {
+    border: #ff0000;
+    border-width: 2px;
+    overflow: hidden;
+    background-color: #a9a9a9;
+}
+.topnav a {
+    float: left;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: #d3d3d3;
+    color: #333;
+}
+.fa { font-size: 50px; }
