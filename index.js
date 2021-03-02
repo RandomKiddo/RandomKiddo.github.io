@@ -21,3 +21,16 @@ function countdown(date){
         }
     }, 1000);
 }
+function getSubscribers(link) {
+    $.ajax({
+        type: "POST",
+        url: "subs_backend.py",
+        data: { param: link },
+        dataType: "text",
+        success: function(response){
+            var subs = document.getElementById("subs");
+            subs.textContent = response.toString();
+            console.log(response.toString());
+        }
+    });
+}
