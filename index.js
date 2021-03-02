@@ -31,5 +31,6 @@ function getLatestVideo() {
 }
 function callback(response) {
     var embed = document.getElementById("latest");
+    console.log(response.toString()); //Attempt Log
     embed.src = response.toString();
 }
