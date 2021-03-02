@@ -24,11 +24,10 @@ function countdown(date){
 function getLatestVideo() {
     $.ajax({
         type: "POST",
-        url: "/index.py",
-        data: { param: none }
-    }).done(function(callback) {
-        var embed = document.getElementById("latest");
-        console.log(callback.toString());
-        embed.src = callback.toString();
+        url: "index.py",
+        success: function(data) {
+            var embed = document.getElementById("latest");
+            embed.src = data.toString();
+        }
     });
 }
