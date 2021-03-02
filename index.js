@@ -25,9 +25,11 @@ function getLatestVideo() {
     $.ajax({
         type: "POST",
         url: "index.py",
-    }).done(function(callback) {
-        var embed = document.getElementById("latest");
-        embed.src = callback.toString();
-        console.log(callback.toString());
+        done: complete
     });
+    function complete(data) {
+        console.log(data)
+        var embed = document.getElementById("latest");
+        embed.src = data.toString();
+    }
 }
