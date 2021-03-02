@@ -26,7 +26,7 @@ function getLatestVideo() {
         type: "POST",
         url: "index.py",
         data: { param: input },
-        sucess: callback
+        success: callback
     });
 }
 function callback(response) {
