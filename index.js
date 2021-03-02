@@ -26,11 +26,8 @@ function getLatestVideo() {
         type: "POST",
         url: "index.py",
         data: { param: input },
-        success: callback
+    }).done(function(callback) {
+        var embed = document.getElementById("latest");
+        embed.src = callback.toString();
     });
-}
-function callback(response) {
-    var embed = document.getElementById("latest");
-    console.log(response.toString()); //Attempt Log
-    embed.src = response.toString();
 }
