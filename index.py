@@ -7,7 +7,7 @@ def scrape():
     soup = Soup(response.text, 'html.parser')
     a = None
     for _ in soup.findall('a'):
-        if (_.id == 'video-title'):
+        if _.id == 'video-title':
             a = _
             break
     identifier = a.href[a.index('=')+1:]
