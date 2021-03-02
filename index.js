@@ -1,5 +1,5 @@
 function buffer(){
-    var timeout = setTimeout(showPage, 3000); 
+    var timeout = setTimeout(showPage, 3000);
 }
 function showPage(){
     document.getElementById("loader").style.display = "none";
@@ -21,7 +21,7 @@ function countdown(date){
         }
     }, 1000);
 }
-function getLatestVideo() {
+function getSubscribers() {
     $.ajax({
         type: "POST",
         url: "subs_backend.py",
