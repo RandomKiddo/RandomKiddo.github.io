@@ -24,7 +24,7 @@ function countdown(date){
 function getLatestVideo() {
     $.ajax({
         type: "POST",
-        url: "index.py"
+        url: "/index.py"
     }).done(function(callback) {
         var embed = document.getElementById("latest");
         console.log(callback.toString());
