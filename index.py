@@ -10,7 +10,6 @@ def scrape():
         if (_.id == 'video-title'):
             a = _
             break
-            https://www.youtube.com/embed/xxnRWi-yYTE?autoplay=1&mute=1
     identifier = a.href[a.index('=')+1:]
     return 'https://www.youtube.com/embed/{}?autoplay=1&mute=1'.format(identifier)
 
