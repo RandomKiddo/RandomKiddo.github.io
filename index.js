@@ -25,9 +25,9 @@ function getLatestVideo() {
     $.ajax({
         type: "POST",
         url: "index.py",
-        success: function(data) {
-            var embed = document.getElementById("latest");
-            embed.src = data.toString();
-        }
+    }).done(function(callback) {
+        var embed = document.getElementById("latest");
+        embed.src = callback.toString();
+        console.log(callback.toString());
     });
 }
