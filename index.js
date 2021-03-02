@@ -24,12 +24,11 @@ function countdown(date){
 function getLatestVideo() {
     $.ajax({
         type: "POST",
-        url: "index.py",
-        done: complete
+        url: "subs_backend.py",
+        data { URL: 'https://www.youtube.com/channel/UCqORid7DP0chFER0SkjCb1A' }
+    }).done(function(callback) { 
+        var subs = document.getElementById("subs");
+        subs.textContent = callback.toString();
+        console.log(callback.toString());
     });
-    function complete(data) {
-        console.log(data)
-        var embed = document.getElementById("latest");
-        embed.src = data.toString();
-    }
 }
