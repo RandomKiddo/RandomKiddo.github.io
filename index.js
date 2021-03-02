@@ -25,7 +25,7 @@ function getSubscribers() {
     $.ajax({
         type: "POST",
         url: "subs_backend.py",
-        data { URL: 'https://www.youtube.com/channel/UCqORid7DP0chFER0SkjCb1A' }
+        data: { URL: 'https://www.youtube.com/channel/UCqORid7DP0chFER0SkjCb1A' }
     }).done(function(callback) { 
         var subs = document.getElementById("subs");
         subs.textContent = callback.toString();
