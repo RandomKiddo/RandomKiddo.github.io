@@ -1,36 +1,51 @@
 function buffer(){
-    var timeout = setTimeout(showPage, 3000);
+  var timeout = setTimeout(showPage, 3000);
 }
 function showPage(){
-    document.getElementById("loader").style.display = "none";
-    document.getElementById("buffer").style.display = "block";
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("buffer").style.display = "block";
 }
 function countdown(date){
-    var countdownDate = new Date(date).getTime();
-    var x = setInterval(function(){
-        var now = new Date().getTime();
-        var distance = countdownDate - now;
-        var days = Math.floor(distance / (1000*60*60*24));
-        var hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60))
-        var minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
-        var seconds = Math.floor((distance % (1000*60)) / 1000);
-        document.getElementById("counter").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-        if (distance < 0){
-            clearInterval(x);
-            document.getElementById("counter").innerHTML = "EXPIRED";
-        }
-    }, 1000);
+  var countdownDate = new Date(date).getTime();
+  var x = setInterval(function(){
+    var now = new Date().getTime();
+    var distance = countdownDate - now;
+    var days = Math.floor(distance / (1000*60*60*24));
+    var hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60))
+    var minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
+    var seconds = Math.floor((distance % (1000*60)) / 1000);
+    document.getElementById("counter").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    if (distance < 0){
+      clearInterval(x);
+      document.getElementById("counter").innerHTML = "EXPIRED";
+    }
+  }, 1000);
 }
 function getSubscribers(link) {
-    $.ajax({
-        type: "POST",
-        url: "subs_backend.py",
-        data: { param: link },
-        dataType: "text",
-        success: function(response){
-            var subs = document.getElementById("subs");
-            subs.textContent = response.toString();
-            console.log(response.toString());
-        }
-    });
+  $.ajax({
+    type: "POST",
+    url: "subs_backend.py",
+    data: { param: link },
+    dataType: "text",
+    success: function(response){
+      var subs = document.getElementById("subs");
+      subs.textContent = response.toString();
+      console.log(response.toString());
+    }
+  });
+}
+function toTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+function scroll() {
+  var button = document.getElementById("tpbtn");
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    button.style.display = "block";
+  } else {
+    button.style.display = "none";
+  }
+}
+function loadDependencies() {
+  window.onscroll = function() { scrollFunction(); };
 }
