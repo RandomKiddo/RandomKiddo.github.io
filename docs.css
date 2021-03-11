@@ -23,3 +23,17 @@ body {
 font {
     font-family: 'Trebuchet MS', sans-serif;
 }
+.btn-group button {
+  background-color: #ff0000;
+  border: 1px solid #ff0000;
+  color: white;
+  padding: 10px 24px;
+  cursor: pointer;
+  display: block;
+}
+.btn-group button:hover {
+  background-color: #cc0000;
+}
+.btn-group button:not(:last-child) {
+  border-bottom: none;
+}
