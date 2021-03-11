@@ -30,10 +30,18 @@ font {
   padding: 10px 24px;
   cursor: pointer;
   display: block;
+  width: 50%;
 }
 .btn-group button:hover {
   background-color: #cc0000;
 }
 .btn-group button:not(:last-child) {
   border-bottom: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: white;
 }
