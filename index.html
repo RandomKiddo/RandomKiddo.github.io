@@ -1,82 +1,130 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="shortcut icon" type="image/x-icon" href="Images/favicon.ico">
-        <link rel="stylesheet" href="index.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="index.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <title>Firsttry - Home Page</title>
-    </head>
-    <body onload="buffer(); loadDependencies(); countdown('Mar 02, 2021 10:00:00');" style="margin: 0;">
-        <div id="loader"></div>
-        <div id="buffer" class="animate-bottom" style="display: none;">
-            <div class="topnav">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="docs.html">Docs</a>
-                <!-- ADD CONTACT -->
-            </div>
-            <br />
-            <button onclick="toTop();" id="tpbtn" title="Go to top">Top</button>
-            <br />
-            <center>
-                <br />
-                <br />
-                <iframe width="420" height="315" id="latest"
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="Images/favicon.ico">
+    <link rel="stylesheet" href="index.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="index.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Firsttry - Home Page</title>
+  </head>
+  <body onload="buffer(); loadDependencies();" style="margin: 0;">
+    <div id="loader"></div>
+    <div id="buffer" class="animate-bottom" style="display: none;">
+      <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="docs.html">Docs</a>
+        <!-- ADD CONTACT -->
+      </div>
+      <br />
+      <button onclick="toTop();" id="tpbtn" title="Go to top">Top</button>
+      <br />
+      <center>
+        <br />
+        <br />
+        <iframe width="420" height="315" id="latest"
                 src="https://www.youtube.com/embed/tXQxRr4aRjY?autoplay=1&mute=1">
-                </iframe>
-            </center>
-            <br />
-            <div>
-                <center>
-                    <div class="row">
-                        <div class="column">
-                            <div class="card">
-                                <p><i class="fa fa-video-camera"></i></p>
-                                <h3 id="subs">3</h3>
-                                <p>YouTube Subs</p>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="card">
-                                <p><i class="fa fa-camera"></i></p>
-                                <h3>2</h3>
-                                <p>Twitch Followers</p>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="card">
-                                <p><i class="fa fa-code"></i></p>
-                                <h3>0</h3>
-                                <p>Github Stars</p>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="card">
-                                <p><i class="fa fa-comment"></i></p>
-                                <h3>2</h3>
-                                <p>Discord Members</p>
-                            </div>
-                        </div>
-                    </div>
-                </center>
+        </iframe>
+      </center>
+      <br />
+      <div>
+        <center>
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <p><i class="fa fa-video-camera"></i></p>
+                <h3 id="subs">3</h3>
+                <p>YouTube Subs</p>
+              </div>
             </div>
-            <br />
-            <br />
-            <br />
-            <div>
-                <!-- Will Be Added -->
+            <div class="column">
+              <div class="card">
+                <p><i class="fa fa-camera"></i></p>
+                <h3>2</h3>
+                <p>Twitch Followers</p>
+              </div>
             </div>
-            <br />
-            <div>
-                <font size="6">ETA 'Til Next Event: </font>
-                <p id="counter"></p>
+            <div class="column">
+              <div class="card">
+                <p><i class="fa fa-code"></i></p>
+                <h3>0</h3>
+                <p>Github Stars</p>
+              </div>
             </div>
-            <br />
-            <br />
-            <br />
-            <iframe src="https://discord.com/widget?id=780146022327386154&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-        </div>
-    </body>
+            <div class="column">
+              <div class="card">
+                <p><i class="fa fa-comment"></i></p>
+                <h3>2</h3>
+                <p>Discord Members</p>
+              </div>
+            </div>
+          </div>
+        </center>
+      </div>
+      <br />
+      <br />
+      <br />
+      <div>
+        <!-- Will Be Added -->
+      </div>
+      <br />
+      <div class="month">
+        <ul>
+          <li class="prev">&#10094;</li>
+          <li class="next">&#10095;</li>
+          <li>
+            March<br>
+            <span style="font-size: 18px">2021</span>
+          </li>
+        </ul>
+      </div>
+      <ul class="weekdays">
+        <li>Mo</li>
+        <li>Tu</li>
+        <li>We</li>
+        <li>Th</li>
+        <li>Fr</li>
+        <li>Sa</li>
+        <li>Su</li>
+      </ul>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li><span class="active">16</span></li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+      </ul>
+      <br />
+      <br />
+      <br />
+      <iframe src="https://discord.com/widget?id=780146022327386154&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </div>
+  </body>
 </html>
