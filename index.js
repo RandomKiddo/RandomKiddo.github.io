@@ -33,3 +33,12 @@ function scroll() {
 function loadDependencies() {
   window.onscroll = function() { scrollFunction(); };
 }
+
+$(window).on('beforeunload', function() {
+  var c = confirm();
+  if (c) {
+    return true;
+  } else {
+    return false;
+  }
+});
