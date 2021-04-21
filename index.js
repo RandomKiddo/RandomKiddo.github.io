@@ -33,11 +33,6 @@ function scroll() {
 function loadDependencies() {
   window.onscroll = function() { scrollFunction(); };
 }
-function warn(url) {
-  var answer = confirm('It looks like you are about to leave this page. Are you sure you want to leave?');
-  if (answer) {
-    alert("Confirmed");
-  } else {
-    window.location = url;
-  }
+function unload() {
+  return 'It looks like you are about to leave this page. Are you sure you want to leave?';
 }

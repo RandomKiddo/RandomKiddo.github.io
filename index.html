@@ -8,14 +8,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Firsttry - Home Page</title>
   </head>
-  <body onload="buffer(); loadDependencies();" style="margin: 0;">
+  <body onload="buffer(); loadDependencies();" onbeforeunload ="return unload();" style="margin: 0;">
     <div id="loader"></div>
     <div id="buffer" class="animate-bottom" style="display: none;">
       <div class="topnav">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="docs.html">Docs</a>
-        <a onclick="warn('https://github.com/RandomKiddo/RandomKiddo.github.io');">Src</a>
+        <a href="https://github.com/RandomKiddo/RandomKiddo.github.io">Src</a>
         <!-- ADD CONTACT -->
       </div>
       <br />
