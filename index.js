@@ -33,9 +33,11 @@ function scroll() {
 function loadDependencies() {
   window.onscroll = function() { scrollFunction(); };
 }
-$(window).on('beforeunload', function(e) {
-  var msg = 'It looks like you are about to leave this page. '
-          + 'Are you sure you want to leave?';
-  (e || window.event).returnValue = msg;
-  return msg;
-});
+function warn(url) {
+  var answer = confirm('It looks like you are about to leave this page. Are you sure you want to leave?');
+  if (answer) {
+    alert("Confirmed");
+  } else {
+    window.location = url;
+  }
+}
