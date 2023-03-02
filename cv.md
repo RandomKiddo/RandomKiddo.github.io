@@ -6,11 +6,12 @@ title: CV and Coursework
 <p class="message">Below is my CV, last updated on 03/01/2023: </p>
 
 <iframe src="/CVObscured.pdf" width="100%" height="910px"></iframe>
+<sub>For personal safety, contact information has been removed. If contact is required, please message me on LinkedIn.</sub>
 
 <br>
 
 <p class="message">As of the fall semester of 2022, I have completed the following technical coursework: </p>
-<sub>Any personal things I've learned are not included. These are classes I've taken at an university or community college, or classes attained by AP credit</sub>
+<sub>Any personal things I've learned are not included. These are classes I've taken at an university or community college, or classes attained by AP credit.</sub>
 
 <ul>
 <li>Calculus I and II + Multivariable Calculus + Theoretical Calculus I and II</li>
