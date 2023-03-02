@@ -6,7 +6,7 @@ title: CV and Coursework
 <p class="message">Below is my CV, last updated on 03/01/2023: </p>
 
 <iframe src="/CVObscured.pdf" width="100%" height="910px"></iframe>
-<sub>For personal safety, contact information has been removed. If contact is required, please message me on LinkedIn.</sub>
+<sub>For personal safety, contact information has been removed. If contact is required, please message me on <a href="https://linkedin.com/in/neilghugare" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</sub>
 
 <br>
 
