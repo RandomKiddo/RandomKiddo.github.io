@@ -4,7 +4,7 @@
  <title>Hyde</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2023-03-02T13:13:09-05:00</updated>
+ <updated>2023-03-02T23:43:55-05:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Mark Otto</name>
@@ -18,12 +18,14 @@
    <updated>2023-03-01T00:00:00-05:00</updated>
    <id>http://localhost:4000/2023/03/01/hemoglobin</id>
    <content type="html">&lt;div class=&quot;message&quot;&gt;
-  Goals: Use Jupyter Notebook, LaTeX, and a Matlab Kernel to do data fitting on experimental hemoglobin binding data. Curve fit different models to the data, including the &quot;Non-Cooperative&quot; model and the Pauling model. 
-  &lt;br /&gt;
-  Results:
+  &lt;u&gt;Goals:&lt;/u&gt; Use Jupyter Notebook, LaTeX, and a Matlab Kernel to do data fitting on experimental hemoglobin binding data. Curve fit different models to the data, including the &quot;Non-Cooperative&quot; model and the Pauling model. 
+  &lt;br /&gt; &lt;br /&gt;
+  &lt;u&gt;Results:&lt;/u&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Snippets:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Process:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Snippets:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;See the full project on &lt;a href=&quot;https://github.com/RandomKiddo/PolarisResearchProject/blob/master/Project.ipynb&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
 </content>
@@ -35,12 +37,16 @@
    <updated>2023-01-27T00:00:00-05:00</updated>
    <id>http://localhost:4000/2023/01/27/stockpricernn</id>
    <content type="html">&lt;div class=&quot;message&quot;&gt;
-  Goals: Learn about Neural Networks and RNNs. Get comfortable with Tensorflow. Predict Proctor &amp;amp; Gamble Stock (closing) price.
-  &lt;br /&gt;
-  Results: A model that is pretty close to the true values of the stock price range predicted (matches shape well, exact values not attained).
+  &lt;u&gt;Goals:&lt;/u&gt; Learn about Neural Networks and RNNs. Get comfortable with Tensorflow. Predict Proctor &amp;amp; Gamble Stock (closing) price.
+  &lt;br /&gt; &lt;br /&gt;
+  &lt;u&gt;Results:&lt;/u&gt; A model that is pretty close to the true values of the stock price range predicted (matches shape well, exact values not attained).
 &lt;/div&gt;
 
-&lt;p&gt;Snippets:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Process:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Collect csv data into a Pandas DataFrame. Enumerate the data to make it all numbers and then visualize the data to see what we’re working with. We then reshape and compile the closing price data and do the same to the high and low price values. We concatenate that usiny NumPy into one array and scale the data. We split the data into training and testing sets, and then using TensorFlow and Keras to generate a Sequential model with a LSTM and Dense layer. After compiling it and training it on the training set, we then predict the stock price closing value of the test set, and then graph the results to inspect the accuracy.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Snippets:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;PG Stock Price Graph:
 &lt;img src=&quot;/screenshots/original.png&quot; alt=&quot;PG Price&quot; /&gt;&lt;/p&gt;
@@ -67,14 +73,18 @@
    <updated>2022-11-28T00:00:00-05:00</updated>
    <id>http://localhost:4000/2022/11/28/housepriceai</id>
    <content type="html">&lt;div class=&quot;message&quot;&gt;
-  Goals: Get accustomed to Jupyter Notebooks, Scikit-Learn, and simple regression AI modeling. Learn concepts such as normalization, imputation, and the foundations of CRISP-DM. 
-  &lt;br /&gt;
-  Results: Model with an r&lt;sup&gt;2&lt;/sup&gt; of 0.9999968, but is not general to any house due to location data being factored into the model.
+  &lt;u&gt;Goals:&lt;/u&gt; Get accustomed to Jupyter Notebooks, Scikit-Learn, and simple regression AI modeling. Learn concepts such as normalization, imputation, enumeration, the foundations of CRISP-DM, and the basics of AI modeling. 
+  &lt;br /&gt; &lt;br /&gt;
+  &lt;u&gt;Results:&lt;/u&gt; Model with an r&lt;sup&gt;2&lt;/sup&gt; of 0.9999968, but is not general to any house due to location data being factored into the model.
 &lt;/div&gt;
 
-&lt;p&gt;Snippets:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Process:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Information Gain on Parameters:
+&lt;p&gt;Use Pandas to read a csv into a DataFrame. Enumerate the data to get a frame with only numbers. Check for unusable data and use imputation, if needed, to insert data. After inspecting graphs of the data, normalize the data and filter it accordingly. Split the data into training and test sets, and then model the data using KNeighborsRegressor model and train the data. Then, we predict on the test set and measure the error. Finally, we fiddle with the model a bit to find the most accurate one, and then we’re done.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Snippets:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Information Gain on Parameters (VarianceThreshold Not Pictured):
 &lt;img src=&quot;/screenshots/informationgain.png&quot; alt=&quot;Information Gain&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The r&lt;sup&gt;2&lt;/sup&gt; Values:

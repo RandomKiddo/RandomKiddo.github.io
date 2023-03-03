@@ -4,12 +4,16 @@ title: PG Stock Price Prediction RNN w/Tensorflow
 ---
 
 <div class="message">
-  Goals: Learn about Neural Networks and RNNs. Get comfortable with Tensorflow. Predict Proctor & Gamble Stock (closing) price.
-  <br>
-  Results: A model that is pretty close to the true values of the stock price range predicted (matches shape well, exact values not attained).
+  <u>Goals:</u> Learn about Neural Networks and RNNs. Get comfortable with Tensorflow. Predict Proctor & Gamble Stock (closing) price.
+  <br> <br>
+  <u>Results:</u> A model that is pretty close to the true values of the stock price range predicted (matches shape well, exact values not attained).
 </div>
 
-Snippets:
+**Process:**
+
+Collect csv data into a Pandas DataFrame. Enumerate the data to make it all numbers and then visualize the data to see what we're working with. We then reshape and compile the closing price data and do the same to the high and low price values. We concatenate that usiny NumPy into one array and scale the data. We split the data into training and testing sets, and then using TensorFlow and Keras to generate a Sequential model with a LSTM and Dense layer. After compiling it and training it on the training set, we then predict the stock price closing value of the test set, and then graph the results to inspect the accuracy.
+
+**Snippets:**
 
 PG Stock Price Graph:
 ![PG Price](/screenshots/original.png)

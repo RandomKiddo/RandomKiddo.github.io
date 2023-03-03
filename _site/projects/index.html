@@ -102,12 +102,14 @@
       <span class="post-date">01 Mar 2023</span>
   
       <div class="message">
-  Goals: Use Jupyter Notebook, LaTeX, and a Matlab Kernel to do data fitting on experimental hemoglobin binding data. Curve fit different models to the data, including the "Non-Cooperative" model and the Pauling model. 
-  <br />
-  Results:
+  <u>Goals:</u> Use Jupyter Notebook, LaTeX, and a Matlab Kernel to do data fitting on experimental hemoglobin binding data. Curve fit different models to the data, including the "Non-Cooperative" model and the Pauling model. 
+  <br /> <br />
+  <u>Results:</u>
 </div>
 
-<p>Snippets:</p>
+<p><strong>Process:</strong></p>
+
+<p><strong>Snippets:</strong></p>
 
 <p>See the full project on <a href="https://github.com/RandomKiddo/PolarisResearchProject/blob/master/Project.ipynb">Github</a></p>
 
@@ -123,12 +125,16 @@
       <span class="post-date">27 Jan 2023</span>
   
       <div class="message">
-  Goals: Learn about Neural Networks and RNNs. Get comfortable with Tensorflow. Predict Proctor &amp; Gamble Stock (closing) price.
-  <br />
-  Results: A model that is pretty close to the true values of the stock price range predicted (matches shape well, exact values not attained).
+  <u>Goals:</u> Learn about Neural Networks and RNNs. Get comfortable with Tensorflow. Predict Proctor &amp; Gamble Stock (closing) price.
+  <br /> <br />
+  <u>Results:</u> A model that is pretty close to the true values of the stock price range predicted (matches shape well, exact values not attained).
 </div>
 
-<p>Snippets:</p>
+<p><strong>Process:</strong></p>
+
+<p>Collect csv data into a Pandas DataFrame. Enumerate the data to make it all numbers and then visualize the data to see what we’re working with. We then reshape and compile the closing price data and do the same to the high and low price values. We concatenate that usiny NumPy into one array and scale the data. We split the data into training and testing sets, and then using TensorFlow and Keras to generate a Sequential model with a LSTM and Dense layer. After compiling it and training it on the training set, we then predict the stock price closing value of the test set, and then graph the results to inspect the accuracy.</p>
+
+<p><strong>Snippets:</strong></p>
 
 <p>PG Stock Price Graph:
 <img src="/screenshots/original.png" alt="PG Price" /></p>
@@ -159,14 +165,18 @@
       <span class="post-date">28 Nov 2022</span>
   
       <div class="message">
-  Goals: Get accustomed to Jupyter Notebooks, Scikit-Learn, and simple regression AI modeling. Learn concepts such as normalization, imputation, and the foundations of CRISP-DM. 
-  <br />
-  Results: Model with an r<sup>2</sup> of 0.9999968, but is not general to any house due to location data being factored into the model.
+  <u>Goals:</u> Get accustomed to Jupyter Notebooks, Scikit-Learn, and simple regression AI modeling. Learn concepts such as normalization, imputation, enumeration, the foundations of CRISP-DM, and the basics of AI modeling. 
+  <br /> <br />
+  <u>Results:</u> Model with an r<sup>2</sup> of 0.9999968, but is not general to any house due to location data being factored into the model.
 </div>
 
-<p>Snippets:</p>
+<p><strong>Process:</strong></p>
 
-<p>Information Gain on Parameters:
+<p>Use Pandas to read a csv into a DataFrame. Enumerate the data to get a frame with only numbers. Check for unusable data and use imputation, if needed, to insert data. After inspecting graphs of the data, normalize the data and filter it accordingly. Split the data into training and test sets, and then model the data using KNeighborsRegressor model and train the data. Then, we predict on the test set and measure the error. Finally, we fiddle with the model a bit to find the most accurate one, and then we’re done.</p>
+
+<p><strong>Snippets:</strong></p>
+
+<p>Information Gain on Parameters (VarianceThreshold Not Pictured):
 <img src="/screenshots/informationgain.png" alt="Information Gain" /></p>
 
 <p>The r<sup>2</sup> Values:
