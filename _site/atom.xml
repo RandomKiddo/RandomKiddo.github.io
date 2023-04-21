@@ -4,7 +4,7 @@
  <title>Hyde</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2023-03-02T23:43:55-05:00</updated>
+ <updated>2023-04-21T19:49:13-04:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Mark Otto</name>
@@ -14,20 +14,25 @@
  
  <entry>
    <title>Hemoglobin Binding Project</title>
-   <link href="http://localhost:4000/2023/03/01/hemoglobin/"/>
-   <updated>2023-03-01T00:00:00-05:00</updated>
-   <id>http://localhost:4000/2023/03/01/hemoglobin</id>
+   <link href="http://localhost:4000/2023/04/17/hemoglobin/"/>
+   <updated>2023-04-17T00:00:00-04:00</updated>
+   <id>http://localhost:4000/2023/04/17/hemoglobin</id>
    <content type="html">&lt;div class=&quot;message&quot;&gt;
-  &lt;u&gt;Goals:&lt;/u&gt; Use Jupyter Notebook, LaTeX, and a Matlab Kernel to do data fitting on experimental hemoglobin binding data. Curve fit different models to the data, including the &quot;Non-Cooperative&quot; model and the Pauling model. 
+  &lt;u&gt;Goals:&lt;/u&gt; Use Jupyter Notebook, LaTeX, and a Matlab Kernel to do data fitting on experimental hemoglobin binding data. Curve fit different models to the data, including the &quot;Non-Cooperative&quot;, Pauling, and Adair models. Run a Monte Carlo simulation on the Adair model, but use brute force for the &quot;Non-Cooperative&quot; and Pauling models. Learn how to derive the models using the grand partition function. Create a poster and present it in LaTeX. Part of Polaris Program at Ohio State.
   &lt;br /&gt; &lt;br /&gt;
-  &lt;u&gt;Results:&lt;/u&gt;
+  &lt;u&gt;Results: We see that experimentally that hemoglobin oxygen particles are cooperative to some extent. &lt;/u&gt;
 &lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;Process:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Project File:&lt;/strong&gt;&lt;/p&gt;
+&lt;iframe src=&quot;/Project.ipynb&quot; width=&quot;100%&quot; height=&quot;910px&quot;&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;strong&gt;Snippets:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Derivations:&lt;/strong&gt;&lt;/p&gt;
+&lt;iframe src=&quot;/HemoglobinDerivations.pdf&quot; width=&quot;100%&quot; height=&quot;910px&quot;&gt;&lt;/iframe&gt;
 
-&lt;p&gt;See the full project on &lt;a href=&quot;https://github.com/RandomKiddo/PolarisResearchProject/blob/master/Project.ipynb&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Poster (Obscured):&lt;/strong&gt;&lt;/p&gt;
+&lt;iframe src=&quot;/PolarisPosterTrue__Copy_.pdf&quot; width=&quot;100%&quot; height=&quot;910px&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;See the full project on &lt;a href=&quot;https://github.com/RandomKiddo/PolarisResearchProject&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
  
