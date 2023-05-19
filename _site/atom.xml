@@ -4,7 +4,7 @@
  <title>Hyde</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2023-04-21T19:57:17-04:00</updated>
+ <updated>2023-05-19T16:49:55-04:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Mark Otto</name>
@@ -99,6 +99,45 @@
 &lt;img src=&quot;/screenshots/model.png&quot; alt=&quot;Final Model&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;See the full project on &lt;a href=&quot;https://github.com/RandomKiddo/HousePriceAI&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>PandoraPvP</title>
+   <link href="http://localhost:4000/2022/07/13/pandora/"/>
+   <updated>2022-07-13T00:00:00-04:00</updated>
+   <id>http://localhost:4000/2022/07/13/pandora</id>
+   <content type="html">&lt;div class=&quot;message&quot;&gt;
+  &lt;u&gt;About:&lt;/u&gt; Pandora PvP is a collection of Spigot Minecraft plugins for a designated modded Minecraft public server. The plugins ranged from economy, to utility, and moderation. My personal work was on the development side, where I worked on server optimizations regarding instant block placement, world border creation, staff command logs, and moderator utility commands. Although my time on the project only spanned a couple months, I enjoyed the time I worked on the project.
+&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;What is Spigot?&lt;/em&gt;:
+Minecraft is a video game made in Java (for non-console systems). Spigot is one of many server-hosting options for Minecraft, like Bukkit, Paper, Yatopia, and more. Spigot allows for programmers to create plugins that are loaded with the server as enhancements. Using Spigot’s API, more optimizations and customizability are available for developers.&lt;/p&gt;
+
+&lt;p&gt;This project helped me learn how to organize many tasks into smaller projects, and taught me how to work with more complicated programming systems, like APIs, documentation, and Maven.&lt;/p&gt;
+
+&lt;p&gt;See the full project on &lt;a href=&quot;https://github.com/PandoraPlugins&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Discord Bot Applications</title>
+   <link href="http://localhost:4000/2020/05/28/bot/"/>
+   <updated>2020-05-28T00:00:00-04:00</updated>
+   <id>http://localhost:4000/2020/05/28/bot</id>
+   <content type="html">&lt;div class=&quot;message&quot;&gt;
+  &lt;u&gt;About:&lt;/u&gt; Discord is a messaging platform with many quality-of-life features. Any developer can create a Discord Bot to add enhancements to the application, which can be fun things (like games) or more useful things (moderation abilities). Starting May 2020, I worked on a Discord Bot called Source Code. In the future, I worked on a larger bot called Psyduck. Both bots were for personal use only, and never became public verified Discord Bots.
+&lt;/div&gt;
+
+&lt;p&gt;Through this project I learned a lot about Python development and asynchronous programming. Additionally, I learned about cloud hosting environments like Heroku and Google Cloud VM to host the bot 24/7. I worked a lot with JSON and SQLite as well to store important data. This project help fuel my love for computer science and also taught me how to handle a large-scale project.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Screenshots:&lt;/strong&gt; &lt;br /&gt;
+&lt;img src=&quot;/imgs/uptime.png&quot; alt=&quot;Uptime&quot; width=&quot;500&quot; /&gt;
+&lt;img src=&quot;/imgs/bug.png&quot; alt=&quot;Bug&quot; width=&quot;500&quot; /&gt;
+&lt;img src=&quot;/imgs/ping.png&quot; alt=&quot;Ping&quot; width=&quot;500&quot; /&gt;
+&lt;img src=&quot;/imgs/status.png&quot; alt=&quot;Status&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;See an obscured version of one of my bots (Psyduck) on &lt;a href=&quot;https://github.com/RandomKiddo/MyDiscordBots&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
  

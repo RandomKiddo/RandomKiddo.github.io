@@ -4,7 +4,6 @@ title: About
 ---
 
 <div>
-<img float="left" src="/me.jpg" alt="A picture of me">
 
 Hey there! My name is Neil. Here is a little bit about me (personally):
 
