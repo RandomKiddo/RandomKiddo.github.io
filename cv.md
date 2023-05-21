@@ -3,7 +3,7 @@ layout: page
 title: CV and Coursework
 ---
 
-<p class="message">Below is my CV, last updated on 03/01/2023 (<i>THIS NEEDS UPDATING</i>): </p>
+<p class="message">Below is my CV, last updated on 05/20/23: </p>
 
 <iframe src="/CVObscured-2.pdf" width="100%" height="910px"></iframe>
 <sub>For personal safety, contact information has been removed. If contact is required, please message me on <a href="https://linkedin.com/in/neilghugare" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</sub>
