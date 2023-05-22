@@ -1,5 +1,7 @@
-# PERSONAL LICENSE
+© 2022-2023 Neil Ghugare, All Rights Reserved
 
-This website was made using Jekyll. Please contact me for usage guidelines. Please do not take my personal files, such as my PDFs, images, or more without my permission.
+You are free to use anything from my website except the following:
 
-© 2023 RandomKiddo
+* My personal files (i.e. my CV, Posters, images, etc.)
+* My projects and their associated files 
+* Do not keep my links to my LinkedIn or Github when reusing

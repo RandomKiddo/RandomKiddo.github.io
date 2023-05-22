@@ -19,4 +19,4 @@ Hey there! My name is Neil. Here is a little bit about me (personally):
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Come to the jazz and band concert at 7! @olhsbands <a href="https://t.co/KuzuDrMS9a">pic.twitter.com/KuzuDrMS9a</a></p>&mdash; Mr. Kim (@MrKimOLHS) <a href="https://twitter.com/MrKimOLHS/status/1205191304445136897?ref_src=twsrc%5Etfw">December 12, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 <sub>Jazz Band Concert Practice 2019 (My Sophomore Year). I'm on the left playing bass guitar!</sub>
 
-
+{% include footer.md %}

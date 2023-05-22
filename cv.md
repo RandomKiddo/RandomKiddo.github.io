@@ -29,3 +29,5 @@ title: CV and Coursework
 <li>Linear Algebra</li>
 <li>STEP Mentorship</li>
 </ul>
+
+{% include footer.md %}

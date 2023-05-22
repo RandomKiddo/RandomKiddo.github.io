@@ -19,3 +19,6 @@ Recent Project Posts:
     </li>
   {% endfor %}
 </ul>
+
+<br>
+{% include footer.md %}
