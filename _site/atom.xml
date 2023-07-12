@@ -4,13 +4,35 @@
  <title>Hyde</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2023-05-22T00:18:24-04:00</updated>
+ <updated>2023-07-12T17:25:48-04:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Mark Otto</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>House Price AI, Revisited</title>
+   <link href="http://localhost:4000/2023/06/22/hpair/"/>
+   <updated>2023-06-22T00:00:00-04:00</updated>
+   <id>http://localhost:4000/2023/06/22/hpair</id>
+   <content type="html">&lt;div class=&quot;message&quot;&gt;
+  &lt;u&gt;Goals:&lt;/u&gt; Revisit Scikit-Learn House Price predicition AI, and redo it with Tensorflow and excluding location data.
+  &lt;br /&gt; &lt;br /&gt;
+  &lt;u&gt;Results:&lt;/u&gt; Model with an r&lt;sup&gt;2&lt;/sup&gt; of 0.9946 and is generalized compared to the previous one.
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Process:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Use Pandas to read a csv into a DataFrame. Drop all date and location information and ensure we are only working with numerical data for regression. Deal with null values accordingly, and then split the data into training and testing sets. Define a model that normalizes the data and then trains on 4 ReLU Dense layers of 512 filters with L2 Regularization, and then finish with a singular filter Dense layer. Train the model with a 0.001 learning rate Adam optimzer, using MAE loss. Train the model, and compare the predictions to the true values.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Project File:&lt;/strong&gt;&lt;/p&gt;
+&lt;iframe src=&quot;/HPAIR.pdf&quot; width=&quot;100%&quot; height=&quot;910px&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;See the full project on &lt;a href=&quot;https://github.com/RandomKiddo/HousePriceAI_Revisited&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Hemoglobin Binding Project</title>

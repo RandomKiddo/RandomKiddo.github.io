@@ -137,26 +137,31 @@ var documents = [{
     "body": "{% include search-lunr. html %}   {% for post in site. posts %}              {{ post. title }}           {{ post. date | date_to_string }}    {{ post. content }}    {% endfor %}{% include footer. md %} "
     }, {
     "id": 7,
+    "url": "http://localhost:4000/2023/06/22/hpair/",
+    "title": "House Price AI, Revisited",
+    "body": "2023/06/22 -  Goals: Revisit Scikit-Learn House Price predicition AI, and redo it with Tensorflow and excluding location data.   Results: Model with an r2 of 0. 9946 and is generalized compared to the previous one. Process: Use Pandas to read a csv into a DataFrame. Drop all date and location information and ensure we are only working with numerical data for regression. Deal with null values accordingly, and then split the data into training and testing sets. Define a model that normalizes the data and then trains on 4 ReLU Dense layers of 512 filters with L2 Regularization, and then finish with a singular filter Dense layer. Train the model with a 0. 001 learning rate Adam optimzer, using MAE loss. Train the model, and compare the predictions to the true values. Project File: See the full project on Github "
+    }, {
+    "id": 8,
     "url": "http://localhost:4000/2023/04/17/hemoglobin/",
     "title": "Hemoglobin Binding Project",
     "body": "2023/04/17 -  Goals: Use Jupyter Notebook, LaTeX, and a Matlab Kernel to do data fitting on experimental hemoglobin binding data. Curve fit different models to the data, including the  Non-Cooperative , Pauling, and Adair models. Run a Monte Carlo simulation on the Adair model, but use brute force for the  Non-Cooperative  and Pauling models. Learn how to derive the models using the grand partition function. Create a poster and present it in LaTeX. Part of Polaris Program at Ohio State.   Results: We see that experimentally that hemoglobin oxygen particles are cooperative to some extent. Project File: Derivations: Poster (Obscured): See the full project on Github "
     }, {
-    "id": 8,
+    "id": 9,
     "url": "http://localhost:4000/2023/01/27/stockpricernn/",
     "title": "PG Stock Price Prediction RNN w/Tensorflow",
     "body": "2023/01/27 -  Goals: Learn about Neural Networks and RNNs. Get comfortable with Tensorflow. Predict Proctor &amp; Gamble Stock (closing) price.   Results: A model that is pretty close to the true values of the stock price range predicted (matches shape well, exact values not attained). Process: Collect csv data into a Pandas DataFrame. Enumerate the data to make it all numbers and then visualize the data to see what we’re working with. We then reshape and compile the closing price data and do the same to the high and low price values. We concatenate that usiny NumPy into one array and scale the data. We split the data into training and testing sets, and then using TensorFlow and Keras to generate a Sequential model with a LSTM and Dense layer. After compiling it and training it on the training set, we then predict the stock price closing value of the test set, and then graph the results to inspect the accuracy. Snippets: PG Stock Price Graph: The RNN Summary: The Prediction: The Prediction w/ More Data: Full Scope of Prediction (Vertical Line Where Prediction Starts): See the full project on Github "
     }, {
-    "id": 9,
+    "id": 10,
     "url": "http://localhost:4000/2022/11/28/housepriceai/",
     "title": "Scikit-Learn House Price AI",
     "body": "2022/11/28 -  Goals: Get accustomed to Jupyter Notebooks, Scikit-Learn, and simple regression AI modeling. Learn concepts such as normalization, imputation, enumeration, the foundations of CRISP-DM, and the basics of AI modeling.    Results: Model with an r2 of 0. 9999968, but is not general to any house due to location data being factored into the model. Process: Use Pandas to read a csv into a DataFrame. Enumerate the data to get a frame with only numbers. Check for unusable data and use imputation, if needed, to insert data. After inspecting graphs of the data, normalize the data and filter it accordingly. Split the data into training and test sets, and then model the data using KNeighborsRegressor model and train the data. Then, we predict on the test set and measure the error. Finally, we fiddle with the model a bit to find the most accurate one, and then we’re done. Snippets: Information Gain on Parameters (VarianceThreshold Not Pictured): The r2 Values: The Final Model: See the full project on Github "
     }, {
-    "id": 10,
+    "id": 11,
     "url": "http://localhost:4000/2022/07/13/pandora/",
     "title": "PandoraPvP",
     "body": "2022/07/13 -  About: Pandora PvP is a collection of Spigot Minecraft plugins for a designated modded Minecraft public server. The plugins ranged from economy, to utility, and moderation. My personal work was on the development side, where I worked on server optimizations regarding instant block placement, world border creation, staff command logs, and moderator utility commands. Although my time on the project only spanned a couple months, I enjoyed the time I worked on the project. What is Spigot?:Minecraft is a video game made in Java (for non-console systems). Spigot is one of many server-hosting options for Minecraft, like Bukkit, Paper, Yatopia, and more. Spigot allows for programmers to create plugins that are loaded with the server as enhancements. Using Spigot’s API, more optimizations and customizability are available for developers. This project helped me learn how to organize many tasks into smaller projects, and taught me how to work with more complicated programming systems, like APIs, documentation, and Maven. See the full project on Github "
     }, {
-    "id": 11,
+    "id": 12,
     "url": "http://localhost:4000/2020/05/28/bot/",
     "title": "Discord Bot Applications",
     "body": "2020/05/28 -  About: Discord is a messaging platform with many quality-of-life features. Any developer can create a Discord Bot to add enhancements to the application, which can be fun things (like games) or more useful things (moderation abilities). Starting May 2020, I worked on a Discord Bot called Source Code. In the future, I worked on a larger bot called Psyduck. Both bots were for personal use only, and never became public verified Discord Bots. Through this project I learned a lot about Python development and asynchronous programming. Additionally, I learned about cloud hosting environments like Heroku and Google Cloud VM to host the bot 24/7. I worked a lot with JSON and SQLite as well to store important data. This project help fuel my love for computer science and also taught me how to handle a large-scale project. Screenshots: See an obscured version of one of my bots (Psyduck) on Github "
@@ -221,6 +226,10 @@ function lunr_search(term) {
 <p>Recent Project Posts:</p>
 
 <ul>
+  
+    <li>
+      <a href="/2023/06/22/hpair/">House Price AI, Revisited</a>
+    </li>
   
     <li>
       <a href="/2023/04/17/hemoglobin/">Hemoglobin Binding Project</a>

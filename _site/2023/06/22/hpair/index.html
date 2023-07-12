@@ -11,7 +11,7 @@
 
   <title>
     
-      Neil Ghugare &middot; Scikit-Learn House Price AI
+      Neil Ghugare &middot; House Price AI, Revisited
     
   </title>
 
@@ -97,45 +97,28 @@
 
     <div class="content container">
       <div class="post">
-  <h1 class="post-title">Scikit-Learn House Price AI</h1>
-  <span class="post-date">28 Nov 2022</span>
+  <h1 class="post-title">House Price AI, Revisited</h1>
+  <span class="post-date">22 Jun 2023</span>
   <div class="message">
-  <u>Goals:</u> Get accustomed to Jupyter Notebooks, Scikit-Learn, and simple regression AI modeling. Learn concepts such as normalization, imputation, enumeration, the foundations of CRISP-DM, and the basics of AI modeling. 
+  <u>Goals:</u> Revisit Scikit-Learn House Price predicition AI, and redo it with Tensorflow and excluding location data.
   <br /> <br />
-  <u>Results:</u> Model with an r<sup>2</sup> of 0.9999968, but is not general to any house due to location data being factored into the model.
+  <u>Results:</u> Model with an r<sup>2</sup> of 0.9946 and is generalized compared to the previous one.
 </div>
 
 <p><strong>Process:</strong></p>
 
-<p>Use Pandas to read a csv into a DataFrame. Enumerate the data to get a frame with only numbers. Check for unusable data and use imputation, if needed, to insert data. After inspecting graphs of the data, normalize the data and filter it accordingly. Split the data into training and test sets, and then model the data using KNeighborsRegressor model and train the data. Then, we predict on the test set and measure the error. Finally, we fiddle with the model a bit to find the most accurate one, and then we’re done.</p>
+<p>Use Pandas to read a csv into a DataFrame. Drop all date and location information and ensure we are only working with numerical data for regression. Deal with null values accordingly, and then split the data into training and testing sets. Define a model that normalizes the data and then trains on 4 ReLU Dense layers of 512 filters with L2 Regularization, and then finish with a singular filter Dense layer. Train the model with a 0.001 learning rate Adam optimzer, using MAE loss. Train the model, and compare the predictions to the true values.</p>
 
-<p><strong>Snippets:</strong></p>
+<p><strong>Project File:</strong></p>
+<iframe src="/HPAIR.pdf" width="100%" height="910px"></iframe>
 
-<p>Information Gain on Parameters (VarianceThreshold Not Pictured):
-<img src="/screenshots/informationgain.png" alt="Information Gain" /></p>
-
-<p>The r<sup>2</sup> Values:
-<img src="/screenshots/rsquared.png" alt="R-Squared Values" /></p>
-
-<p>The Final Model:
-<img src="/screenshots/model.png" alt="Final Model" /></p>
-
-<p>See the full project on <a href="https://github.com/RandomKiddo/HousePriceAI">Github</a></p>
+<p>See the full project on <a href="https://github.com/RandomKiddo/HousePriceAI_Revisited">Github</a></p>
 
 </div>
 
 <div class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
-    
-      <li>
-        <h3>
-          <a href="/2023/06/22/hpair/">
-            House Price AI, Revisited
-            <small>22 Jun 2023</small>
-          </a>
-        </h3>
-      </li>
     
       <li>
         <h3>
@@ -151,6 +134,15 @@
           <a href="/2023/01/27/stockpricernn/">
             PG Stock Price Prediction RNN w/Tensorflow
             <small>27 Jan 2023</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2022/11/28/housepriceai/">
+            Scikit-Learn House Price AI
+            <small>28 Nov 2022</small>
           </a>
         </h3>
       </li>
