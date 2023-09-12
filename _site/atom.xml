@@ -4,13 +4,53 @@
  <title>Hyde</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2023-07-12T17:25:48-04:00</updated>
+ <updated>2023-09-12T00:13:35-04:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Mark Otto</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Graphene Unsupervised AI Clustering</title>
+   <link href="http://localhost:4000/2023/07/14/graphene/"/>
+   <updated>2023-07-14T00:00:00-04:00</updated>
+   <id>http://localhost:4000/2023/07/14/graphene</id>
+   <content type="html">&lt;div class=&quot;message&quot;&gt;
+  &lt;u&gt;Goals:&lt;/u&gt; Create a custom Graphene layer identification model through AI. 
+  &lt;br /&gt; &lt;br /&gt;
+  &lt;u&gt;Results:&lt;/u&gt; &lt;b&gt;Incomplete&lt;/b&gt;, but we get are getting good results for preliminary results. The current work on the project has &lt;i&gt;stalled&lt;/i&gt;.
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Example Output:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/screenshots/graphene.png&quot; alt=&quot;Graphene Clustered&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;See the current project on &lt;a href=&quot;https://github.com/RandomKiddo/GrapheneMixturing&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Chocolate - Vanilla Minecraft Extension</title>
+   <link href="http://localhost:4000/2023/06/23/chocolate/"/>
+   <updated>2023-06-23T00:00:00-04:00</updated>
+   <id>http://localhost:4000/2023/06/23/chocolate</id>
+   <content type="html">&lt;div class=&quot;message&quot;&gt;
+  &lt;u&gt;Goals:&lt;/u&gt; Use FabricAPI and Gradle to implement custom behavior into popular game, Minecraft. Work with multiple collaborators through the project. 
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Implementations:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This project implements a lot. To see the custom behavior, check the &lt;a href=&quot;https://github.com/RandomKiddo/ChocolateMod/wiki&quot;&gt;wiki of the repository&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Addition Example:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/screenshots/chocolate.png&quot; alt=&quot;Quartz Spike&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;See the full project on &lt;a href=&quot;https://github.com/RandomKiddo/ChocolateMod&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>House Price AI, Revisited</title>
