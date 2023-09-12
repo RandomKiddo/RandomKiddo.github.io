@@ -4,7 +4,7 @@
  <title>Hyde</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2023-09-12T00:13:35-04:00</updated>
+ <updated>2023-09-12T00:14:40-04:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Mark Otto</name>
@@ -28,6 +28,8 @@
 &lt;p&gt;&lt;img src=&quot;/screenshots/graphene.png&quot; alt=&quot;Graphene Clustered&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;See the current project on &lt;a href=&quot;https://github.com/RandomKiddo/GrapheneMixturing&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;sub&gt;There was a poster presentation associated with this. For discretion regarding the others involved, it has not been included on this website&lt;/sub&gt;&lt;/p&gt;
 </content>
  </entry>
  
