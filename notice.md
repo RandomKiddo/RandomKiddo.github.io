@@ -21,6 +21,9 @@ Hemoglobin Binding Project `© 2023 RandomKiddo`, MIT License <br>
 Stock Price RNN, `© 2023 RandomKiddo`, GNU AGPLv3 License <br>
 House Price AI, `© 2022 RandomKiddo, danield33`, GNU AGPLv3 License <br>
 Discord Bot Obscured, No License <br>
-PandoraPvP, No License
+PandoraPvP, No License <br>
+House Price AI Revisited, `© 2023 RandomKiddo`, GNU AGPLv3 License <br>
+Graphene Mixturing, No License, No Public Usage, Incomplete <br>
+Chocolate, `© 2021 RandomKiddo | © 2022 RandomKiddo, danield33 | © 2023 RandomKiddo, danield33, NithilB, pranavmoola, Mag1cmang0`, GNU GPLv3 License
 
 [Go Back](/index.html)

@@ -4,7 +4,7 @@
  <title>Hyde</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2023-09-12T00:14:40-04:00</updated>
+ <updated>2023-09-17T16:12:48-04:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Mark Otto</name>
@@ -70,7 +70,7 @@
 &lt;p&gt;Use Pandas to read a csv into a DataFrame. Drop all date and location information and ensure we are only working with numerical data for regression. Deal with null values accordingly, and then split the data into training and testing sets. Define a model that normalizes the data and then trains on 4 ReLU Dense layers of 512 filters with L2 Regularization, and then finish with a singular filter Dense layer. Train the model with a 0.001 learning rate Adam optimzer, using MAE loss. Train the model, and compare the predictions to the true values.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Project File:&lt;/strong&gt;&lt;/p&gt;
-&lt;iframe src=&quot;/HPAIR.pdf&quot; width=&quot;100%&quot; height=&quot;910px&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;/pdfs/HPAIR.pdf&quot; width=&quot;100%&quot; height=&quot;910px&quot;&gt;&lt;/iframe&gt;
 
 &lt;p&gt;See the full project on &lt;a href=&quot;https://github.com/RandomKiddo/HousePriceAI_Revisited&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
 </content>
@@ -88,13 +88,13 @@
 &lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Project File:&lt;/strong&gt;&lt;/p&gt;
-&lt;iframe src=&quot;/Project.pdf&quot; width=&quot;100%&quot; height=&quot;910px&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;/pdfs/Project.pdf&quot; width=&quot;100%&quot; height=&quot;910px&quot;&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;strong&gt;Derivations:&lt;/strong&gt;&lt;/p&gt;
-&lt;iframe src=&quot;/HemoglobinDerivations.pdf&quot; width=&quot;100%&quot; height=&quot;910px&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;/pdfs/HemoglobinDerivations.pdf&quot; width=&quot;100%&quot; height=&quot;910px&quot;&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;strong&gt;Poster (Obscured):&lt;/strong&gt;&lt;/p&gt;
-&lt;iframe src=&quot;/PolarisPosterTrue__Copy_.pdf&quot; width=&quot;100%&quot; height=&quot;910px&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;/pdfs/PolarisPosterTrue__Copy_.pdf&quot; width=&quot;100%&quot; height=&quot;910px&quot;&gt;&lt;/iframe&gt;
 
 &lt;p&gt;See the full project on &lt;a href=&quot;https://github.com/RandomKiddo/PolarisResearchProject&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
 </content>

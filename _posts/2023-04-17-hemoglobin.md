@@ -10,12 +10,12 @@ title: Hemoglobin Binding Project
 </div>
 
 **Project File:**
-<iframe src="/Project.pdf" width="100%" height="910px"></iframe>
+<iframe src="/pdfs/Project.pdf" width="100%" height="910px"></iframe>
 
 **Derivations:**
-<iframe src="/HemoglobinDerivations.pdf" width="100%" height="910px"></iframe>
+<iframe src="/pdfs/HemoglobinDerivations.pdf" width="100%" height="910px"></iframe>
 
 **Poster (Obscured):**
-<iframe src="/PolarisPosterTrue__Copy_.pdf" width="100%" height="910px"></iframe>
+<iframe src="/pdfs/PolarisPosterTrue__Copy_.pdf" width="100%" height="910px"></iframe>
 
 See the full project on [Github](https://github.com/RandomKiddo/PolarisResearchProject)

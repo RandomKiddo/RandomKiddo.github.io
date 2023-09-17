@@ -5,7 +5,7 @@ title: CV and Coursework
 
 <p class="message">Below is my CV, last updated on 05/20/23: </p>
 
-<iframe src="/CVObscured-2.pdf" width="100%" height="910px"></iframe>
+<iframe src="/pdfs/CV__Obscured_Copy_.pdf" width="100%" height="910px"></iframe>
 <sub>For personal safety, contact information has been removed. If contact is required, please message me on <a href="https://linkedin.com/in/neilghugare" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</sub>
 
 <br>
@@ -26,7 +26,7 @@ title: CV and Coursework
 
 <ul>
 <li>Intermediate Mechanics I</li>
-<li>Linear Algebra</li>
+<li>Linear Algebra and Differential Equations</li>
 <li>STEP Mentorship</li>
 </ul>
 
