@@ -4,13 +4,37 @@
  <title>Hyde</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2023-09-17T16:12:48-04:00</updated>
+ <updated>2023-09-20T21:04:28-04:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Mark Otto</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Dot on Wheel Animation</title>
+   <link href="http://localhost:4000/2023/07/20/dotonwheel/"/>
+   <updated>2023-07-20T00:00:00-04:00</updated>
+   <id>http://localhost:4000/2023/07/20/dotonwheel</id>
+   <content type="html">&lt;div class=&quot;message&quot;&gt;
+  &lt;u&gt;Goals:&lt;/u&gt; Use Mathematica to create an animation of a dot on a wheel that is rolling at a constant angular velocity.
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A wheel with radius R has a constant angular velocity in the -z direction (so the wheel rolls in +x). There is a dot on the wheel a distance p away from the center where p&amp;gt;0. We wish for R&amp;gt;p, but we do explore when p&amp;gt;R and even when p=R. We wish to animate the motion of this dot.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Result:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We go through many different results and iterations of animation. The entire process is on the Github tied to the project. This was the final result for R=2, angular velocity of -2, and p=1:
+&lt;img src=&quot;/screenshots/wheelroll3.gif&quot; alt=&quot;Result Gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;sub&gt;Note that the original project used a .mov file. This resulting .gif is of lower quality than the original video&lt;/sub&gt;&lt;/p&gt;
+
+&lt;p&gt;See the full project on &lt;a href=&quot;https://github.com/RandomKiddo/DotOnWheelAnimation&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Graphene Unsupervised AI Clustering</title>
