@@ -4,7 +4,7 @@
  <title>Hyde</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2023-09-20T21:10:51-04:00</updated>
+ <updated>2023-09-21T13:03:39-04:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Mark Otto</name>
@@ -27,8 +27,16 @@
 
 &lt;p&gt;&lt;strong&gt;Result:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;We go through many different results and iterations of animation. The entire process is on the Github tied to the project. This was the final result for R=2, angular velocity of -2, and p=1:
+&lt;p&gt;We go through many different results and iterations of animation. The entire process is on the Github tied to the project. This was the final result for R=2, angular velocity of -2, and p=1, and for values of p=2 and p=4.&lt;/p&gt;
+
+&lt;p&gt;p=1:
 &lt;img src=&quot;/screenshots/wheelroll3.gif&quot; alt=&quot;Result Gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;p=2:
+&lt;img src=&quot;/screenshots/wheelroll_rho2.gif&quot; alt=&quot;Result Gif 2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;p=4:
+&lt;img src=&quot;/screenshots/wheelroll_rho4.gif&quot; alt=&quot;Result Gif 3&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;sub&gt;Note that the original project used a .mov file. This resulting .gif is of lower quality than the original video&lt;/sub&gt;&lt;/p&gt;
 

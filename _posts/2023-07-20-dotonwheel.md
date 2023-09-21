@@ -13,8 +13,16 @@ A wheel with radius R has a constant angular velocity in the -z direction (so th
 
 **Result:**
 
-We go through many different results and iterations of animation. The entire process is on the Github tied to the project. This was the final result for R=2, angular velocity of -2, and p=1:
+We go through many different results and iterations of animation. The entire process is on the Github tied to the project. This was the final result for R=2, angular velocity of -2, and p=1, and for values of p=2 and p=4.
+
+p=1:
 ![Result Gif](/screenshots/wheelroll3.gif)
+
+p=2:
+![Result Gif 2](/screenshots/wheelroll_rho2.gif)
+
+p=4:
+![Result Gif 3](/screenshots/wheelroll_rho4.gif)
 
 <sub>Note that the original project used a .mov file. This resulting .gif is of lower quality than the original video</sub>
 
