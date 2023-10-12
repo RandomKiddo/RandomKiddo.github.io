@@ -24,6 +24,7 @@ Discord Bot Obscured, No License <br>
 PandoraPvP, No License <br>
 House Price AI Revisited, `© 2023 RandomKiddo`, GNU AGPLv3 License <br>
 Graphene Mixturing, No License, No Public Usage, Incomplete <br>
-Chocolate, `© 2021 RandomKiddo | © 2022 RandomKiddo, danield33 | © 2023 RandomKiddo, danield33, NithilB, pranavmoola, Mag1cmang0`, GNU GPLv3 License
+Chocolate, `© 2021 RandomKiddo | © 2022 RandomKiddo, danield33 | © 2023 RandomKiddo, danield33, NithilB, pranavmoola, Mag1cmang0`, GNU GPLv3 License <br>
+Dot on Wheel Animation, `© 2023 RandomKiddo`, MIT License
 
 [Go Back](/index.html)
