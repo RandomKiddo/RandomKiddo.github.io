@@ -11,7 +11,7 @@ accordion:
   - title: Mentorships
     content: Physics 2050.01/02 - Polaris Mentorship I & II<br>STEP Mentorship
   - title: Other Coursework
-    content: AP Chemistry<br>AP Computer Science A
+    content: AP Chemistry<br>AP Computer Science A<br>Public Affairs 5513/4 - Excel Basic and Advanced Skills
 ---
 
 <p class="message">Below is my CV, last updated on 05/20/23: </p>
