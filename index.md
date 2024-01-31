@@ -21,4 +21,3 @@ Recent Project Posts:
 </ul>
 
 <br>
-{% include footer.md %}

@@ -112,17 +112,17 @@ var documents = [{
     "id": 1,
     "url": "http://localhost:4000/about/",
     "title": "About",
-    "body": "Hey there! My name is Neil. Here is a little bit about me (personally):Pronouns: he/him/hisHobbies: I like to play video games and I also play tennis and have been since around 2016. I enjoy photography a lot as well, especially astrophotography, landscape photography, and animal photography. I also like music a lot (both listening and playing), and I have been playing guitar since 2016 as well and bass guitar since 2018. I was involved in my high school's Jazz Band for all four years (and loved every second of it). I am currently learning German. Along with my major, I am currently pursuing a German minor and an Honors Math minor. In the future, I would love to learn a language with a different writing system (like Japanese). I love programming. I have programming skills in Python, C++, Java, and more! I have a certification in Python as well! I currently have been working on AI projects with AI Club on campus. I working towards getting a Tensorflow certification as well. I also have LaTeX skills and other programming-adjacent skills. Come to the jazz and band concert at 7! @olhsbands pic. twitter. com/KuzuDrMS9a &mdash; Mr. Kim (@MrKimOLHS) December 12, 2019Jazz Band Concert Practice 2019 (My Sophomore Year). I’m on the left playing bass guitar! © 2022-2023 Neil Ghugare, All Rights ReservedNotice&nbsp;&#124;&nbsp;License"
+    "body": "Hey there! My name is Neil. Here is a little bit about me (personally):Pronouns: he/him/hisHobbies: I like to play video games and I also play tennis and have been since around 2016. I enjoy photography a lot as well, especially astrophotography, landscape photography, and animal photography. I also like music a lot (both listening and playing), and I have been playing guitar since 2016 as well and bass guitar since 2018. I was involved in my high school's Jazz Band for all four years (and loved every second of it). I am currently learning German. Along with my major, I am currently pursuing a German minor and an Honors Math minor. In the future, I would love to learn a language with a different writing system (like Japanese). I love programming. I have programming skills in Python, C++, Java, and more! I have a certification in Python as well! I currently have been working on AI projects with AI Club on campus. I working towards getting a Tensorflow certification as well. I also have LaTeX skills and other programming-adjacent skills. Come to the jazz and band concert at 7! @olhsbands pic. twitter. com/KuzuDrMS9a &mdash; Mr. Kim (@MrKimOLHS) December 12, 2019Jazz Band Concert Practice 2019 (My Sophomore Year). I’m on the left playing bass guitar! "
     }, {
     "id": 2,
     "url": "http://localhost:4000/cv/",
     "title": "CV and Coursework",
-    "body": "Below is my CV, last updated on 05/20/23: For personal safety, contact information has been removed. If contact is required, please message me on LinkedIn.  As of the spring semester of 2023, I have completed the following technical coursework: Any personal things I’ve learned are not included. These are classes I’ve taken at an university or community college, or classes attained by AP credit. Calculus I-III + Theoretical Calculus I-IIIGeneral Chemistry I (Inorganic)Algebra- and Calculus-Based Introductory PhysicsIntroductory Java + Java Data StructuresIntroductory StatisticsPolaris MentorshipMy current technical coursework is (fall 2023): Intermediate Mechanics ILinear Algebra and Differential EquationsSTEP Mentorship© 2022-2023 Neil Ghugare, All Rights ReservedNotice&nbsp;&#124;&nbsp;License"
+    "body": "Below is my CV, last updated on 05/20/23: For personal safety, contact information has been removed. If contact is required, please message me on LinkedIn.  Current and Past Coursework (as of Spring 2024): Any personal things I’ve learned are not included. These are classes I’ve taken at an university or community college, or classes attained by AP credit. "
     }, {
     "id": 3,
     "url": "http://localhost:4000/",
     "title": "Home",
-    "body": "     Hello!My name is Neil Ghugare! This website is dedicated to being a landing platform for all of my professional achievements. On this website, you can learn about me, find my CV, and get links to some of my portfolios! Recent Project Posts:       Dot on Wheel Animation        Graphene Unsupervised AI Clustering        Chocolate - Vanilla Minecraft Extension        House Price AI, Revisited        Hemoglobin Binding Project        PG Stock Price Prediction RNN w/Tensorflow        Scikit-Learn House Price AI        PandoraPvP        Discord Bot Applications    © 2022-2023 Neil Ghugare, All Rights ReservedNotice&nbsp;&#124;&nbsp;License"
+    "body": "     Hello!My name is Neil Ghugare! This website is dedicated to being a landing platform for all of my professional achievements. On this website, you can learn about me, find my CV, and get links to some of my portfolios! Recent Project Posts:       Dot on Wheel Animation        Graphene Unsupervised AI Clustering        Chocolate - Vanilla Minecraft Extension        House Price AI, Revisited        Hemoglobin Binding Project        PG Stock Price Prediction RNN w/Tensorflow        Scikit-Learn House Price AI        PandoraPvP        Discord Bot Applications    "
     }, {
     "id": 4,
     "url": "http://localhost:4000/licensepage/",
@@ -137,7 +137,7 @@ var documents = [{
     "id": 6,
     "url": "http://localhost:4000/projects/",
     "title": "Projects",
-    "body": "{% include search-lunr. html %}   {% for post in site. posts %}              {{ post. title }}           {{ post. date | date_to_string }}    {{ post. content }}    {% endfor %}{% include footer. md %} "
+    "body": "{% include search-lunr. html %}   {% for post in site. posts %}              {{ post. title }}           {{ post. date | date_to_string }}    {{ post. content }}    {% endfor %}"
     }, {
     "id": 7,
     "url": "http://localhost:4000/2023/07/20/dotonwheel/",
@@ -500,13 +500,27 @@ Minecraft is a video game made in Java (for non-console systems). Spigot is one 
     </div>
     
 </div>
+</div>
 
-<hr />
+<style>
+    ul.jekyllcodex_accordion {position: relative; margin: 1.4rem 0!important; border-bottom: 1px solid rgba(0,0,0,0.25); padding-bottom: 0;}
+    ul.jekyllcodex_accordion li {border-top: 1px solid rgba(0,0,0,0.25); list-style: none; margin-left: 0;}
+    ul.jekyllcodex_accordion li input {display: none;}
+    ul.jekyllcodex_accordion li label {display: block; cursor: pointer; padding: 0.75rem 2.4rem 0.75rem 0; margin: 0;}
+    ul.jekyllcodex_accordion li div {display: none; padding-bottom: 1.2rem;}
+    ul.jekyllcodex_accordion li input:checked + label {font-weight: bold;}
+    ul.jekyllcodex_accordion li input:checked + label + div {display: block;}
+    ul.jekyllcodex_accordion li label::before {content: "+"; font-weight: normal; font-size: 130%; line-height: 1.1rem; padding: 0; position: absolute; right: 0.5rem; transition: all 0.15s ease-in-out;}
+    ul.jekyllcodex_accordion li input:checked + label::before {transform: rotate(-45deg);}
+    </style>
+    <ul class="jekyllcodex_accordion">
+        
+    <br>
+    </ul>
 
 <center><font size="2">© 2022-2023 Neil Ghugare, All Rights Reserved</font></center>
 
 <center><a href="/notice/index.html"><font size="3">Notice</font></a>&nbsp;<font size="3">&#124;</font>&nbsp;<a href="/licensepage/index.html"><font size="3">License</font></a></center>
-</div>
 
     </div>
 
