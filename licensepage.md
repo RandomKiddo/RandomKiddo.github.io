@@ -5,7 +5,7 @@ title: License
 
 # License
 
-© 2022-2023 Neil Ghugare, All Rights Reserved
+© 2022-2024 Neil Ghugare, All Rights Reserved
 
 You are free to use anything from my website except the following:
 
