@@ -8,11 +8,13 @@ title: About
 Hey there! My name is Neil. Here is a little bit about me (personally):
 
 <ul>
-<li>Pronouns: he/him/his</li>
-<li>Hobbies: I like to play video games and I also play tennis and have been since around 2016. I enjoy photography a lot as well, especially astrophotography, landscape photography, and animal photography.</li>
-<li>I also like music a lot (both listening and playing), and I have been playing guitar since 2016 as well and bass guitar since 2018. I was involved in my high school's Jazz Band for all four years (and loved every second of it).</li>
-<li>I am currently learning German. Along with my major, I am currently pursuing a German minor and an Honors Math minor. In the future, I would love to learn a language with a different writing system (like Japanese).</li>
-<li>I love programming. I have programming skills in Python, C++, Java, and more! I have a certification in Python as well! I currently have been working on AI projects with AI Club on campus. I working towards getting a Tensorflow certification as well. I also have LaTeX skills and other programming-adjacent skills.</li>
+<li>I like video games a lot. Some of my favorites include: Minecraft, Stardew Valley, Mario Games, GTFO, and more!</li>
+<li>I enjoy photography a lot as well, including landscape photography, animal photography, and astrophotography! Using a Canon Powershot G7X Mark II and a Sony Alpha 5000 DSLR, I have photographed the following: Landscapes of Costa Rica and Hawai'i, the milky way galaxy, the stages of a total solar eclipse, animals like hummingbirds and sea turtles, and more!</li>
+<li>I like listening to music and playing music! I have been playing guitar since 2016 and bass guitar since 2018. I was also involved in my high school's Jazz Band for four years, and loved every second of it!</li>
+<li>I play sports in my free time as well! I play tennis, and have played it for several years, playing it through high school (on the high school team) and continuing in college as well! I also enjoy playing volleyball with my friends, and have recently gotten involved in playing in intramural beach and indoor teams! I plan on joining a summer league at some point as well.</li>
+<li>I am learning German. I have been learning German since 8th grade, and continued through high school, taking AP German. I continue to learn German to this day, pursuing a German minor in college, and I have plans to study abroad in Dresden in the summer of 2024! In the future, I would also like to complete my fluency in Marathi (I can understand completely, but cannot speak or write very well).</li>
+<li>Programming is something I do in my spare time as well. I mainly program in Python, Java, Mathematica, and MATLAB. I also have the PCEP certification in Python and Wolfram U certifications for Mathematica! I am also involved with the AI Club at my university, and have completed multiple AI projects, and have competed in HackAI 2024. I also have other programming-adjacent skills like LaTeX and Git.</li>
+<li>Finally, I love reading and have multiple bookshelves full of books. I also enjoy watching YouTube and anime and playing chess!</li>
 </ul>
 </div>
 
