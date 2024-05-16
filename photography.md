@@ -3,11 +3,21 @@ layout: page
 title: Photography
 ---
 
-The landing page for my photography!
+The landing page for my photography! (Sorry in advance if this page loads slowly; The photo files are big, and I didn't want to reduce their quality).
 
 My equipment: <br />
+
+Cameras: <br />
 Canon Powershot G7X Mark II <br />
 Sony α5000 DSLR <br />
+
+Lenses: <br />
+Zoom Lens (details unknown) <br />
+Rokinon 14mm f/2.8 Lens <br />
+
+Other: <br />
+Neweer 72mm ND100000 Filter
+
 
 <br />
 
