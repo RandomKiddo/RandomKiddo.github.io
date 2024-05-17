@@ -5,10 +5,11 @@ title: Changelog
 
 # Changelog
 
-Current Version: `v1.54`
+Current Version: `v1.55`
 
 For personal interest in the latest changes made to the website (starting on 05/15/2024):
 
+* `v1.55`: Updated photography page.
 * `v1.54`: Added "back to top" buttons; Updated notice to accomodate; Updated coursework page.
 * `v1.53`: Updated photography page.
 * `v1.52`: Finalized photography page.

@@ -23,7 +23,7 @@ Zoom Lens (details unknown) <br />
 Rokinon 14mm f/2.8 Lens <br />
 
 Other: <br />
-Neweer 72mm ND100000 Filter
+Neewer 72mm ND100000 Filter
 
 
 <br />
@@ -114,5 +114,13 @@ Neweer 72mm ND100000 Filter
 <center>
     <img src="/PFW/DSC03111.JPG" width="50%"/>
     Description: Total solar eclipse, shot leading up to the eclipse <br />
+    Equipment/Location: Sony α5000 w/ Neewer ND100000 Filter <br />
+</center>
+
+<br />
+
+<center>
+    <img src="/PFW/DSC031052.JPG" width="50%"/>
+    Description: Total solar eclipse <br />
     Equipment/Location: Sony α5000 w/ Neewer ND100000 Filter <br />
 </center>
