@@ -18,6 +18,13 @@ accordion:
     content: <b>(Upcoming)</b> Calculus of Variations<br><b>(Upcoming)</b> Tensor Calculus for Physics<br>
 ---
 
+<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  backgroundColor: 'rgb(106, 159, 181)',
+  textColor: '#fff'
+})</script>
+
 <p class="message">Below is my CV, last updated on 05/20/23: </p>
 
 <iframe src="/pdfs/CV__Obscured_Copy_.pdf" width="100%" height="910px"></iframe>
@@ -25,7 +32,7 @@ accordion:
 
 <br>
 
-<p class="message">Brief information on my Physics Coursework: </p>
+<p class="message">Brief information on my Physics Coursework, last updated on 5/16/24: </p>
 
 <iframe src="/pdfs/ClassList.pdf" width="100%" height="910px"></iframe>
 

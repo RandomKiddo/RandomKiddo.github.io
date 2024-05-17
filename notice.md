@@ -14,7 +14,10 @@ The theme used is also licensed under the MIT License, as part of the Poole/Hyde
 This website also uses lunr.js for searching features, licensed by the MIT License <br>
 `© 2013 Oliver Nightingale`
 
-This website may use any other software associated with Jekyll, Poole, Hyde, or lunr.js, licensed under its own attributions.
+For "back to top" buttons, this website employed vanilla-back-to-top, licensed under the MIT License <br>
+`© 2018 Vladimir Feskov`
+
+This website may use any other software associated with Jekyll, Poole, Hyde, lunr.js, or other packages, licensed under its own attributions.
 
 My personal projects are also licensed under their own licenses: <br>
 * Hemoglobin Binding Project 

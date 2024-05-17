@@ -3,6 +3,13 @@ layout: page
 title: Photography
 ---
 
+<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  backgroundColor: 'rgb(106, 159, 181)',
+  textColor: '#fff'
+})</script>
+
 The landing page for my photography! (Sorry in advance if this page loads slowly; The photo files are big, and I didn't want to reduce their quality).
 
 My equipment: <br />
@@ -99,7 +106,7 @@ Neweer 72mm ND100000 Filter
 <center>
     <img src="/PFW/NAZZ7335.JPG" width="50%"/>
     Description: Raw image of the moon <br />
-    Equipment/Location: Canon Powershot G&x Mark II [Location Unknown] <br />
+    Equipment/Location: Canon Powershot G7x Mark II [Location Unknown] <br />
 </center>
 
 <br />
