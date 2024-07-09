@@ -10,7 +10,7 @@ title: Photography
   textColor: '#fff'
 })</script>
 
-The landing page for my photography! (Sorry in advance if this page loads slowly; The photo files are big, and I didn't want to reduce their quality).
+The landing page for my photography! (Sorry in advance if this page loads slowly; The photo files are big, and I didn't want to reduce their quality). For astrophotography not relating to DSLR cameras, see the <a href="/astrophotography/index.html">Astrophotography page</a>.
 
 My equipment: <br />
 
