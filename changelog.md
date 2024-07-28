@@ -9,6 +9,7 @@ Current Version: `v1.56`
 
 For personal interest in the latest changes made to the website (starting on 05/15/2024):
 
+* `v1.57`: Updates to photography page. Updated crucial typo. Updated CV. 
 * `v1.56`: Started creating astrophotography page. 
 * `v1.55`: Updated photography page.
 * `v1.54`: Added "back to top" buttons; Updated notice to accomodate; Updated coursework page.

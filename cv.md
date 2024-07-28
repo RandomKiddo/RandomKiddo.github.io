@@ -25,7 +25,9 @@ accordion:
   textColor: '#fff'
 })</script>
 
-<p class="message">Below is my CV, last updated on 05/20/23: </p>
+<br />
+
+<p class="message">Below is my CV, last updated on 07/28/24: </p>
 
 <iframe src="/pdfs/CV__Obscured_Copy_.pdf" width="100%" height="910px"></iframe>
 <sub>For personal safety, contact information has been removed. If contact is required, please message me on <a href="https://linkedin.com/in/neilghugare" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</sub>

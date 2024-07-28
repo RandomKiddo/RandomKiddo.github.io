@@ -10,13 +10,15 @@ title: Photography
   textColor: '#fff'
 })</script>
 
-The landing page for my photography! (Sorry in advance if this page loads slowly; The photo files are big, and I didn't want to reduce their quality). For astrophotography not relating to DSLR cameras, see the <a href="/astrophotography/index.html">Astrophotography page</a>.
+The landing page for my photography! (Sorry in advance if this page loads slowly; The photo files are big, and I didn't want to reduce their quality). For astrophotography not relating to DSLR cameras, see the <a href="/astrophotography/index.html">Astrophotography page</a>. 
+
+This page contains my "critics picks" (a.k.a. the photos I thought were the best and have a lot of diversity). There are other special landing pages containing more photos from specific trips. The page to access these landing pages is currently *under construction*. 
 
 My equipment: <br />
 
 Cameras: <br />
 Canon Powershot G7X Mark II <br />
-Sony α5000 DSLR <br />
+Sony α6000 DSLR <br />
 
 Lenses: <br />
 Zoom Lens (details unknown) <br />
@@ -31,7 +33,7 @@ Neewer 72mm ND100000 Filter
 <center>
     <img src="/PFW/DSC02794.JPG" width="50%"/>
     Description: A nice waterfall <br />
-    Equipment/Location: Sony α5000 [Costa Rica] <br />
+    Equipment/Location: Sony α6000 [Costa Rica] <br />
 </center>
 
 <br />
@@ -39,7 +41,7 @@ Neewer 72mm ND100000 Filter
 <center>
     <img src="/PFW/IMG_5528.JPG" width="50%"/>
     Description: A beautiful hummingbird <br />
-    Equipment/Location: Sony α5000 w/ Zoom Lens [Costa Rica] <br />
+    Equipment/Location: Sony α6000 w/ Zoom Lens [Costa Rica] <br />
 </center>
 
 <br />
@@ -98,7 +100,7 @@ Neewer 72mm ND100000 Filter
 <center>
     <img src="/PFW/DSC03063.JPG" width="50%"/>
     Description: Large portion of milky way galaxy <br />
-    Equipment/Location: Sony α5000 w/ Rokinon 14mm f/2.8 Lens [Hocking Hills] <br />
+    Equipment/Location: Sony α6000 w/ Rokinon 14mm f/2.8 Lens [Hocking Hills] <br />
 </center>
 
 <br />
@@ -114,7 +116,7 @@ Neewer 72mm ND100000 Filter
 <center>
     <img src="/PFW/DSC03111.JPG" width="50%"/>
     Description: Total solar eclipse, shot leading up to the eclipse <br />
-    Equipment/Location: Sony α5000 w/ Neewer ND100000 Filter <br />
+    Equipment/Location: Sony α6000 w/ Neewer ND100000 Filter [Ohio]<br />
 </center>
 
 <br />
@@ -122,5 +124,21 @@ Neewer 72mm ND100000 Filter
 <center>
     <img src="/PFW/DSC031052.JPG" width="50%"/>
     Description: Total solar eclipse <br />
-    Equipment/Location: Sony α5000 w/ Neewer ND100000 Filter <br />
+    Equipment/Location: Sony α6000 w/ Neewer ND100000 Filter [Ohio]<br />
+</center>
+
+<br />
+
+<center>
+    <img src="/PFW/DSC03215.JPG" width="50%"/>
+    Description: Chichén Itzá <br />
+    Equipment/Location: Sony α6000 [Yucatán]<br />
+</center>
+
+<br />
+
+<center>
+    <img src="/PFW/DSC03244.JPG" width="50%"/>
+    Description: Mayan temple of the god of wind <br />
+    Equipment/Location: Sony α6000 [Tulum]<br />
 </center>

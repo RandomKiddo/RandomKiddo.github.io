@@ -8,3 +8,4 @@ You may not use:
 * My projects and their associated files (you must)
 * Do not keep my links to my LinkedIn or Github when reusing
 * Keep in mind the general usage guidelines for Jekyll, Hyde/Poole, and other packages, listed in the notice
+* Photos may be downloaded but may not be redistributed without proper crediting
