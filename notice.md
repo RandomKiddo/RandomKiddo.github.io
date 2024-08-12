@@ -43,5 +43,8 @@ My personal projects are also licensed under their own licenses: <br>
 * Dot on Wheel Animation
     - `© 2023 RandomKiddo`
     - MIT License
+* Starr Programming Language
+    - `© 2024 RandomKiddo`
+    - GNU AGLPv3 License
 
 [Go Back](/index.html)
