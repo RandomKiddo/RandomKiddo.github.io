@@ -12,9 +12,15 @@ title: "Astrophotography"
 
 <h1 class="page-title">Astrophotography</h1>
 
-The landing page for my astrophotography (non-DSLR related)!
+The landing page for my astrophotography!
 
 ***Under Construction, Come Back Later!***
+
+The Rig: <br />
+Sony α6000 Mirrorless <br />
+Sky-Watcher EvoStar 72 APO Doublet Refractor <br />
+Orion 8893 FF for Short Refractors <br />
+
 
 Return to the <a href="/photography/index.html">Photography page</a>.
 

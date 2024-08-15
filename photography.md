@@ -10,7 +10,7 @@ title: Photography
   textColor: '#fff'
 })</script>
 
-The landing page for my photography! (Sorry in advance if this page loads slowly; The photo files are big, and I didn't want to reduce their quality). For astrophotography not relating to DSLR cameras, see the <a href="/astrophotography/index.html">Astrophotography page</a>. 
+The landing page for my photography! (Sorry in advance if this page loads slowly; The photo files are big, and I didn't want to reduce their quality). For astrophotography relating to DSOs, see the <a href="/astrophotography/index.html">Astrophotography page</a>. 
 
 This page contains my "critics picks" (a.k.a. the photos I thought were the best and have a lot of diversity). There are other special landing pages containing more photos from specific trips. The page to access these landing pages is currently *under construction*. 
 
@@ -18,7 +18,7 @@ My equipment: <br />
 
 Cameras: <br />
 Canon Powershot G7X Mark II <br />
-Sony α6000 DSLR <br />
+Sony α6000 Mirrorless <br />
 
 Lenses: <br />
 Zoom Lens (details unknown) <br />
