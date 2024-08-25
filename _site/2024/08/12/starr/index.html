@@ -126,17 +126,17 @@
 
 <p><strong>Example Syntax:</strong></p>
 
-<pre><code class="language-cpp">extern void printi(int val)
-
-int do_math(int a) {
+<pre><code class="language-cpp">int one(int a) {
   int x = a * 5
   return x + 3
 }
 
+int two() {
+  return 5 % 3
+}
 
-echo(do_math(11))
-echo(do_math(12))
-printi(10)
+out(one(12)) // Outputs 63
+out(two()) // Outputs 2
 </code></pre>
 
 <p>See the current project on <a href="https://github.com/RandomKiddo/Starr">Github</a></p>

@@ -3,13 +3,13 @@ layout: page
 title: CV and Coursework
 accordion: 
   - title: Physics Coursework
-    content: AP Physics 1<br>AP Physics C - Mechanics<br>Physics 1250H - Honors Mechanics, Conservation Laws, and Special Relativity<br>Physics 1251H - Honors E&M, Thermal Physics, Waves, and Quantum Physics<br>Physics 2300 - Intermediate Mechanics I<br>Physics 2301 - Intermediate Mechanics II<br>Physics 3700 - Experimental Physics Instrumentation and Data Analysis Lab<br><b>(Upcoming)</b> Physics 5400H - Honors Intermediate Electricity & Magnetism<br><b>(Upcoming)</b> Physics 5500H - Honors Quantum Mechanics I<br><b>(Upcoming)</b> Physics 5680 - Big Data Analytics in Physics
+    content: AP Physics 1<br>AP Physics C - Mechanics<br>Physics 1250H - Honors Mechanics, Conservation Laws, and Special Relativity<br>Physics 1251H - Honors E&M, Thermal Physics, Waves, and Quantum Physics<br>Physics 2300 - Intermediate Mechanics I<br>Physics 2301 - Intermediate Mechanics II<br>Physics 3700 - Experimental Physics Instrumentation and Data Analysis Lab<br><i>(Current)<i> Physics 5400H - Honors Intermediate Electricity & Magnetism<br><i>(Current)</i> Physics 5500H - Honors Quantum Mechanics I<br><i>(Current)</i> Physics 5680 - Big Data Analytics in Physics
   - title: Astronomy Coursework 
-    content: <b>(Upcoming)</b> Astronomy 2291 - Basic Astrophysics and Planetary Science
+    content: <i>(Current)</i> Astronomy 2291 - Basic Astrophysics and Planetary Science
   - title: Math Coursework
     content: AP Calculus AB<br>Calculus II<br>Calculus III<br>Math 4181H - Honors Analysis I<br>Math 4182H - Honors Analysis II<br>Math 2415 - Ordinary and Partial Differential Equations<br>Math 2568 - Linear Algebra
   - title: German Coursework
-    content: German 1-4 (High School)<br>AP German<br>German 2101 - Texts & Contexts I<br>German 2102 - Texts & Contexts II<br>German 3102 - News & Views, Conversations about Current Issues<br>Goethe-Institut Study Abroad Program (I75 B2.2)<br><b>(Upcoming)</b> German 3200 - Topics in German Literature, Art, and Film
+    content: German 1-4 (High School)<br>AP German<br>German 2101 - Texts & Contexts I<br>German 2102 - Texts & Contexts II<br>German 3102 - News & Views, Conversations about Current Issues<br>Goethe-Institut Study Abroad Program (I75 B2.2)<br><i>(Current)</i> German 3200 - Topics in German Literature, Art, and Film
   - title: Mentorships
     content: Physics 2050.01/02 - Polaris Mentorship I & II<br> STEP Mentorship
   - title: Other Coursework

@@ -4,7 +4,7 @@
  <title>Hyde</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2024-08-14T20:37:11-04:00</updated>
+ <updated>2024-08-25T10:34:35-04:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Mark Otto</name>
@@ -25,17 +25,17 @@
 
 &lt;p&gt;&lt;strong&gt;Example Syntax:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-cpp&quot;&gt;extern void printi(int val)
-
-int do_math(int a) {
+&lt;pre&gt;&lt;code class=&quot;language-cpp&quot;&gt;int one(int a) {
   int x = a * 5
   return x + 3
 }
 
+int two() {
+  return 5 % 3
+}
 
-echo(do_math(11))
-echo(do_math(12))
-printi(10)
+out(one(12)) // Outputs 63
+out(two()) // Outputs 2
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;See the current project on &lt;a href=&quot;https://github.com/RandomKiddo/Starr&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;

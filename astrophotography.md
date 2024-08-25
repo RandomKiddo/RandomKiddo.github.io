@@ -19,7 +19,8 @@ The landing page for my astrophotography!
 The Rig: <br />
 Sony α6000 Mirrorless <br />
 Sky-Watcher EvoStar 72 APO Doublet Refractor <br />
-Orion 8893 FF for Short Refractors <br />
+Sky-Watcher 0.85x Focal Reducer/Flattener for EvoStar 72<br />
+Oumij M48x0.75mm T-Mount Adapter for NEX<br />
 
 
 Return to the <a href="/photography/index.html">Photography page</a>.
