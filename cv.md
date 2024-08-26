@@ -3,7 +3,7 @@ layout: page
 title: CV and Coursework
 accordion: 
   - title: Physics Coursework
-    content: AP Physics 1<br>AP Physics C - Mechanics<br>Physics 1250H - Honors Mechanics, Conservation Laws, and Special Relativity<br>Physics 1251H - Honors E&M, Thermal Physics, Waves, and Quantum Physics<br>Physics 2300 - Intermediate Mechanics I<br>Physics 2301 - Intermediate Mechanics II<br>Physics 3700 - Experimental Physics Instrumentation and Data Analysis Lab<br><i>(Current)<i> Physics 5400H - Honors Intermediate Electricity & Magnetism<br><i>(Current)</i> Physics 5500H - Honors Quantum Mechanics I<br><i>(Current)</i> Physics 5680 - Big Data Analytics in Physics
+    content: AP Physics 1<br>AP Physics C - Mechanics<br>Physics 1250H - Honors Mechanics, Conservation Laws, and Special Relativity<br>Physics 1251H - Honors E&M, Thermal Physics, Waves, and Quantum Physics<br>Physics 2300 - Intermediate Mechanics I<br>Physics 2301 - Intermediate Mechanics II<br>Physics 3700 - Experimental Physics Instrumentation and Data Analysis Lab<br><i>(Current)</i> Physics 5400H - Honors Intermediate Electricity & Magnetism<br><i>(Current)</i> Physics 5500H - Honors Quantum Mechanics I<br><i>(Current)</i> Physics 5680 - Big Data Analytics in Physics
   - title: Astronomy Coursework 
     content: <i>(Current)</i> Astronomy 2291 - Basic Astrophysics and Planetary Science
   - title: Math Coursework
