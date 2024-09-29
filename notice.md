@@ -46,5 +46,8 @@ My personal projects are also licensed under their own licenses: <br>
 * Starr Programming Language
     - `© 2024 RandomKiddo`
     - GNU AGLPv3 License
+* Dementia AI
+    - `© 2024 RandomKiddo, Nishanth-Kunchala, Jacoube, danield33`
+    - MIT License
 
 [Go Back](/index.html)

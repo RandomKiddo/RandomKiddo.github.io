@@ -141,7 +141,7 @@ var documents = [{
     "id": 3,
     "url": "http://localhost:4000/changelog/",
     "title": "Changelog",
-    "body": "ChangelogCurrent Version: v1. 61. 1 For personal interest in the latest changes made to the website (starting on 05/15/2024):  v1. 61: Updates to coursework as of fall ‘24. Updates to project page.  v1. 60: Updates to photography/astrophotography/about pages.  v1. 59: New project post.  v1. 58: Updates to coursework.  v1. 57: Updates to photography page. Updated crucial typo. Updated CV.  v1. 56: Started creating astrophotography page.  v1. 55: Updated photography page.  v1. 54: Added “back to top” buttons; Updated notice to accomodate; Updated coursework page.  v1. 53: Updated photography page.  v1. 52: Finalized photography page.  v1. 51: Updated licensing; Creation of photography page (in progress); Updated footer and sidebar.  v1. 50: Created the changelog page; Updated about page, footer, and license. Go Back "
+    "body": "ChangelogCurrent Version: v1. 62 For personal interest in the latest changes made to the website (starting on 05/15/2024):  v1. 62: Class list updates. Added post about new project.  v1. 61: Updates to coursework as of fall ‘24. Updates to project page.  v1. 60: Updates to photography/astrophotography/about pages.  v1. 59: New project post.  v1. 58: Updates to coursework.  v1. 57: Updates to photography page. Updated crucial typo. Updated CV.  v1. 56: Started creating astrophotography page.  v1. 55: Updated photography page.  v1. 54: Added “back to top” buttons; Updated notice to accomodate; Updated coursework page.  v1. 53: Updated photography page.  v1. 52: Finalized photography page.  v1. 51: Updated licensing; Creation of photography page (in progress); Updated footer and sidebar.  v1. 50: Created the changelog page; Updated about page, footer, and license. Go Back (make this actually go back) "
     }, {
     "id": 4,
     "url": "http://localhost:4000/cv/",
@@ -151,7 +151,7 @@ var documents = [{
     "id": 5,
     "url": "http://localhost:4000/",
     "title": "Home",
-    "body": "     Hello!My name is Neil Ghugare! This website is dedicated to being a landing platform for all of my professional achievements. On this website, you can learn about me, find my CV, and get links to some of my portfolios! Recent Project Posts:       Starr Programming Language        Dot on Wheel Animation        Graphene Unsupervised AI Clustering        Chocolate - Vanilla Minecraft Extension        House Price AI, Revisited        Hemoglobin Binding Project        PG Stock Price Prediction RNN w/Tensorflow        Scikit-Learn House Price AI        PandoraPvP        Discord Bot Applications    © 2022-2024 Neil Ghugare, All Rights ReservedNotice&nbsp;&#124;&nbsp;License&nbsp;&#124;&nbsp;Changelog           &nbsp;&nbsp;        "
+    "body": "     Hello!My name is Neil Ghugare! This website is dedicated to being a landing platform for all of my professional achievements. On this website, you can learn about me, find my CV, and get links to some of my portfolios! Recent Project Posts:       Dementia Classification AI        Starr Programming Language        Dot on Wheel Animation        Graphene Unsupervised AI Clustering        Chocolate - Vanilla Minecraft Extension        House Price AI, Revisited        Hemoglobin Binding Project        PG Stock Price Prediction RNN w/Tensorflow        Scikit-Learn House Price AI        PandoraPvP        Discord Bot Applications    © 2022-2024 Neil Ghugare, All Rights ReservedNotice&nbsp;&#124;&nbsp;License&nbsp;&#124;&nbsp;Changelog           &nbsp;&nbsp;        "
     }, {
     "id": 6,
     "url": "http://localhost:4000/licensepage/",
@@ -161,7 +161,7 @@ var documents = [{
     "id": 7,
     "url": "http://localhost:4000/notice/",
     "title": "Notice",
-    "body": "NoticeThis website was created using Jekyll, licensed under the MIT License © 2008-Present Tom Preston-Werner and Jekyll Contributors The theme used is also licensed under the MIT License, as part of the Poole/Hyde Project © 2013 Mark Otto This website also uses lunr. js for searching features, licensed by the MIT License © 2013 Oliver Nightingale For “back to top” buttons, this website employed vanilla-back-to-top, licensed under the MIT License © 2018 Vladimir Feskov This website may use any other software associated with Jekyll, Poole, Hyde, lunr. js, or other packages, licensed under its own attributions. My personal projects are also licensed under their own licenses:  Hemoglobin Binding Project     © 2023 RandomKiddo   MIT License    Stock Price RNN     © 2023 RandomKiddo   GNU AGPLv3 License    House Price AI     © 2022 RandomKiddo, danield33   GNU AGPLv3 License    Discord Bot Obscured PandoraPvP House Price AI Revisited     © 2023 RandomKiddo   GNU AGPLv3 License    Graphene Mixturing, Incomplete Chocolate,     © 2021 RandomKiddo   © 2022 RandomKiddo, danield33   © 2023 RandomKiddo, danield33, NithilB, pranavmoola, Mag1cmang0   GNU GPLv3 License    Dot on Wheel Animation     © 2023 RandomKiddo   MIT License    Starr Programming Language     © 2024 RandomKiddo   GNU AGLPv3 License   Go Back "
+    "body": "NoticeThis website was created using Jekyll, licensed under the MIT License © 2008-Present Tom Preston-Werner and Jekyll Contributors The theme used is also licensed under the MIT License, as part of the Poole/Hyde Project © 2013 Mark Otto This website also uses lunr. js for searching features, licensed by the MIT License © 2013 Oliver Nightingale For “back to top” buttons, this website employed vanilla-back-to-top, licensed under the MIT License © 2018 Vladimir Feskov This website may use any other software associated with Jekyll, Poole, Hyde, lunr. js, or other packages, licensed under its own attributions. My personal projects are also licensed under their own licenses:  Hemoglobin Binding Project     © 2023 RandomKiddo   MIT License    Stock Price RNN     © 2023 RandomKiddo   GNU AGPLv3 License    House Price AI     © 2022 RandomKiddo, danield33   GNU AGPLv3 License    Discord Bot Obscured PandoraPvP House Price AI Revisited     © 2023 RandomKiddo   GNU AGPLv3 License    Graphene Mixturing, Incomplete Chocolate,     © 2021 RandomKiddo   © 2022 RandomKiddo, danield33   © 2023 RandomKiddo, danield33, NithilB, pranavmoola, Mag1cmang0   GNU GPLv3 License    Dot on Wheel Animation     © 2023 RandomKiddo   MIT License    Starr Programming Language     © 2024 RandomKiddo   GNU AGLPv3 License    Dementia AI     © 2024 RandomKiddo, Nishanth-Kunchala, Jacoube, danield33   MIT License   Go Back "
     }, {
     "id": 8,
     "url": "http://localhost:4000/notice_leave_git/",
@@ -184,51 +184,56 @@ var documents = [{
     "body": "{% include search-lunr. html %}   {% for post in site. posts %}              {{ post. title }}           {{ post. date | date_to_string }}    {{ post. content }}    {% endfor %}"
     }, {
     "id": 12,
+    "url": "http://localhost:4000/2024/09/28/dementia/",
+    "title": "Dementia Classification AI",
+    "body": "2024/09/28 -  Goals: Revisit the project for OSU Hack AI 2024 and make the model not overfit.   Results: Stacked layers of 61 images of an MRI scan into 3D tensors and build a Tensorflow functional model and trained it using GPU acceleration with an NVIDIA RTX 3060 GPU for a test accuracy of 97. 31%. Motivation: We wanted to create a classification model that would be able to detect if a patient has dementia based on a set of 61 layers of an MRI scan. If successful, this model could be a support tool for doctors to detect if a patient has dementia. It may not be the definitive way to detect if a patient has dementia, but it could be helpful for doctors to see what the model thinks the patient has and with what confidence. Data: The data comes from the OASIS Alzheimer’s dataset, a public dataset consisting of 80,000 MRI images. Since 61 MRI images are for a single patient, it means we have over 1300 patients worth of data in this dataset. The data was downloaded from Kaggle, but can also be accessed through the OASIS website. The HackAI 2024 Model: As a part of the OSU AI Club Hack AI 2024, this project was selected by the team to try in complete in the 24-hour hackathon. We downsized the OASIS images and converted them to grayscale to decrease training time and complexity. We stacked each of the 61 MRI images per patient into a 3D tensor as a numpy ndarray and saved the patient’s 3D MRI scan as an . npz file. We then amplified some of the moderate dementia and mild dementia samples through duplication, as there weren’t many patients with that classification. We then created a Tensorflow functional model to train on the sample data. Although we had a good training accuracy, we had a relatively low testing accuracy (indicating overfitting). Unfortunately, due to not having access to a GPU at the hackathon, we could not GPU accelerate the model, and we did not have enough time to test a simpler model. The training accuracy was in the high 90% range, but the testing accuracy hovered around high 70%. Although this repository is being integrated with the Hack AI 2024 repository (meaning the files here will now also be there), the older version of the model can still be found by looking back in the commits here. This Model &amp; Results: We revisited this model to try and create a better model. We continued to use the stacked 3D tensors. The creation file for them is located in the npz_generation. py file. We created a simpler Tensorflow functional model and GPU accelerated with an NVIDIA RTX 3060 to decrease training time. We added training callbacks of ModelCheckpoint and EarlyStopping to save the best possible model. We got a training accuracy of 100% (it isn’t really 100%, it is being rounded) with a testing accuracy of 97. 31%, indicating that our model makes much better generalizations this time around. Loss and accuracy graphs: See the full project on Github "
+    }, {
+    "id": 13,
     "url": "http://localhost:4000/2024/08/12/starr/",
     "title": "Starr Programming Language",
     "body": "2024/08/12 -  Goals: Create a custom program language written in C++, Flex, and Bison, using LLVM and CMake.    Results: Work on this project is ongoing, but the preliminary basic phase has been completed. Example Syntax: int one(int a) { int x = a * 5 return x + 3}int two() { return 5 % 3}out(one(12)) // Outputs 63out(two()) // Outputs 2See the current project on Github "
     }, {
-    "id": 13,
+    "id": 14,
     "url": "http://localhost:4000/2023/07/20/dotonwheel/",
     "title": "Dot on Wheel Animation",
     "body": "2023/07/20 -  Goals: Use Mathematica to create an animation of a dot on a wheel that is rolling at a constant angular velocity. Problem: A wheel with radius R has a constant angular velocity in the -z direction (so the wheel rolls in +x). There is a dot on the wheel a distance p away from the center where p&gt;0. We wish for R&gt;p, but we do explore when p&gt;R and even when p=R. We wish to animate the motion of this dot. Result: We go through many different results and iterations of animation. The entire process is on the Github tied to the project. This was the final result for R=2, angular velocity of -2, and p=1, and for values of p=2 and p=4. p=1: p=2: p=4: Note that the original project used a . mov file. This resulting . gif is of lower quality than the original video See the full project on Github "
     }, {
-    "id": 14,
+    "id": 15,
     "url": "http://localhost:4000/2023/07/14/graphene/",
     "title": "Graphene Unsupervised AI Clustering",
     "body": "2023/07/14 -  Goals: Create a custom Graphene layer identification model through AI.    Results: Incomplete, but we get are getting good results for preliminary results. The current work on the project has stalled. Example Output: See the current project on Github There was a poster presentation associated with this. For discretion regarding the others involved, it has not been included on this website "
     }, {
-    "id": 15,
+    "id": 16,
     "url": "http://localhost:4000/2023/06/23/chocolate/",
     "title": "Chocolate - Vanilla Minecraft Extension",
     "body": "2023/06/23 -  Goals: Use FabricAPI and Gradle to implement custom behavior into popular game, Minecraft. Work with multiple collaborators through the project. Implementations: This project implements a lot. To see the custom behavior, check the wiki of the repository Addition Example: See the full project on Github "
     }, {
-    "id": 16,
+    "id": 17,
     "url": "http://localhost:4000/2023/06/22/hpair/",
     "title": "House Price AI, Revisited",
     "body": "2023/06/22 -  Goals: Revisit Scikit-Learn House Price predicition AI, and redo it with Tensorflow and excluding location data.   Results: Model with an r2 of 0. 9946 and is generalized compared to the previous one. Process: Use Pandas to read a csv into a DataFrame. Drop all date and location information and ensure we are only working with numerical data for regression. Deal with null values accordingly, and then split the data into training and testing sets. Define a model that normalizes the data and then trains on 4 ReLU Dense layers of 512 filters with L2 Regularization, and then finish with a singular filter Dense layer. Train the model with a 0. 001 learning rate Adam optimzer, using MAE loss. Train the model, and compare the predictions to the true values. Project File: See the full project on Github "
     }, {
-    "id": 17,
+    "id": 18,
     "url": "http://localhost:4000/2023/04/17/hemoglobin/",
     "title": "Hemoglobin Binding Project",
     "body": "2023/04/17 -  Goals: Use Jupyter Notebook, LaTeX, and a Matlab Kernel to do data fitting on experimental hemoglobin binding data. Curve fit different models to the data, including the  Non-Cooperative , Pauling, and Adair models. Run a Monte Carlo simulation on the Adair model, but use brute force for the  Non-Cooperative  and Pauling models. Learn how to derive the models using the grand partition function. Create a poster and present it in LaTeX. Part of Polaris Program at Ohio State.   Results: We see that experimentally that hemoglobin oxygen particles are cooperative to some extent. Project File: Derivations: Poster (Obscured): See the full project on Github "
     }, {
-    "id": 18,
+    "id": 19,
     "url": "http://localhost:4000/2023/01/27/stockpricernn/",
     "title": "PG Stock Price Prediction RNN w/Tensorflow",
     "body": "2023/01/27 -  Goals: Learn about Neural Networks and RNNs. Get comfortable with Tensorflow. Predict Proctor &amp; Gamble Stock (closing) price.   Results: A model that is pretty close to the true values of the stock price range predicted (matches shape well, exact values not attained). Process: Collect csv data into a Pandas DataFrame. Enumerate the data to make it all numbers and then visualize the data to see what we’re working with. We then reshape and compile the closing price data and do the same to the high and low price values. We concatenate that usiny NumPy into one array and scale the data. We split the data into training and testing sets, and then using TensorFlow and Keras to generate a Sequential model with a LSTM and Dense layer. After compiling it and training it on the training set, we then predict the stock price closing value of the test set, and then graph the results to inspect the accuracy. Snippets: PG Stock Price Graph: The RNN Summary: The Prediction: The Prediction w/ More Data: Full Scope of Prediction (Vertical Line Where Prediction Starts): See the full project on Github "
     }, {
-    "id": 19,
+    "id": 20,
     "url": "http://localhost:4000/2022/11/28/housepriceai/",
     "title": "Scikit-Learn House Price AI",
     "body": "2022/11/28 -  Goals: Get accustomed to Jupyter Notebooks, Scikit-Learn, and simple regression AI modeling. Learn concepts such as normalization, imputation, enumeration, the foundations of CRISP-DM, and the basics of AI modeling.    Results: Model with an r2 of 0. 9999968, but is not general to any house due to location data being factored into the model. Process: Use Pandas to read a csv into a DataFrame. Enumerate the data to get a frame with only numbers. Check for unusable data and use imputation, if needed, to insert data. After inspecting graphs of the data, normalize the data and filter it accordingly. Split the data into training and test sets, and then model the data using KNeighborsRegressor model and train the data. Then, we predict on the test set and measure the error. Finally, we fiddle with the model a bit to find the most accurate one, and then we’re done. Snippets: Information Gain on Parameters (VarianceThreshold Not Pictured): The r2 Values: The Final Model: See the full project on Github "
     }, {
-    "id": 20,
+    "id": 21,
     "url": "http://localhost:4000/2022/07/13/pandora/",
     "title": "PandoraPvP",
     "body": "2022/07/13 -  About: Pandora PvP is a collection of Spigot Minecraft plugins for a designated modded Minecraft public server. The plugins ranged from economy, to utility, and moderation. My personal work was on the development side, where I worked on server optimizations regarding instant block placement, world border creation, staff command logs, and moderator utility commands. Although my time on the project only spanned a couple months, I enjoyed the time I worked on the project. What is Spigot?:Minecraft is a video game made in Java (for non-console systems). Spigot is one of many server-hosting options for Minecraft, like Bukkit, Paper, Yatopia, and more. Spigot allows for programmers to create plugins that are loaded with the server as enhancements. Using Spigot’s API, more optimizations and customizability are available for developers. This project helped me learn how to organize many tasks into smaller projects, and taught me how to work with more complicated programming systems, like APIs, documentation, and Maven. See the full project on Github "
     }, {
-    "id": 21,
+    "id": 22,
     "url": "http://localhost:4000/2020/05/28/bot/",
     "title": "Discord Bot Applications",
     "body": "2020/05/28 -  About: Discord is a messaging platform with many quality-of-life features. Any developer can create a Discord Bot to add enhancements to the application, which can be fun things (like games) or more useful things (moderation abilities). Starting May 2020, I worked on a Discord Bot called Source Code. In the future, I worked on a larger bot called Psyduck. Both bots were for personal use only, and never became public verified Discord Bots. Through this project I learned a lot about Python development and asynchronous programming. Additionally, I learned about cloud hosting environments like Heroku and Google Cloud VM to host the bot 24/7. I worked a lot with JSON and SQLite as well to store important data. This project help fuel my love for computer science and also taught me how to handle a large-scale project. Screenshots: See an obscured version of one of my bots (Psyduck) on Github "
@@ -293,6 +298,58 @@ function lunr_search(term) {
 })</script>
 
 <div class="posts">
+    
+    <div class="post">
+      <h1 class="post-title">
+        <a href="/2024/09/28/dementia/">
+          Dementia Classification AI
+        </a>
+      </h1>
+  
+      <span class="post-date">28 Sep 2024</span>
+  
+      <div class="message">
+  <u>Goals:</u> Revisit the project for OSU Hack AI 2024 and make the model not overfit.
+  <br /> <br />
+  <u>Results:</u> Stacked layers of 61 images of an MRI scan into 3D tensors and build a Tensorflow functional model and trained it using GPU acceleration with an NVIDIA RTX 3060 GPU for a test accuracy of 97.31%.
+</div>
+
+<h3 id="motivation">Motivation</h3>
+
+<p>We wanted to create a classification model that would be able to detect if a patient has dementia based on a set of 61 layers of an MRI scan. If successful, this model could be a support tool for doctors to detect if a patient has dementia. It may not be the definitive way to detect if a patient has dementia, but it could be helpful for doctors to see what the model thinks the patient has and with what confidence.</p>
+
+<hr />
+
+<h3 id="data">Data</h3>
+
+<p>The data comes from the OASIS Alzheimer’s dataset, a public dataset consisting of 80,000 MRI images. Since 61 MRI images are for a single patient, it means we have over 1300 patients worth of data in this dataset. The data was downloaded from <a href="https://www.kaggle.com/datasets/ninadaithal/imagesoasis">Kaggle</a>, but can also be accessed through the <a href="https://sites.wustl.edu/oasisbrains/">OASIS website</a>.</p>
+
+<hr />
+
+<h3 id="the-hackai-2024-model">The HackAI 2024 Model</h3>
+
+<p>As a part of the OSU AI Club Hack AI 2024, this project was selected by the team to try in complete in the 24-hour hackathon. We downsized the OASIS images and converted them to grayscale to decrease training time and complexity. We stacked each of the 61 MRI images per patient into a 3D tensor as a numpy <code>ndarray</code> and saved the patient’s 3D MRI scan as an <code>.npz</code> file. We then amplified some of the moderate dementia and mild dementia samples through duplication, as there weren’t many patients with that classification. We then created a Tensorflow functional model to train on the sample data.</p>
+
+<p>Although we had a good training accuracy, we had a relatively low testing accuracy (indicating overfitting). Unfortunately, due to not having access to a GPU at the hackathon, we could not GPU accelerate the model, and we did not have enough time to test a simpler model. The training accuracy was in the high 90% range, but the testing accuracy hovered around high 70%.</p>
+
+<p>Although this repository is being integrated with the Hack AI 2024 repository (meaning the files here will now also be there), the older version of the model can still be found by looking back in the commits <a href="https://github.com/Nishanth-Kunchala/Hack_AI_2024">here</a>.</p>
+
+<hr />
+
+<h3 id="this-model--results">This Model &amp; Results</h3>
+
+<p>We revisited this model to try and create a better model. We continued to use the stacked 3D tensors. The creation file for them is located in the <code>npz_generation.py</code> file.</p>
+
+<p>We created a simpler Tensorflow functional model and GPU accelerated with an NVIDIA RTX 3060 to decrease training time. We added training callbacks of <code>ModelCheckpoint</code> and <code>EarlyStopping</code> to save the best possible model. We got a training accuracy of 100% (it isn’t really 100%, it is being rounded) with a testing accuracy of 97.31%, indicating that our model makes much better generalizations this time around.</p>
+
+<p>Loss and accuracy graphs:</p>
+
+<p><img src="/screenshots/accuracy.png" alt="Accuracy Graph" />
+<img src="/screenshots/loss.png" alt="Loss Graph" /></p>
+
+<p>See the full project on <a href="https://github.com/RandomKiddo/DementiaAI">Github</a></p>
+
+    </div>
     
     <div class="post">
       <h1 class="post-title">

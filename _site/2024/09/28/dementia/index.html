@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Neil Ghugare &middot; Dementia Classification AI
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body class="theme-base-0d"></body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="https://randomkiddo.github.io/">
+          Neil Ghugare
+        </a>
+      </h1>
+      <p class="lead">Honors Physics Student and RA at The Ohio State University. Aspiring PhD student.</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://randomkiddo.github.io/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/about/">About</a>
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/cv/">CV and Coursework</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/photography/">Photography</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/projects/">Projects</a>
+          
+        
+      
+    </nav>
+
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="post">
+  <h1 class="post-title">Dementia Classification AI</h1>
+  <span class="post-date">28 Sep 2024</span>
+  <div class="message">
+  <u>Goals:</u> Revisit the project for OSU Hack AI 2024 and make the model not overfit.
+  <br /> <br />
+  <u>Results:</u> Stacked layers of 61 images of an MRI scan into 3D tensors and build a Tensorflow functional model and trained it using GPU acceleration with an NVIDIA RTX 3060 GPU for a test accuracy of 97.31%.
+</div>
+
+<h3 id="motivation">Motivation</h3>
+
+<p>We wanted to create a classification model that would be able to detect if a patient has dementia based on a set of 61 layers of an MRI scan. If successful, this model could be a support tool for doctors to detect if a patient has dementia. It may not be the definitive way to detect if a patient has dementia, but it could be helpful for doctors to see what the model thinks the patient has and with what confidence.</p>
+
+<hr />
+
+<h3 id="data">Data</h3>
+
+<p>The data comes from the OASIS Alzheimer’s dataset, a public dataset consisting of 80,000 MRI images. Since 61 MRI images are for a single patient, it means we have over 1300 patients worth of data in this dataset. The data was downloaded from <a href="https://www.kaggle.com/datasets/ninadaithal/imagesoasis">Kaggle</a>, but can also be accessed through the <a href="https://sites.wustl.edu/oasisbrains/">OASIS website</a>.</p>
+
+<hr />
+
+<h3 id="the-hackai-2024-model">The HackAI 2024 Model</h3>
+
+<p>As a part of the OSU AI Club Hack AI 2024, this project was selected by the team to try in complete in the 24-hour hackathon. We downsized the OASIS images and converted them to grayscale to decrease training time and complexity. We stacked each of the 61 MRI images per patient into a 3D tensor as a numpy <code>ndarray</code> and saved the patient’s 3D MRI scan as an <code>.npz</code> file. We then amplified some of the moderate dementia and mild dementia samples through duplication, as there weren’t many patients with that classification. We then created a Tensorflow functional model to train on the sample data.</p>
+
+<p>Although we had a good training accuracy, we had a relatively low testing accuracy (indicating overfitting). Unfortunately, due to not having access to a GPU at the hackathon, we could not GPU accelerate the model, and we did not have enough time to test a simpler model. The training accuracy was in the high 90% range, but the testing accuracy hovered around high 70%.</p>
+
+<p>Although this repository is being integrated with the Hack AI 2024 repository (meaning the files here will now also be there), the older version of the model can still be found by looking back in the commits <a href="https://github.com/Nishanth-Kunchala/Hack_AI_2024">here</a>.</p>
+
+<hr />
+
+<h3 id="this-model--results">This Model &amp; Results</h3>
+
+<p>We revisited this model to try and create a better model. We continued to use the stacked 3D tensors. The creation file for them is located in the <code>npz_generation.py</code> file.</p>
+
+<p>We created a simpler Tensorflow functional model and GPU accelerated with an NVIDIA RTX 3060 to decrease training time. We added training callbacks of <code>ModelCheckpoint</code> and <code>EarlyStopping</code> to save the best possible model. We got a training accuracy of 100% (it isn’t really 100%, it is being rounded) with a testing accuracy of 97.31%, indicating that our model makes much better generalizations this time around.</p>
+
+<p>Loss and accuracy graphs:</p>
+
+<p><img src="/screenshots/accuracy.png" alt="Accuracy Graph" />
+<img src="/screenshots/loss.png" alt="Loss Graph" /></p>
+
+<p>See the full project on <a href="https://github.com/RandomKiddo/DementiaAI">Github</a></p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2024/08/12/starr/">
+            Starr Programming Language
+            <small>12 Aug 2024</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2023/07/20/dotonwheel/">
+            Dot on Wheel Animation
+            <small>20 Jul 2023</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2023/07/14/graphene/">
+            Graphene Unsupervised AI Clustering
+            <small>14 Jul 2023</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+    </div>
+
+  </body>
+</html>

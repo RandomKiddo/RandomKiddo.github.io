@@ -4,13 +4,61 @@
  <title>Hyde</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2024-08-25T23:05:31-04:00</updated>
+ <updated>2024-09-28T21:34:33-04:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Mark Otto</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Dementia Classification AI</title>
+   <link href="http://localhost:4000/2024/09/28/dementia/"/>
+   <updated>2024-09-28T00:00:00-04:00</updated>
+   <id>http://localhost:4000/2024/09/28/dementia</id>
+   <content type="html">&lt;div class=&quot;message&quot;&gt;
+  &lt;u&gt;Goals:&lt;/u&gt; Revisit the project for OSU Hack AI 2024 and make the model not overfit.
+  &lt;br /&gt; &lt;br /&gt;
+  &lt;u&gt;Results:&lt;/u&gt; Stacked layers of 61 images of an MRI scan into 3D tensors and build a Tensorflow functional model and trained it using GPU acceleration with an NVIDIA RTX 3060 GPU for a test accuracy of 97.31%.
+&lt;/div&gt;
+
+&lt;h3 id=&quot;motivation&quot;&gt;Motivation&lt;/h3&gt;
+
+&lt;p&gt;We wanted to create a classification model that would be able to detect if a patient has dementia based on a set of 61 layers of an MRI scan. If successful, this model could be a support tool for doctors to detect if a patient has dementia. It may not be the definitive way to detect if a patient has dementia, but it could be helpful for doctors to see what the model thinks the patient has and with what confidence.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;data&quot;&gt;Data&lt;/h3&gt;
+
+&lt;p&gt;The data comes from the OASIS Alzheimer’s dataset, a public dataset consisting of 80,000 MRI images. Since 61 MRI images are for a single patient, it means we have over 1300 patients worth of data in this dataset. The data was downloaded from &lt;a href=&quot;https://www.kaggle.com/datasets/ninadaithal/imagesoasis&quot;&gt;Kaggle&lt;/a&gt;, but can also be accessed through the &lt;a href=&quot;https://sites.wustl.edu/oasisbrains/&quot;&gt;OASIS website&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;the-hackai-2024-model&quot;&gt;The HackAI 2024 Model&lt;/h3&gt;
+
+&lt;p&gt;As a part of the OSU AI Club Hack AI 2024, this project was selected by the team to try in complete in the 24-hour hackathon. We downsized the OASIS images and converted them to grayscale to decrease training time and complexity. We stacked each of the 61 MRI images per patient into a 3D tensor as a numpy &lt;code&gt;ndarray&lt;/code&gt; and saved the patient’s 3D MRI scan as an &lt;code&gt;.npz&lt;/code&gt; file. We then amplified some of the moderate dementia and mild dementia samples through duplication, as there weren’t many patients with that classification. We then created a Tensorflow functional model to train on the sample data.&lt;/p&gt;
+
+&lt;p&gt;Although we had a good training accuracy, we had a relatively low testing accuracy (indicating overfitting). Unfortunately, due to not having access to a GPU at the hackathon, we could not GPU accelerate the model, and we did not have enough time to test a simpler model. The training accuracy was in the high 90% range, but the testing accuracy hovered around high 70%.&lt;/p&gt;
+
+&lt;p&gt;Although this repository is being integrated with the Hack AI 2024 repository (meaning the files here will now also be there), the older version of the model can still be found by looking back in the commits &lt;a href=&quot;https://github.com/Nishanth-Kunchala/Hack_AI_2024&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;this-model--results&quot;&gt;This Model &amp;amp; Results&lt;/h3&gt;
+
+&lt;p&gt;We revisited this model to try and create a better model. We continued to use the stacked 3D tensors. The creation file for them is located in the &lt;code&gt;npz_generation.py&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;p&gt;We created a simpler Tensorflow functional model and GPU accelerated with an NVIDIA RTX 3060 to decrease training time. We added training callbacks of &lt;code&gt;ModelCheckpoint&lt;/code&gt; and &lt;code&gt;EarlyStopping&lt;/code&gt; to save the best possible model. We got a training accuracy of 100% (it isn’t really 100%, it is being rounded) with a testing accuracy of 97.31%, indicating that our model makes much better generalizations this time around.&lt;/p&gt;
+
+&lt;p&gt;Loss and accuracy graphs:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/screenshots/accuracy.png&quot; alt=&quot;Accuracy Graph&quot; /&gt;
+&lt;img src=&quot;/screenshots/loss.png&quot; alt=&quot;Loss Graph&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;See the full project on &lt;a href=&quot;https://github.com/RandomKiddo/DementiaAI&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Starr Programming Language</title>
