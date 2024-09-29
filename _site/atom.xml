@@ -4,7 +4,7 @@
  <title>Hyde</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2024-09-28T21:34:33-04:00</updated>
+ <updated>2024-09-29T15:21:58-04:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Mark Otto</name>
@@ -55,6 +55,10 @@
 
 &lt;p&gt;&lt;img src=&quot;/screenshots/accuracy.png&quot; alt=&quot;Accuracy Graph&quot; /&gt;
 &lt;img src=&quot;/screenshots/loss.png&quot; alt=&quot;Loss Graph&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Confusion matrix:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/screenshots/confusion_matrix.png&quot; alt=&quot;Confusion Matrix&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;See the full project on &lt;a href=&quot;https://github.com/RandomKiddo/DementiaAI&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
 </content>
