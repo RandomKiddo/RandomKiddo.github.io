@@ -4,13 +4,46 @@
  <title>Hyde</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2024-09-29T15:21:58-04:00</updated>
+ <updated>2024-12-18T20:14:02-05:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Mark Otto</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Book Recommendation System Using Goodreads Dataset</title>
+   <link href="http://localhost:4000/2024/12/12/goodreads/"/>
+   <updated>2024-12-12T00:00:00-05:00</updated>
+   <id>http://localhost:4000/2024/12/12/goodreads</id>
+   <content type="html">&lt;div class=&quot;message&quot;&gt;
+  &lt;u&gt;Goals:&lt;/u&gt; Create an AI book recommendation system based on the Goodreads raw review dataset for spoiler detection.
+  &lt;br /&gt; &lt;br /&gt;
+  &lt;u&gt;Results:&lt;/u&gt; See below. &lt;i&gt;Project work is still ongoing&lt;/i&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;motivation&quot;&gt;Motivation&lt;/h3&gt;
+
+&lt;p&gt;This project was part of a Physics 5680 (Big Data Analytics for Physics) class. The project was to create an AI book recommendation system based on the Goodreads dataset. This was a pre-defined project choice out of many from the course. Below is a pipeline of the project.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/screenshots/pipeline.png&quot; alt=&quot;Pipeline&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;report&quot;&gt;Report&lt;/h3&gt;
+
+&lt;p&gt;A report was required as part of the project. The report outlines all aspects of the project. It is attached below. The report includes information like the training of BERT-Tiny, the confusion matrix, the pipeline, the collaborative filtering, and the results of the project.&lt;/p&gt;
+
+&lt;iframe src=&quot;/pdfs/Report.pdf&quot; width=&quot;100%&quot; height=&quot;910px&quot;&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&quot;project-ipynb&quot;&gt;Project IPYNB&lt;/h3&gt;
+
+&lt;p&gt;Below is the PDF version of the Jupyter Notebook creating the project. It is attached below for viewing.&lt;/p&gt;
+
+&lt;iframe src=&quot;/pdfs/Project2.pdf&quot; width=&quot;100%&quot; height=&quot;910px&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;See the full project on &lt;a href=&quot;https://github.com/RandomKiddo/BookRecommendationAI&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Dementia Classification AI</title>
