@@ -19,7 +19,7 @@ This project was part of a Physics 5680 (Big Data Analytics for Physics) class. 
 
 A report was required as part of the project. The report outlines all aspects of the project. It is attached below. The report includes information like the training of BERT-Tiny, the confusion matrix, the pipeline, the collaborative filtering, and the results of the project. 
 
-<iframe src="/pdfs/Report.pdf" width="100%" height="910px"></iframe>
+<iframe src="/pdfs/report.pdf" width="100%" height="910px"></iframe>
 
 ### Project IPYNB
 

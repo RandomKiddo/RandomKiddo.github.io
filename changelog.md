@@ -5,10 +5,11 @@ title: Changelog
 
 # Changelog
 
-Current Version: `v1.62.1`
+Current Version: `v1.63.1`
 
 For personal interest in the latest changes made to the website (starting on 05/15/2024):
 
+* `v1.63`: New project posts. Updates to all pages.
 * `v1.62`: Class list updates. Added post about new project. 
 * `v1.61`: Updates to coursework as of fall '24. Updates to project page. 
 * `v1.60`: Updates to photography/astrophotography/about pages.

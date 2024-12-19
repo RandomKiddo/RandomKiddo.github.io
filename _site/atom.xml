@@ -4,7 +4,7 @@
  <title>Hyde</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2024-12-18T20:14:02-05:00</updated>
+ <updated>2024-12-19T15:07:01-05:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Mark Otto</name>
@@ -33,7 +33,7 @@
 
 &lt;p&gt;A report was required as part of the project. The report outlines all aspects of the project. It is attached below. The report includes information like the training of BERT-Tiny, the confusion matrix, the pipeline, the collaborative filtering, and the results of the project.&lt;/p&gt;
 
-&lt;iframe src=&quot;/pdfs/Report.pdf&quot; width=&quot;100%&quot; height=&quot;910px&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;/pdfs/report.pdf&quot; width=&quot;100%&quot; height=&quot;910px&quot;&gt;&lt;/iframe&gt;
 
 &lt;h3 id=&quot;project-ipynb&quot;&gt;Project IPYNB&lt;/h3&gt;
 
