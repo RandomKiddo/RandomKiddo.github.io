@@ -5,10 +5,11 @@ title: Changelog
 
 # Changelog
 
-Current Version: `v1.63.1`
+Current Version: `v1.64`
 
 For personal interest in the latest changes made to the website (starting on 05/15/2024):
 
+* `v1.64`: Updated for 2025. Added redirect timers for Github and LinkedIn icons. Updated back buttons.
 * `v1.63`: New project posts. Updates to all pages.
 * `v1.62`: Class list updates. Added post about new project. 
 * `v1.61`: Updates to coursework as of fall '24. Updates to project page. 
@@ -24,4 +25,4 @@ For personal interest in the latest changes made to the website (starting on 05/
 * `v1.51`: Updated licensing; Creation of photography page (in progress); Updated footer and sidebar.
 * `v1.50`: Created the changelog page; Updated about page, footer, and license.
 
-[Go Back](/index.html) (make this actually go back)
+[Go Back](javascript:history.back())

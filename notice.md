@@ -49,5 +49,8 @@ My personal projects are also licensed under their own licenses: <br>
 * Dementia AI
     - `© 2024 RandomKiddo, Nishanth-Kunchala, Jacoube, danield33`
     - MIT License
+* Goodreads Project
+    - `© 2024 RandomKiddo`
+    - GNU GPLv3 License
 
-[Go Back](/index.html)
+[Go Back](javascript:history.back())

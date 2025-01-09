@@ -5,7 +5,7 @@ title: License
 
 # License
 
-© 2022-2024 Neil Ghugare, All Rights Reserved
+© 2022-2025 Neil Ghugare, All Rights Reserved
 
 You are free to use anything from the website, with respect to its source code, as licensed by the packages used in this website:
 
@@ -18,4 +18,4 @@ You may not use:
 * Photos may be downloaded but may not be redistributed without proper crediting
 
 
-[Go Back](/index.html)
+[Go Back](javascript:history.back())
