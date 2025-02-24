@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Neil Ghugare &middot; AI Docking Port Locator and Distance Regressor for the ISS
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body class="theme-base-0d"></body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="https://randomkiddo.github.io/">
+          Neil Ghugare
+        </a>
+      </h1>
+      <p class="lead">Honors Physics and Astrophysics Student and Research Assistant at The Ohio State University. Aspiring PhD student.</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://randomkiddo.github.io/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/about/">About</a>
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/cv/">CV and Coursework</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/photography/">Photography</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/projects/">Projects</a>
+          
+        
+      
+    </nav>
+
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="post">
+  <h1 class="post-title">AI Docking Port Locator and Distance Regressor for the ISS</h1>
+  <span class="post-date">23 Feb 2025</span>
+  <div class="message">
+  <u>Goals:</u> Create a project for HackAI 2025 at OSU regarding AI docking port location and distance regression for the International Space Station.
+  <br /> <br />
+  <u>Results:</u> Utilizing the data, a multi-headed network (MHN) was built on the top layer of the MobileNetV3Small architecture. The MHN had three heads, each head regressing one of three values: the distance to the ISS, the x-coordinate of the docking port, or the y-coordinate of the docking port. After training, the best model was saved and then used to create a three-dimensional visualization showing the line the SpaceX Dragon capsule would need to take to dock with the ISS. An animation was made of this visualization. This visualization utilized public-access STL files of the ISS and Dragon capsule. <br /><br />
+  <b>This project won 3rd place in the competition.</b>
+</div>
+
+<h3 id="motivation">Motivation</h3>
+
+<p>We wanted to create an open-source docking system that can be generalized for different spacecraft. This would aid in the flight process of docking capsules to space stations and would allow for astronauts to direct their attention to other aspects outside of docking. This project also allows for the generalization of docking, showing that it would be possible to do other similar docking tasks with the right data (i.e., automated parking, ship docking, airplane-to-gate travel, etc.)</p>
+
+<hr />
+
+<h3 id="data">Data</h3>
+
+<p>The data is a set of 10,000 images of the ISS with labeled distance values and the location of docking port (albeit in a less-usable format). The data came from <a href="https://www.kaggle.com/datasets/msafi04/iss-docking-dataset/data">Kaggle</a>. It was originally part of an AICrowd challenge.</p>
+
+<hr />
+
+<h3 id="the-model">The Model</h3>
+
+<p>After tuning the model, we arrived on the following MHN top layer on the MobileNetV3Small architecture.</p>
+
+<p><img src="/imgs/model.png" alt="Model Top Layer" /></p>
+
+<p>We trained the model for 50 epochs implementing early stopping and model checkpoint callbacks to stop the training early if the validation loss stopped decreasing (started to overfit), and to only save the best model based on validation loss. Since this was an MHN, we had three loss functions to minimize, one for each head. We chose MAE for all three heads because we are working with distances. The total loss of the model was a weighted sum of these three individual losses, the weights being tuned through trial-and-error. The result was the following loss graph:</p>
+
+<p><img src="/imgs/loss5.png" alt="Loss Graph" /></p>
+
+<hr />
+
+<h3 id="visualization">Visualization</h3>
+
+<p>Training the model yielded the best model to use for visualization and prediction. Utilizing public-access STL files of the ISS and SpaceX Dragon capsule, we were able to create a 3D visualization in python of the capsule and ISS in 3D-space, and the line the capsule needs to take to dock, using the predictions from the model. Using this visualization, we made an animation showcasing the results of the model. The animation is shown below.</p>
+
+<p><img src="/imgs/test.gif" alt="Visualization Animation" /></p>
+
+<p>See the full project on <a href="https://github.com/RandomKiddo/HackAI2025">Github</a></p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2024/12/12/goodreads/">
+            Book Recommendation System Using Goodreads Dataset
+            <small>12 Dec 2024</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2024/09/28/dementia/">
+            Dementia Classification AI
+            <small>28 Sep 2024</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2024/08/12/starr/">
+            Starr Programming Language
+            <small>12 Aug 2024</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+    </div>
+
+  </body>
+</html>

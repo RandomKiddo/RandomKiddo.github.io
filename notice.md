@@ -52,5 +52,8 @@ My personal projects are also licensed under their own licenses: <br>
 * Goodreads Project
     - `© 2024 RandomKiddo`
     - GNU GPLv3 License
+* ISS AI Docking and Distance Regression for the ISS
+    - `© 2025 RandomKiddo, Nishanth-Kunchala, pranavmoola, Jacoube`
+    - GNU GPLv3 License
 
 [Go Back](javascript:history.back())

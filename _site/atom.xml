@@ -4,13 +4,59 @@
  <title>Hyde</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2025-01-08T20:55:20-05:00</updated>
+ <updated>2025-02-24T14:54:02-05:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Mark Otto</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>AI Docking Port Locator and Distance Regressor for the ISS</title>
+   <link href="http://localhost:4000/2025/02/23/hackai25/"/>
+   <updated>2025-02-23T00:00:00-05:00</updated>
+   <id>http://localhost:4000/2025/02/23/hackai25</id>
+   <content type="html">&lt;div class=&quot;message&quot;&gt;
+  &lt;u&gt;Goals:&lt;/u&gt; Create a project for HackAI 2025 at OSU regarding AI docking port location and distance regression for the International Space Station.
+  &lt;br /&gt; &lt;br /&gt;
+  &lt;u&gt;Results:&lt;/u&gt; Utilizing the data, a multi-headed network (MHN) was built on the top layer of the MobileNetV3Small architecture. The MHN had three heads, each head regressing one of three values: the distance to the ISS, the x-coordinate of the docking port, or the y-coordinate of the docking port. After training, the best model was saved and then used to create a three-dimensional visualization showing the line the SpaceX Dragon capsule would need to take to dock with the ISS. An animation was made of this visualization. This visualization utilized public-access STL files of the ISS and Dragon capsule. &lt;br /&gt;&lt;br /&gt;
+  &lt;b&gt;This project won 3rd place in the competition.&lt;/b&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;motivation&quot;&gt;Motivation&lt;/h3&gt;
+
+&lt;p&gt;We wanted to create an open-source docking system that can be generalized for different spacecraft. This would aid in the flight process of docking capsules to space stations and would allow for astronauts to direct their attention to other aspects outside of docking. This project also allows for the generalization of docking, showing that it would be possible to do other similar docking tasks with the right data (i.e., automated parking, ship docking, airplane-to-gate travel, etc.)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;data&quot;&gt;Data&lt;/h3&gt;
+
+&lt;p&gt;The data is a set of 10,000 images of the ISS with labeled distance values and the location of docking port (albeit in a less-usable format). The data came from &lt;a href=&quot;https://www.kaggle.com/datasets/msafi04/iss-docking-dataset/data&quot;&gt;Kaggle&lt;/a&gt;. It was originally part of an AICrowd challenge.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;the-model&quot;&gt;The Model&lt;/h3&gt;
+
+&lt;p&gt;After tuning the model, we arrived on the following MHN top layer on the MobileNetV3Small architecture.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/imgs/model.png&quot; alt=&quot;Model Top Layer&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We trained the model for 50 epochs implementing early stopping and model checkpoint callbacks to stop the training early if the validation loss stopped decreasing (started to overfit), and to only save the best model based on validation loss. Since this was an MHN, we had three loss functions to minimize, one for each head. We chose MAE for all three heads because we are working with distances. The total loss of the model was a weighted sum of these three individual losses, the weights being tuned through trial-and-error. The result was the following loss graph:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/imgs/loss5.png&quot; alt=&quot;Loss Graph&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;visualization&quot;&gt;Visualization&lt;/h3&gt;
+
+&lt;p&gt;Training the model yielded the best model to use for visualization and prediction. Utilizing public-access STL files of the ISS and SpaceX Dragon capsule, we were able to create a 3D visualization in python of the capsule and ISS in 3D-space, and the line the capsule needs to take to dock, using the predictions from the model. Using this visualization, we made an animation showcasing the results of the model. The animation is shown below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/imgs/test.gif&quot; alt=&quot;Visualization Animation&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;See the full project on &lt;a href=&quot;https://github.com/RandomKiddo/HackAI2025&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Book Recommendation System Using Goodreads Dataset</title>
