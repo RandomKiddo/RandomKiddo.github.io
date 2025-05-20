@@ -5,10 +5,11 @@ title: Changelog
 
 # Changelog
 
-Current Version: `v1.64.2`
+Current Version: `v1.65`
 
 For personal interest in the latest changes made to the website (starting on 05/15/2024):
 
+* `v1.65`: Updates to CV page. Minor updates to photography/astrophotography pages.
 * `v1.64`: Updated for 2025. Added redirect timers for Github and LinkedIn icons. Updated back buttons.
 * `v1.63`: New project posts. Updates to all pages.
 * `v1.62`: Class list updates. Added post about new project. 

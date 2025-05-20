@@ -32,7 +32,7 @@ Neewer 72mm ND100000 Filter
 
 <center>
     <img src="/PFW/DSC02794.JPG" width="50%"/>
-    Description: A nice waterfall <br />
+    Description: A nice waterfall. <br />
     Equipment/Location: Sony α6000 [Costa Rica] <br />
 </center>
 
@@ -40,7 +40,7 @@ Neewer 72mm ND100000 Filter
 
 <center>
     <img src="/PFW/IMG_5528.JPG" width="50%"/>
-    Description: A beautiful hummingbird <br />
+    Description: A beautiful hummingbird. <br />
     Equipment/Location: Sony α6000 w/ Zoom Lens [Costa Rica] <br />
 </center>
 
@@ -48,7 +48,7 @@ Neewer 72mm ND100000 Filter
 
 <center>
     <img src="/PFW/IMG_2711.JPG" width="50%"/>
-    Description: A nice mountain photo with a streaking sun <br />
+    Description: A nice mountain photo with a streaking sun. <br />
     Equipment/Location: Canon Powershot G7X Mark II [Hawai'i] <br />
 </center>
 
@@ -56,7 +56,7 @@ Neewer 72mm ND100000 Filter
 
 <center>
     <img src="/PFW/IMG_2738.JPG" width="50%"/>
-    Description: A nice photo atop a mountain <br />
+    Description: A nice photo atop a mountain. <br />
     Equipment/Location: Canon Powershot G7X Mark II [Hawai'i] <br />
 </center>
 
@@ -64,7 +64,7 @@ Neewer 72mm ND100000 Filter
 
 <center>
     <img src="/PFW/IMG_2771.JPG" width="50%"/>
-    Description: Small portion of milky way galaxy <br />
+    Description: Small portion of milky way galaxy. <br />
     Equipment/Location: Canon Powershot G7X Mark II [Hawai'i] <br />
 </center>
 
@@ -72,7 +72,7 @@ Neewer 72mm ND100000 Filter
 
 <center>
     <img src="/PFW/IMG_2868.JPG" width="50%"/>
-    Description: A turtle sunbathing on a beach <br />
+    Description: A turtle sunbathing on a beach. <br />
     Equipment/Location: Canon Powershot G7X Mark II [Hawai'i] <br />
 </center>
 
@@ -80,7 +80,7 @@ Neewer 72mm ND100000 Filter
 
 <center>
     <img src="/PFW/IMG_2902.JPG" width="50%"/>
-    Description: The large 'Akaka waterfall <br />
+    Description: The large 'Akaka waterfall. <br />
     Equipment/Location: Canon Powershot G7X Mark II [Hawai'i] <br />
 </center>
 
@@ -91,7 +91,7 @@ Neewer 72mm ND100000 Filter
     <source src="/PFW/MVI_2736.MP4" type="video/mp4">
     Your browser does not support the video tag.
     </video> <br />
-    Description: Sunset atop a mountain <br />
+    Description: Sunset atop a mountain. <br />
     Equipment/Location: Canon Powershot G7X Mark II [Hawai'i] <br />
 </center>
 
@@ -99,7 +99,7 @@ Neewer 72mm ND100000 Filter
 
 <center>
     <img src="/PFW/DSC03063.JPG" width="50%"/>
-    Description: Large portion of milky way galaxy <br />
+    Description: Large portion of milky way galaxy. <br />
     Equipment/Location: Sony α6000 w/ Rokinon 14mm f/2.8 Lens [Hocking Hills] <br />
 </center>
 
@@ -107,7 +107,7 @@ Neewer 72mm ND100000 Filter
 
 <center>
     <img src="/PFW/NAZZ7335.JPG" width="50%"/>
-    Description: Raw image of the moon <br />
+    Description: Raw image of the moon. <br />
     Equipment/Location: Canon Powershot G7x Mark II [Location Unknown] <br />
 </center>
 
@@ -115,7 +115,7 @@ Neewer 72mm ND100000 Filter
 
 <center>
     <img src="/PFW/DSC03111.JPG" width="50%"/>
-    Description: Total solar eclipse, shot leading up to the eclipse <br />
+    Description: Total solar eclipse, shot leading up to the eclipse. <br />
     Equipment/Location: Sony α6000 w/ Neewer ND100000 Filter [Ohio]<br />
 </center>
 
@@ -123,7 +123,7 @@ Neewer 72mm ND100000 Filter
 
 <center>
     <img src="/PFW/DSC031052.JPG" width="50%"/>
-    Description: Total solar eclipse <br />
+    Description: Total solar eclipse. <br />
     Equipment/Location: Sony α6000 w/ Neewer ND100000 Filter [Ohio]<br />
 </center>
 
@@ -131,7 +131,7 @@ Neewer 72mm ND100000 Filter
 
 <center>
     <img src="/PFW/DSC03215.JPG" width="50%"/>
-    Description: Chichén Itzá <br />
+    Description: Chichén Itzá. <br />
     Equipment/Location: Sony α6000 [Yucatán]<br />
 </center>
 
@@ -139,6 +139,6 @@ Neewer 72mm ND100000 Filter
 
 <center>
     <img src="/PFW/DSC03244.JPG" width="50%"/>
-    Description: Mayan temple of the god of wind <br />
+    Description: Mayan temple of the god of wind. <br />
     Equipment/Location: Sony α6000 [Tulum]<br />
 </center>

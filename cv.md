@@ -25,14 +25,14 @@ accordion:
 
 <br />
 
-<p class="message">Below is my CV, last updated on 07/28/24: </p>
+<p class="message">Below is my CV, last updated on 05/20/2025: </p>
 
 <iframe src="/pdfs/CV__Obscured_Copy_.pdf" width="100%" height="910px"></iframe>
 <sub>For personal safety, contact information has been removed. If contact is required, please message me on <a href="https://linkedin.com/in/neilghugare" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</sub>
 
 <br>
 
-<p class="message">Brief information on my Physics Coursework, last updated on 5/16/24 (<i>Needs Updating</i>): </p>
+<p class="message">Brief information on my Physics Coursework, last updated on 05/20/2025: </p>
 
 <iframe src="/pdfs/ClassList.pdf" width="100%" height="910px"></iframe>
 
