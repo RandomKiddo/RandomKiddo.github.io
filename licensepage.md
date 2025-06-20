@@ -5,7 +5,7 @@ title: License
 
 # License
 
-© 2022-2025 Neil Ghugare, All Rights Reserved
+© 2020-2025 Neil Ghugare, All Rights Reserved
 
 You are free to use anything from the website, with respect to its source code, as licensed by the packages used in this website:
 
