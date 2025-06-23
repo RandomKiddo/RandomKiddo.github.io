@@ -17,6 +17,9 @@ This website also uses lunr.js for searching features, licensed by the MIT Licen
 For "back to top" buttons, this website employed vanilla-back-to-top, licensed under the MIT License <br>
 `© 2018 Vladimir Feskov`
 
+For the browser-based rendering of LaTeX inside of Markdown, this website implemented MathJax, licensed under the Apache-2.0 License <br>
+`© MathJax`
+
 This website may use any other software associated with Jekyll, Poole, Hyde, lunr.js, or other packages, licensed under its own attributions.
 
 My personal projects are also licensed under their own licenses: <br>
