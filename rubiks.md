@@ -57,9 +57,9 @@ $$\langle t_N\rangle = \frac{\sum_{j=1}^{N} t_j - \min{(t_j)} - \max{(t_j)}}{N-2
 | 2x2 | Intuitive. Learning Ortega. |
 | 3x3 | CFOP with Intuitive F2L, Beginner OLL, Full PLL |
 | 3x3 OH | CFOP with Intuitive F2L, Beginner OLL, Simplified PLL |
-| Pyraminx | - |
-| Skewb | - |
-| Clock | - |
+| Pyraminx | Beginner's Method |
+| Skewb | Sarah's Method -- Beginner's Variation |
+| Clock | Beginner's Method |
 
 Return to the <a href="/about/index.html">About page</a>.
 
