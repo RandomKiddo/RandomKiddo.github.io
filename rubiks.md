@@ -26,16 +26,16 @@ The (slightly hidden) landing page about my speedcubing!
 
 While I solve multiple different kinds of Rubik's cubes, I only speedsolve a few specific events. More digits of precision are known, but for formatting reasons, the results shown are rounded two two decimal places.
 
-| Cube | PB (s) | AO5 (s) | AO5 Times<sup>&dagger;</sup> (s) | AO12 (s) |
+| Cube | PB (s) | AO5 (s) | AO5 Times (s)<sup>&dagger;</sup> | AO12 (s) |
 | ---- | ---- | ------ | ---------- | ------------- | ------- |
 | 2x2 | 3.40 | 4.60 | (3.40) 5.65 (7.62) 3.46 4.69 | 5.59 |
-| 3x3 | 12.47 | 13.63 | (15.43) (12.43) 14.29 14.13 12.47 | 14.59 |
+| 3x3 | 11.11 | 13.63 | (15.43) (12.43) 14.29 14.13 12.47 | 14.59 |
 | 3x3 OH | - | - | - | - |
 | Pyraminx | - | - | - | - |
-| Skewb |  - | - | - | - |
+| Skewb |  8.16 | 12.21 | (10.78) 14.98 10.83 (19.70) 10.81 | 14.14 |
 | Clock |  - | - | - | - | 
 
-<sup>&dagger;</sup> For calculation of averages, such as the average-of-5 (AO5) or average-of-12 (AO12), the standard World Cube Association (WCA) guidelines are used. As such, the average is calculated by excluding the fastest and slowest times, and then averaging the remaining solve times. The parenthetical terms are the ones excluded. For a generic $$N$$ average, the formula is:
+<sup>&dagger;</sup> For calculation of averages, such as the average-of-5 (AO5) or average-of-12 (AO12), the standard World Cube Association (WCA) guidelines are used. As such, the average is calculated by excluding the fastest and slowest times, and then averaging the remaining solve times. The parenthetical terms are the ones excluded. For more information, see item 9f8 of the [WCA regulations](https://www.worldcubeassociation.org/regulations/#article-A-speedsolving). For a generic $$N$$ average, the formula is:
 
 $$\langle t_N\rangle = \frac{\sum_{j=1}^{N} t_j - \min{(t_j)} - \max{(t_j)}}{N-2}$$
 
