@@ -24,14 +24,14 @@ The (slightly hidden) landing page about my speedcubing!
 
 <u><i>Times:</i></u>
 
-While I solve multiple different kinds of Rubik's cubes, I only speedsolve a few specific events. More digits of precision are known, but for formatting reasons, the results shown are rounded two two decimal places.
+While I solve multiple different kinds of Rubik's cubes, I only speedsolve a few specific events. More digits of precision are known, but for formatting reasons, the results shown are rounded to two decimal places. Some of data still needs to be populated.
 
 | Cube | PB (s) | AO5 (s) | AO5 Times (s)<sup>&dagger;</sup> | AO12 (s) |
 | ---- | ---- | ------ | ---------- | ------------- | ------- |
 | 2x2 | 2.81 | 4.12 | (5.63) 3.73 4.80 3.83 (3.33) | 4.53 |
 | 3x3 | 10.27 | 13.62 | 12.88 13.70 (16.73) (12.31) 14.27 | 14.59 |
 | 3x3 OH | - | - | - | - |
-| Pyraminx | - | - | - | - |
+| 4x4 | - | - | - | - |
 | Skewb |  8.16 | 12.21 | (10.78) 14.98 10.83 (19.70) 10.81 | 14.14 |
 | Clock |  - | - | - | - | 
 
@@ -47,7 +47,7 @@ $$\langle t_N\rangle = \frac{\sum_{j=1}^{N} t_j - \min{(t_j)} - \max{(t_j)}}{N-2
 | 2x2 | QiYi MS | 2020 | *Discontinued* |
 | 3x3 | Angstrom MoYu Weilong WR M Ferrocore | 2025 | [Available](https://www.thecubicle.com/products/angstrom-weilong-ferrocore-3x3-special-edition-wrm-v10?_pos=1&_psq=angstrom+ferroco&_ss=e&_v=1.0) |
 | 3x3 OH | Gan 354 M | 2018 | *Discontinued* |
-| Pyraminx | MoYu Magnetic Pyraminx | 2018 | *Discontinued* |
+| 4x4 | MoYu AoSu WR M | 2019 | [Available](https://www.thecubicle.com/products/moyu-aosu-4x4-wr-m?_pos=1&_sid=fa04cac04&_ss=r) |
 | Skewb | X-Man Wingy Magnetic Concave | 2018 | *Discontinued* |
 | Clock | LingAo Clock | 2018 | *Discontinued* |
 
@@ -58,7 +58,7 @@ $$\langle t_N\rangle = \frac{\sum_{j=1}^{N} t_j - \min{(t_j)} - \max{(t_j)}}{N-2
 | 2x2 | Ortega. |
 | 3x3 | CFOP with Intuitive F2L, 2-Look OLL, Full PLL. Learning Full OLL. |
 | 3x3 OH | CFOP with Intuitive F2L, 2-Look OLL, Simplified PLL. |
-| Pyraminx | Beginner's Method. |
+| 4x4 | Reduction. Learning Yau. |
 | Skewb | Sarah's Method -- Beginner's Variation. |
 | Clock | Beginner's Method. Learning 7-Simul Flip. |
 
@@ -68,10 +68,10 @@ I don't necessarily try to speedsolve these cubes (or at least I don't as much a
 
 | Cube | Main | Release Yr. | Status |
 | ---- | ---- | ----------- | ------ |
-| 4x4 | MoYu AoSu WR M | 2019 | [Available](https://www.thecubicle.com/products/moyu-aosu-4x4-wr-m?_pos=1&_sid=fa04cac04&_ss=r) |
 | 5x5 | QiYi WuShuang | 2018 | *Discontinued* |
 | 6x6 | MFJS MeiLong | 2019 | [Available](https://www.thecubicle.com/collections/6x6-speed-cubes/products/mfjs-meilong-6x6) |
-| Square 1 | Angstrom YJ MGC Mag-Lev | 2021 | [Available](https://www.thecubicle.com/products/angstrom-mgc-square-1-fully-magnetic?_pos=1&_sid=eaa2c860a&_ss=r) |
+| Square-1 | Angstrom YJ MGC Mag-Lev | 2021 | [Available](https://www.thecubicle.com/products/angstrom-mgc-square-1-fully-magnetic?_pos=1&_sid=eaa2c860a&_ss=r) |
+| Pyraminx | MoYu Magnetic Pyraminx | 2018 | *Discontinued* |
 
 Return to the <a href="/about/index.html">About page</a>.
 
