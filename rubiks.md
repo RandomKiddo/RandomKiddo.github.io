@@ -73,6 +73,20 @@ I don't necessarily try to speedsolve these cubes (or at least I don't as much a
 | Square-1 | Angstrom YJ MGC Mag-Lev | 2021 | [Available](https://www.thecubicle.com/products/angstrom-mgc-square-1-fully-magnetic?_pos=1&_sid=eaa2c860a&_ss=r) |
 | Pyraminx | MoYu Magnetic Pyraminx | 2018 | *Discontinued* |
 
+<u><i>A Note on Jargon:</i></u>
+
+Much like other hobbies or technical skills, speedcubing has a lot of jargon. Below is a list of jargon terms and their explanations used on this page, for those interested:
+* AOX: "Average-of-X", i.e. AO5 is "average-of-5". The average over how many solves.
+* OH: "One-handed", i.e. 3x3 OH is "3x3 one-handed".
+* Mains: The main speedcubes, or the go-to speedcubes, one uses for speedsolving.
+* Angstrom: A specific lubing and setup of a cube provided by [thecubicle.com](https://thecubicle.com), aimed at control and stability.
+* M: "Magnetic", i.e. the Gan 354 M is the magnetic version of a Gan 354 (nowadays the M-version is the only version of a cube). Magnets in a magnetic cube are used for cube alignment, typically being drilled into the pieces themselves. 
+* Ferrocore: Refers to a special core of a cube being made out of metal (typically iron or an iron alloy), adding weight and stability.
+* Mag-Lev: "Magnetic levitation". Unlike the magnetics in a M-version cube, which are used for alignment and are on pieces, mag-lev systems replace the traditional springs in the *core* with repelling magnets, reducing friction and increasing smoothness. Thus, mag-lev systems and magnetic versions are not mutually exclusive; A cube can be magnetic only, mag-lev only (rare), or both.
+* Ortega, Reduction, Yau, Sarah's Method, Beginner's Method, 7-Simul Flip, etc.: These are all methods for solving different puzzles. These are typically named after their creator (Ortega, Yau, Sarah's Method), or they indicate how a cube is solved (Reduction, Beginner's Method, or 7-Simul Flip).
+* CFOP, F2L, OLL, PLL: These are also methods for solving, specifically for n-by-n cubes, although most commonly used for 3x3 solving. CFOP stands for "Cross-F2L-OLL-PLL", with F2L standing for the first 2 layers, OLL for orientation of the last layer, and PLL for permutation of the last layer. Intuitive F2L indicates little or no algorithms are used when solving the first 2 layers. 
+* QiYi, MoYu, Gan, X-Man, LingAo, MFJS, YJ: All cube companies outside of the well-known "Rubik's". 
+
 Return to the <a href="/about/index.html">About page</a>.
 
 {% include footer.md %}
