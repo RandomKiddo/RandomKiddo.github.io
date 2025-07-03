@@ -20,8 +20,6 @@ title: "Speedcubing"
 
 The (slightly hidden) landing page about my speedcubing! 
 
-***This page is still under construction!***
-
 <u><i>Times:</i></u>
 
 While I solve multiple different kinds of Rubik's cubes, I only speedsolve a few specific events. More digits of precision are known, but for formatting reasons, the results shown are rounded to two decimal places. Some of data still needs to be populated.
@@ -30,10 +28,10 @@ While I solve multiple different kinds of Rubik's cubes, I only speedsolve a few
 | ---- | ---- | ------ | ---------- | ------------- | ------- |
 | 2x2 | 2.81 | 4.12 | (5.63) 3.73 4.80 3.83 (3.33) | 4.53 |
 | 3x3 | 10.27 | 13.62 | 12.88 13.70 (16.73) (12.31) 14.27 | 14.59 |
-| 3x3 OH | - | - | - | - |
-| 4x4 | - | - | - | - |
+| 3x3 OH | 34.34 | 41.94 | 43.54 (47.34) (34.34) 39.04 43.24 | - |
+| 4x4 | 1:18.24 | 1:32.47 | (1:43) 1:24 1:41 (1:18) 1:33 | 1:36.33 |
 | Skewb |  8.16 | 12.21 | (10.78) 14.98 10.83 (19.70) 10.81 | 14.14 |
-| Clock |  - | - | - | - | 
+| Clock | 17.53 | 22.29 |  24.09 22.88 (18.76) (32.74) 19.88 | 23.21 | 
 
 <sup>&dagger;</sup> For calculation of averages, such as the average-of-5 (AO5) or average-of-12 (AO12), the standard World Cube Association (WCA) guidelines are used. As such, the average is calculated by excluding the fastest and slowest times, and then averaging the remaining solve times. The parenthetical terms are the ones excluded. For more information, see item 9f8 of the [WCA regulations](https://www.worldcubeassociation.org/regulations/). For a generic $$N$$ average, the formula is:
 
@@ -49,7 +47,7 @@ $$\langle t_N\rangle = \frac{\sum_{j=1}^{N} t_j - \min{(t_j)} - \max{(t_j)}}{N-2
 | 3x3 OH | Gan 354 M | 2018 | *Discontinued* |
 | 4x4 | MoYu AoSu WR M | 2019 | [Available](https://www.thecubicle.com/products/moyu-aosu-4x4-wr-m?_pos=1&_sid=fa04cac04&_ss=r) |
 | Skewb | X-Man Wingy Magnetic Concave | 2018 | *Discontinued* |
-| Clock | LingAo Clock | 2018 | *Discontinued* |
+| Clock | QiYi Magnetic Clock Green | 2025 | [Available](https://www.thecubicle.com/products/qiyi-magnetic-clock-green-limited-edition?_pos=5&_psq=cloc&_ss=e&_v=1.0) |
 
 <u><i>Methods:</i></u>
 
@@ -82,9 +80,9 @@ Much like other hobbies or technical skills, speedcubing has a lot of jargon. Be
 * Angstrom: A specific lubing and setup of a cube provided by [thecubicle.com](https://thecubicle.com), aimed at control and stability.
 * M: "Magnetic", i.e. the Gan 354 M is the magnetic version of a Gan 354 (nowadays the M-version is the only version of a cube). Magnets in a magnetic cube are used for cube alignment, typically being drilled into the pieces themselves. 
 * Ferrocore: Refers to a special core of a cube being made out of metal (typically iron or an iron alloy), adding weight and stability.
-* Mag-Lev: "Magnetic levitation". Unlike the magnetics in a M-version cube, which are used for alignment and are on pieces, mag-lev systems replace the traditional springs in the *core* with repelling magnets, reducing friction and increasing smoothness. Thus, mag-lev systems and magnetic versions are not mutually exclusive; A cube can be magnetic only, mag-lev only (rare), or both.
-* Ortega, Reduction, Yau, Sarah's Method, Beginner's Method, 7-Simul Flip, etc.: These are all methods for solving different puzzles. These are typically named after their creator (Ortega, Yau, Sarah's Method), or they indicate how a cube is solved (Reduction, Beginner's Method, or 7-Simul Flip).
-* CFOP, F2L, OLL, PLL: These are also methods for solving, specifically for n-by-n cubes, although most commonly used for 3x3 solving. CFOP stands for "Cross-F2L-OLL-PLL", with F2L standing for the first 2 layers, OLL for orientation of the last layer, and PLL for permutation of the last layer. Intuitive F2L indicates little or no algorithms are used when solving the first 2 layers. 
+* Mag-Lev: "Magnetic levitation". Unlike the magnets in a M-version cube, which are used for alignment and are on pieces, mag-lev systems replace the traditional springs in the *core* with repelling magnets, reducing friction and increasing smoothness. Thus, mag-lev systems and magnetic versions are not mutually exclusive; A cube can be magnetic only, mag-lev only (rare), or both.
+* Ortega, Reduction, Yau, Sarah's Method, Beginner's Method, 7-Simul Flip, etc.: These are all methods for solving different puzzles. These are typically named after their creator (Ortega, Yau, or Sarah's Method), or they indicate how a cube is solved (Reduction, Beginner's Method, or 7-Simul Flip).
+* CFOP, F2L, OLL, PLL: These are also methods for solving, specifically for n-by-n cubes, although most commonly used for 3x3 solving. CFOP stands for "Cross-F2L-OLL-PLL", with F2L standing for the first 2 layers, OLL for orientation of the last layer, and PLL for permutation of the last layer. Intuitive F2L indicates little or no algorithms are used when solving the first 2 layers, and thus done intuitively. 
 * QiYi, MoYu, Gan, X-Man, LingAo, MFJS, YJ: All cube companies outside of the well-known "Rubik's". 
 
 Return to the <a href="/about/index.html">About page</a>.
