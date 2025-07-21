@@ -15,6 +15,69 @@ title: "Speedcubing"
   type="text/javascript">
 </script>
 
+<script>
+window.addEventListener("DOMContentLoaded", () => {
+  // Date Different (In Days) Function
+  function daysDiff(startDate) {
+    let start = new Date(startDate);
+    let end = new Date();
+    let timeDiff = end - start;
+    return Math.floor(timeDiff / (1000*3600*24));
+  }
+
+  // Addendum Date Function
+  function addendumText(date) {
+    let days = daysDiff(date);
+    if (days < 7) {
+      return "Recent break!";
+    } else if (days >= 7 && days < 30) {
+      return "A little stale.";
+    } else if (days >= 30 && days < 100) {
+      return "Yikes";
+    } else {
+      return "Oh boy...";
+    }
+  }
+
+  let datesInOrder = [
+    '2025-06-29', // 2x2
+    '2025-06-28', // 3x3
+    '2025-06-30', // 3x3 OH
+    '2025-06-30', // 4x4
+    '2025-06-24', // Skewb
+    '2025-07-17', // Clock
+    '2025-07-17' // Square-1
+  ];
+
+  // Update Days Since Break
+  document.getElementById("2").textContent = "" + daysDiff(datesInOrder[0]) + " Days";
+  document.getElementById("3").textContent = "" + daysDiff(datesInOrder[1]) + " Days";
+  document.getElementById("oh").textContent = "" + daysDiff(datesInOrder[2]) + "  Days";
+  document.getElementById("4").textContent = "" + daysDiff(datesInOrder[3]) + " Days";
+  document.getElementById("skewb").textContent = "" + daysDiff(datesInOrder[4]) + " Days";
+  document.getElementById("clock").textContent = "" + daysDiff(datesInOrder[5]) + " Days";
+  document.getElementById("sq1").textContent = "" + daysDiff(datesInOrder[6]) + " Days";
+
+  // Update Addendums
+  document.getElementById("2a").textContent = addendumText(datesInOrder[0]);
+  document.getElementById("3a").textContent = addendumText(datesInOrder[1]);
+  document.getElementById("oha").textContent = addendumText(datesInOrder[2]);
+  document.getElementById("4a").textContent = addendumText(datesInOrder[3]);
+  document.getElementById("skewba").textContent = addendumText(datesInOrder[4]);
+  document.getElementById("clocka").textContent = addendumText(datesInOrder[5]);
+  document.getElementById("sq1a").textContent = addendumText(datesInOrder[6]);
+
+  // Updated Date Of Break
+  document.getElementById("2d").textContent = datesInOrder[0];
+  document.getElementById("3d").textContent = datesInOrder[1];
+  document.getElementById("ohd").textContent = datesInOrder[2];
+  document.getElementById("4d").textContent = datesInOrder[3];
+  document.getElementById("skewbd").textContent = datesInOrder[4];
+  document.getElementById("clockd").textContent = datesInOrder[5];
+  document.getElementById("sq1d").textContent = datesInOrder[6];
+});
+</script>
+
 
 <h1 class="page-title">Speedcubing</h1>
 
@@ -22,17 +85,17 @@ The (slightly hidden) landing page about my speedcubing!
 
 <u><i>Times:</i></u>
 
-While I solve multiple different kinds of Rubik's cubes, I only speedsolve a few specific events. More digits of precision are known, but for formatting reasons, the results shown are rounded to two decimal places. Some results are shown here that are *not* frequently speedsolved, but still have recorded times. Dashes indicate no extended solving session has occurred to record an average, or that a average has yet to be reached. Last updated 07/11/2025.
+While I solve multiple different kinds of Rubik's cubes, I only speedsolve a few specific events. More digits of precision are known, but for formatting reasons, the results shown are rounded to two decimal places. Some results are shown here that are *not* frequently speedsolved, but still have recorded times. Dashes indicate no extended solving session has occurred to record an average, or that an average has yet to be reached. Last updated 07/21/2025.
 
 | Cube | PB (s) | AO5 (s) | AO5 Times (s)<sup>&dagger;</sup> | AO12 (s) |
 | ---- | ---- | ------ | ---------- | ------------- | ------- |
 | 2x2 | 2.81 | 4.12 | (5.63) 3.73 4.80 3.83 (3.33) | 4.53 |
-| 3x3 | 10.27 | 13.18 | 12.37 (15.50) 12.20 (11.44) 14.96 | <abbr title="14.56 14.15 15.18 14.17 (15.27) 12.50 (12.28) 14.29 13.28 14.75 14.21 14.10">14.12</abbr> |
-| 3x3 OH | 34.34 | 40.26 | (45.62) 40.78 39.44 40.55 (35.65) | <center>-</center> |
+| 3x3 | 10.27 | 12.53 | 14.80 11.70 11.09 (17.25) (10.83) | <abbr title="11.43 13.66 15.77 14.80 11.70 11.09 (17.25) (10.83) 15.61 14.36 13.14 10.90">13.24</abbr> |
+| 3x3 OH | 34.34 | 40.12 | (35.25) 41.15 38.92 40.28 (46.02) | <center>-</center> |
 | 4x4 | 1:18.24 | 1:32.47 | (1:43) 1:24 1:41 (1:18) 1:33 | 1:36.33 |
 | Skewb |  8.06 | 11.46 | (10.15) (18.06) 11.46 12.11 10.82 | 14.14 |
-| Clock | 17.49 | 20.80 | (25.31) 19.13 19.74 23.52 (17.49) | 22.79 | 
-| Square-1 | 50.22 | 1:05.02 | (1:14) 56.88 (52.75) 1:04 (1:26) | <center>-</center> |
+| Clock | 14.36 | 18.08 | (23.27) 16.58 17.56 20.11 (14.36) | 22.79 | 
+| Square-1 | 48.99 | 57.04 | 55.68 (1:03) (48.99) 57.03 58.42 | <center>-</center> |
 
 
 <sup>&dagger;</sup> For calculation of averages, such as the average-of-5 (AO5) or average-of-12 (AO12), the standard World Cube Association (WCA) guidelines are used. As such, the average is calculated by excluding the fastest and slowest times, and then averaging the remaining solve times. The parenthetical terms are the ones excluded. For more information, see item 9f8 of the [WCA regulations](https://www.worldcubeassociation.org/regulations/). For a generic $$N$$ average, the formula is:
@@ -54,12 +117,12 @@ $$\langle t_N\rangle = \frac{\sum_{j=1}^{N} t_j - \min{(t_j)} - \max{(t_j)}}{N-2
 
 <u><i>Methods:</i></u>
 
-| Cube | Solving Method |
+| Cube | Solve Method |
 | ---- | -------------- |
 | 2x2 | Ortega. |
 | 3x3 | CFOP with Intuitive F2L, 2-Look OLL, Full PLL. Learning Full OLL. |
 | 3x3 OH | CFOP with Intuitive F2L, 2-Look OLL, Simplified PLL. |
-| 4x4 | Reduction. Learning Yau. |
+| 4x4 | Yau. |
 | Skewb | Sarah's Method -- Beginner's Variation. |
 | Clock | Beginner's Method. Learning 7-Simul Flip. |
 | Square-1 | DG's Beginner's Method. |
@@ -68,11 +131,11 @@ $$\langle t_N\rangle = \frac{\sum_{j=1}^{N} t_j - \min{(t_j)} - \max{(t_j)}}{N-2
 
 I don't necessarily try to speedsolve these cubes (or at least I don't as much anymore), but I can solve these cubes. These are my mains and more info:
 
-| Cube | Main | Release Yr. | Status |
-| ---- | ---- | ----------- | ------ |
-| 5x5 | QiYi WuShuang | 2018 | *Discontinued* |
-| 6x6 | MFJS MeiLong | 2019 | [Available](https://www.thecubicle.com/collections/6x6-speed-cubes/products/mfjs-meilong-6x6) |
-| Pyraminx | MoYu Magnetic Pyraminx | 2018 | *Discontinued* |
+| Cube | Main | Release Yr. | Status | Solve Method |
+| ---- | ---- | ----------- | ------ | ----------- |
+| 5x5 | QiYi WuShuang | 2018 | *Discontinued* | Reduction |
+| 6x6 | MFJS MeiLong | 2019 | [Available](https://www.thecubicle.com/collections/6x6-speed-cubes/products/mfjs-meilong-6x6) | Reduction |
+| Pyraminx | MoYu Magnetic Pyraminx | 2018 | *Discontinued* | Beginner's |
 
 <details closed>
   <summary><u><i>A Note on Jargon</i></u> (Click to Expand)</summary>
@@ -90,6 +153,65 @@ I don't necessarily try to speedsolve these cubes (or at least I don't as much a
     <li>CFOP, F2L, OLL, PLL: These are also methods for solving, specifically for n-by-n cubes, although most commonly used for 3x3 solving. CFOP stands for "Cross-F2L-OLL-PLL", with F2L standing for the first 2 layers, OLL for orientation of the last layer, and PLL for permutation of the last layer. Intuitive F2L indicates little or no algorithms are used when solving the first 2 layers, and thus done intuitively.</li> 
     <li>QiYi, MoYu, Gan, X-Man, LingAo, MFJS, YJ: All cube companies outside of the well-known "Rubik's".</li>
   </ul>
+</details>
+<details closed>
+  <summary><u><i>Days Since PB Breaks</i></u> (Click to Expand)</summary>
+  <br />
+  Below is a table laying out events and the amount of days since the PB was last broken. See the "Times" section to see the current records. I actually do not track time since breaking averages, as averages are actually broken more often (practice and consistency yields more stable, faster times than a singular fast solve). <br /> <br />
+
+   <table>
+  <tr>
+    <th>Cube</th>
+    <th>Time Since Break</th>
+    <th>Broken On</th>
+    <th>Addendum<sup>&dagger;</sup></th>
+  </tr>
+  <tr>
+    <td>2x2</td>
+    <td id="2">2</td>
+    <td id="2d">2d</td>
+    <td id="2a">2a</td>
+  </tr>
+  <tr>
+    <td>3x3</td>
+    <td id="3">3</td>
+    <td id="3d">3d</td>
+    <td id="3a">3a</td>
+  </tr>
+  <tr>
+    <td>3x3 OH</td>
+    <td id="oh">oh</td>
+    <td id="ohd">ohd</td>
+    <td id="oha">oha</td>
+  </tr>
+  <tr>
+    <td>4x4</td>
+    <td id="4">4</td>
+    <td id="4d">4d</td>
+    <td id="4a">4a</td>
+  </tr>
+  <tr>
+    <td>Skewb</td>
+    <td id="skewb">skewb</td>
+    <td id="skewbd">skewbd</td>
+    <td id="skewba">skewba</td>
+  </tr>
+  <tr>
+    <td>Clock</td>
+    <td id="clock">clock</td>
+    <td id="clockd">clockd</td>
+    <td id="clocka">clocka</td>
+  </tr>
+  <tr>
+    <td>Square-1</td>
+    <td id="sq1">sq1</td>
+    <td id="sq1d">sq1d</td>
+    <td id="sq1a">sq1a</td>
+  </tr>
+</table> 
+
+<sup>&dagger;</sup> This addendum is auto-generated using JavaScript (in fact, the entire table is populated using JavaScript). The addendum is just a short statement about the status of the time since breaking, usually displaying if a break is recent, a little stale, or if it's really been a long time since a break.
+
 </details>
 <br />
 Return to the <a href="/about/index.html">About page</a>.
