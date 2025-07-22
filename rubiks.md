@@ -92,10 +92,10 @@ While I solve multiple different kinds of Rubik's cubes, I only speedsolve a few
 | 2x2 | 2.81 | 4.12 | (5.63) 3.73 4.80 3.83 (3.33) | 4.53 |
 | 3x3 | 10.27 | 12.53 | 14.80 11.70 11.09 (17.25) (10.83) | <abbr title="11.43 13.66 15.77 14.80 11.70 11.09 (17.25) (10.83) 15.61 14.36 13.14 10.90">13.24</abbr> |
 | 3x3 OH | 28.78 | 40.12 | (35.25) 41.15 38.92 40.28 (46.02) | <center>-</center> |
-| 4x4 | 1:18.24 | 1:32.47 | (1:43) 1:24 1:41 (1:18) 1:33 | 1:36.33 |
+| 4x4 | 1:17.38 | 1:29.54 | (1:43) (1:22) 1:31 1:28 1:29 | 1:32.29 | 
 | Skewb |  8.06 | 11.46 | (10.15) (18.06) 11.46 12.11 10.82 | 14.14 |
 | Clock | 14.36 | 18.08 | (23.27) 16.58 17.56 20.11 (14.36) | 22.79 | 
-| Square-1 | 48.99 | 57.04 | 55.68 (1:03) (48.99) 57.03 58.42 | <center>-</center> |
+| Square-1 | 48.99 | 54.69 | (51.33) (1:07) 56.24 54.96 52.88 | <center>-</center> |
 
 
 <sup>&dagger;</sup> For calculation of averages, such as the average-of-5 (AO5) or average-of-12 (AO12), the standard World Cube Association (WCA) guidelines are used. As such, the average is calculated by excluding the fastest and slowest times, and then averaging the remaining solve times. The parenthetical terms are the ones excluded. For more information, see item 9f8 of the [WCA regulations](https://www.worldcubeassociation.org/regulations/). For a generic $$N$$ average, the formula is:
