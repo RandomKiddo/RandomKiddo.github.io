@@ -42,7 +42,7 @@ window.addEventListener("DOMContentLoaded", () => {
   let datesInOrder = [
     '2025-06-29', // 2x2
     '2025-06-28', // 3x3
-    '2025-06-30', // 3x3 OH
+    '2025-07-22', // 3x3 OH
     '2025-06-30', // 4x4
     '2025-06-24', // Skewb
     '2025-07-17', // Clock
@@ -85,13 +85,13 @@ The (slightly hidden) landing page about my speedcubing!
 
 <u><i>Times:</i></u>
 
-While I solve multiple different kinds of Rubik's cubes, I only speedsolve a few specific events. More digits of precision are known, but for formatting reasons, the results shown are rounded to two decimal places. Some results are shown here that are *not* frequently speedsolved, but still have recorded times. Dashes indicate no extended solving session has occurred to record an average, or that an average has yet to be reached. Last updated 07/21/2025.
+While I solve multiple different kinds of Rubik's cubes, I only speedsolve a few specific events. More digits of precision are known, but for formatting reasons, the results shown are rounded to two decimal places. Some results are shown here that are *not* frequently speedsolved, but still have recorded times. Dashes indicate no extended solving session has occurred to record an average, or that an average has yet to be reached. I also compete in weekly online competitions [Speedsolving.com](https://www.speedsolving.com/competition/showPersonalRecords.php?showRecords=11738#resultsHead), but some PBs are done casually outside of these competitions. I lost my old account for these competitions, so that is a newer one. Last updated on 07/22/2025.
 
 | Cube | PB (s) | AO5 (s) | AO5 Times (s)<sup>&dagger;</sup> | AO12 (s) |
 | ---- | ---- | ------ | ---------- | ------------- | ------- |
 | 2x2 | 2.81 | 4.12 | (5.63) 3.73 4.80 3.83 (3.33) | 4.53 |
 | 3x3 | 10.27 | 12.53 | 14.80 11.70 11.09 (17.25) (10.83) | <abbr title="11.43 13.66 15.77 14.80 11.70 11.09 (17.25) (10.83) 15.61 14.36 13.14 10.90">13.24</abbr> |
-| 3x3 OH | 34.34 | 40.12 | (35.25) 41.15 38.92 40.28 (46.02) | <center>-</center> |
+| 3x3 OH | 28.78 | 40.12 | (35.25) 41.15 38.92 40.28 (46.02) | <center>-</center> |
 | 4x4 | 1:18.24 | 1:32.47 | (1:43) 1:24 1:41 (1:18) 1:33 | 1:36.33 |
 | Skewb |  8.06 | 11.46 | (10.15) (18.06) 11.46 12.11 10.82 | 14.14 |
 | Clock | 14.36 | 18.08 | (23.27) 16.58 17.56 20.11 (14.36) | 22.79 | 
