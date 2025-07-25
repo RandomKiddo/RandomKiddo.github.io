@@ -43,7 +43,7 @@ window.addEventListener("DOMContentLoaded", () => {
     '2025-06-29', // 2x2
     '2025-06-28', // 3x3
     '2025-07-22', // 3x3 OH
-    '2025-06-30', // 4x4
+    '2025-07-25', // 4x4
     '2025-06-24', // Skewb
     '2025-07-17', // Clock
     '2025-07-17' // Square-1
@@ -92,7 +92,7 @@ While I solve multiple different kinds of Rubik's cubes, I only speedsolve a few
 | 2x2 | 2.81 | 4.12 | (5.63) 3.73 4.80 3.83 (3.33) | 4.53 |
 | 3x3 | 10.27 | 12.53 | 14.80 11.70 11.09 (17.25) (10.83) | <abbr title="11.43 13.66 15.77 14.80 11.70 11.09 (17.25) (10.83) 15.61 14.36 13.14 10.90">13.24</abbr> |
 | 3x3 OH | 28.78 | 40.12 | (35.25) 41.15 38.92 40.28 (46.02) | <center>-</center> |
-| 4x4 | 1:17.38 | 1:24.17 | (1:32) (1:23) 1:26 1:23 1:23 | 1:26.26 |
+| 4x4 | 1:02.72 | 1:15.41 | (1:30) 1:12 1:16 1:19 (1:03) | 1:17.12 |
 | Skewb |  8.06 | 11.46 | (10.15) (18.06) 11.46 12.11 10.82 | 14.14 |
 | Clock | 14.36 | 16.70 | (15.24) 16.37 (22.00) 15.67 18.08 |18.22 | 
 | Square-1 | 48.99 | 54.69 | (51.33) (1:07) 56.24 54.96 52.88 | <center>-</center> |
@@ -103,14 +103,13 @@ While I solve multiple different kinds of Rubik's cubes, I only speedsolve a few
 $$\langle t_N\rangle = \frac{\sum_{j=1}^{N} t_j - \min{(t_j)} - \max{(t_j)}}{N-2}$$
 
 <u><i>Mains:</i></u> <br />
-<sub><i>(I haven't bought new cubes in years now, although I still speedcube. I'm looking into buying new mains soon.)</i></sub>
 
 | Cube | Main | Release Yr. | Status |
 | ---- | ---- | ----------- | ------ |
 | 2x2 | QiYi MS | 2020 | *Discontinued* |
 | 3x3 | Angstrom MoYu Weilong WR M Ferrocore | 2025 | [Available](https://www.thecubicle.com/products/angstrom-weilong-ferrocore-3x3-special-edition-wrm-v10?_pos=1&_psq=angstrom+ferroco&_ss=e&_v=1.0) |
 | 3x3 OH | Gan 354 M | 2018 | *Discontinued* |
-| 4x4 | MoYu AoSu WR M | 2019 | [Available](https://www.thecubicle.com/products/moyu-aosu-4x4-wr-m?_pos=1&_sid=fa04cac04&_ss=r) |
+| 4x4 | MoYu AoSu v7 Double-Track UV | 2025 | [Available](https://www.thecubicle.com/products/moyu-aosu-v7-4x4-double-track-uv-special-edition?f=versions) |
 | Skewb | X-Man Wingy Magnetic Concave | 2018 | *Discontinued* |
 | Clock | QiYi Magnetic Clock Green | 2025 | [Available](https://www.thecubicle.com/products/qiyi-magnetic-clock-green-limited-edition?_pos=5&_psq=cloc&_ss=e&_v=1.0) |
 | Square-1 | Angstrom YJ MGC Mag-Lev | 2021 | [Available](https://www.thecubicle.com/products/angstrom-mgc-square-1-fully-magnetic?_pos=1&_sid=eaa2c860a&_ss=r) |
@@ -151,7 +150,9 @@ I don't necessarily try to speedsolve these cubes (or at least I don't as much a
     <li>Mag-Lev: "Magnetic levitation". Unlike the magnets in a M-version cube, which are used for alignment and are on pieces, mag-lev systems replace the traditional springs in the <i>core</i> with repelling magnets, reducing friction and increasing smoothness. Thus, mag-lev systems and magnetic versions are not mutually exclusive; A cube can be magnetic only, mag-lev only (rare), or both.</li>
     <li>Ortega, Reduction, Yau, Sarah's Method, Beginner's Method, 7-Simul Flip, etc.: These are all methods for solving different puzzles. These are typically named after their creator (Ortega, Yau, or Sarah's Method), or they indicate how a cube is solved (Reduction, Beginner's Method, or 7-Simul Flip).</li>
     <li>CFOP, F2L, OLL, PLL: These are also methods for solving, specifically for n-by-n cubes, although most commonly used for 3x3 solving. CFOP stands for "Cross-F2L-OLL-PLL", with F2L standing for the first 2 layers, OLL for orientation of the last layer, and PLL for permutation of the last layer. Intuitive F2L indicates little or no algorithms are used when solving the first 2 layers, and thus done intuitively.</li> 
-    <li>QiYi, MoYu, Gan, X-Man, LingAo, MFJS, YJ: All cube companies outside of the well-known "Rubik's".</li>
+    <li>QiYi, MoYu, Gan, X-Man, LingAo, MFJS, YJ, etc.: All cube companies outside of the well-known "Rubik's".</li>
+    <li>UV: UV coating, a glossy, clear layer cured using UV light applied to the surface of a cube typically to improve grip and scratch resistance.</li>
+    <li>Single-, Double-, Triple-Track: Refers to the internal magnet system for larger cubes (4x4 and up), where the internal alignment magnets have multiple "tracks". Basically the number of tracks represents the number of magnets aligning each layer (single is one set of magnets, double is two, etc.).</li>
   </ul>
 </details>
 <details closed>
