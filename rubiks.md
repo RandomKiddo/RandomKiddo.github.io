@@ -42,11 +42,11 @@ window.addEventListener("DOMContentLoaded", () => {
   let datesInOrder = [
     '2025-06-29', // 2x2
     '2025-06-28', // 3x3
-    '2025-07-22', // 3x3 OH
+    '2025-07-29', // 3x3 OH
     '2025-07-25', // 4x4
     '2025-06-24', // Skewb
     '2025-07-17', // Clock
-    '2025-07-17' // Square-1
+    '2025-07-29' // Square-1
   ];
 
   // Update Days Since Break
@@ -85,17 +85,17 @@ The (slightly hidden) landing page about my speedcubing!
 
 <u><i>Times:</i></u>
 
-While I solve multiple different kinds of Rubik's cubes, I only speedsolve a few specific events. More digits of precision are known, but for formatting reasons, the results shown are rounded to two decimal places. Some results are shown here that are *not* frequently speedsolved, but still have recorded times. Dashes indicate no extended solving session has occurred to record an average, or that an average has yet to be reached. I also compete in weekly online competitions [Speedsolving.com](https://www.speedsolving.com/competition/showPersonalRecords.php?showRecords=11738#resultsHead), but some PBs are done casually outside of these competitions. I lost my old account for these competitions, so that is a newer one. Last updated on 07/22/2025.
+While I solve multiple different kinds of Rubik's cubes, I only speedsolve a few specific events. More digits of precision are known, but for formatting reasons, the results shown are rounded to two decimal places. Some results are shown here that are *not* frequently speedsolved, but still have recorded times. Dashes indicate no extended solving session has occurred to record an average, or that an average has yet to be reached. I also compete in weekly online competitions [Speedsolving.com](https://www.speedsolving.com/competition/showPersonalRecords.php?showRecords=11738#resultsHead), but some PBs are done casually outside of these competitions. I lost my old account for these competitions, so that is a newer one. Last updated on 07/29/2025.
 
 | Cube | PB (s) | AO5 (s) | AO5 Times (s)<sup>&dagger;</sup> | AO12 (s) |
 | ---- | ---- | ------ | ---------- | ------------- | ------- |
 | 2x2 | 2.81 | 4.12 | (5.63) 3.73 4.80 3.83 (3.33) | 4.53 |
 | 3x3 | 10.27 | 12.53 | 14.80 11.70 11.09 (17.25) (10.83) | <abbr title="11.43 13.66 15.77 14.80 11.70 11.09 (17.25) (10.83) 15.61 14.36 13.14 10.90">13.24</abbr> |
-| 3x3 OH | 28.78 | 40.12 | (35.25) 41.15 38.92 40.28 (46.02) | <center>-</center> |
-| 4x4 | 1:02.72 | 1:15.41 | (1:30) 1:12 1:16 1:19 (1:03) | 1:17.12 |
+| 3x3 OH | 27.34 | 38.02 | 41.55 (42.55) (27.34) 36.43 36.07 | <center>-</center> |
+| 4x4 | 1:02.72 | 1:12.69 | 1:18 (1:22) 1:09 (1:09) 1:11 | 1:17.12 |
 | Skewb |  8.06 | 11.46 | (10.15) (18.06) 11.46 12.11 10.82 | 14.14 |
-| Clock | 14.36 | 16.70 | (15.24) 16.37 (22.00) 15.67 18.08 |18.22 | 
-| Square-1 | 48.99 | 54.69 | (51.33) (1:07) 56.24 54.96 52.88 | <center>-</center> |
+| Clock | 13.27 | 16.65 | 16.44 (13.27) (18.35) 15.46 18.05 |18.22 | 
+| Square-1 | 43.72 | 54.33 | (1:02) 59.53 48.60 (43.72) 54.85 | <center>-</center> |
 
 
 <sup>&dagger;</sup> For calculation of averages, such as the average-of-5 (AO5) or average-of-12 (AO12), the standard World Cube Association (WCA) guidelines are used. As such, the average is calculated by excluding the fastest and slowest times, and then averaging the remaining solve times. The parenthetical terms are the ones excluded. For more information, see item 9f8 of the [WCA regulations](https://www.worldcubeassociation.org/regulations/). For a generic $$N$$ average, the formula is:
@@ -112,7 +112,7 @@ $$\langle t_N\rangle = \frac{\sum_{j=1}^{N} t_j - \min{(t_j)} - \max{(t_j)}}{N-2
 | 4x4 | MoYu AoSu v7 Double-Track UV | 2025 | [Available](https://www.thecubicle.com/products/moyu-aosu-v7-4x4-double-track-uv-special-edition?f=versions) |
 | Skewb | X-Man Wingy Magnetic Concave | 2018 | *Discontinued* |
 | Clock | QiYi Magnetic Clock Green | 2025 | [Available](https://www.thecubicle.com/products/qiyi-magnetic-clock-green-limited-edition?_pos=5&_psq=cloc&_ss=e&_v=1.0) |
-| Square-1 | Angstrom YJ MGC Mag-Lev | 2021 | [Available](https://www.thecubicle.com/products/angstrom-mgc-square-1-fully-magnetic?_pos=1&_sid=eaa2c860a&_ss=r) |
+| Square-1 | YJ MGC Sq-1 Black | 2021 | [Available](https://www.thecubicle.com/products/yj-mgc-sq-1-fully-magnetic?_pos=1&_psq=yj+mgc+sq&_ss=e&_v=1.0) |
 
 <u><i>Methods:</i></u>
 
