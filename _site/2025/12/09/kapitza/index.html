@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Neil Ghugare &middot; Kapitza Pendulum Analysis
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body class="theme-base-0d"></body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="https://randomkiddo.github.io/">
+          Neil Ghugare
+        </a>
+      </h1>
+      <p class="lead">Honors Physics and Astrophysics Student and Research Assistant at The Ohio State University. Aspiring PhD student.</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://randomkiddo.github.io/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/about/">About</a>
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/cv/">CV and Coursework</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/photography/">Photography</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/projects/">Projects</a>
+          
+        
+      
+        
+          
+        
+      
+    </nav>
+
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="post">
+  <h1 class="post-title">Kapitza Pendulum Analysis</h1>
+  <span class="post-date">09 Dec 2025</span>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+
+<div class="message">
+  The following project involves the numerical analysis and manim animation of a Kapitza pendulum system as a part of a theoretical mechanics course final project. Specifically, we use Manim animations and Hopf bifurcation analysis to inspect the stability of the inverted position of the pendulum in the high-driving, low-amplitude regime. This is done with a mix of analytical and numerical methods. 
+</div>
+
+<h3 id="implementations">Implementations</h3>
+
+<p>Reading the <a href="https://github.com/RandomKiddo/KapitzaPendulumAnalysis/blob/master/src/Project.ipynb">Project notebook file</a> provides a comprehensive step-by-step breakdown of the project. Inspecting the various <code>.py</code> files shows the different numerical solving methods used to solve this system.</p>
+
+<p>The project does the following:</p>
+<ul>
+  <li>Derives the Lagrangian, equations of motion, and effective potential for the Kapitza pendulum system, while inspecting the high-driving, low-amplitude regime.</li>
+  <li>Implements numerical methods to solve the system and check that turning off the driving components recovers the simple pendulum.</li>
+  <li>Dynamic widget analysis of the system with varying parameters.</li>
+  <li>\(U(\phi,t)\) and \(U_{\rm eff}(\phi)\) comparisons for high-driving, low-amplitude regime, with separate PDF derivation.</li>
+  <li>Manim animations of the system, with normalized state space axis as well.</li>
+  <li>Chaos and bifurcation analysis: using Liapunov exponent to judge chaos. Manim animations of two pendula for chaos, with animated Liapunov exponent graph. Hopf bifurcation discrete analysis with checks on stability vs. instability of the vertical position using the bifurcation plot. Further analysis on the low-amplitude area, showing periodic motion but no chaos.</li>
+</ul>
+
+<p>Included in the Github repository:</p>
+<ul>
+  <li>All project files: the project Jupyter notebook, the PDF derivation file, any <code>.py</code> numerical files, and the outputted images.</li>
+  <li>The Conda environment used for the project, built for M-architecture OS.</li>
+  <li>The presentation file given as a part of this project.</li>
+</ul>
+
+<blockquote>
+  <p>Manim animations are hosted in the releases, as they are big, hosted in the <code>videos.zip</code> file in each release description. One example is shown below, but in order to get it to display, it has been converted to a gif, which greatly reduces its overall quality. It is recommended to download the zip for higher-fidelity animations. The zip file is <a href="https://github.com/RandomKiddo/KapitzaPendulumAnalysis/releases/tag/beta1.1">here</a>.</p>
+</blockquote>
+
+<p>Here is the (low quality) gif: <br />
+<img src="/imgs/example.gif" alt="Example Animation as Low-Quality Gif" /></p>
+
+<p>See the full project on <a href="https://github.com/RandomKiddo/KapitzaPendulumAnalysis">Github</a></p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2025/02/23/hackai25/">
+            AI Docking Port Locator and Distance Regressor for the ISS
+            <small>23 Feb 2025</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2024/12/12/goodreads/">
+            Book Recommendation System Using Goodreads Dataset
+            <small>12 Dec 2024</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2024/09/28/dementia/">
+            Dementia Classification AI
+            <small>28 Sep 2024</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+    </div>
+
+  </body>
+</html>

@@ -5,10 +5,11 @@ title: Changelog
 
 # Changelog
 
-Current Version: `v1.56.20`
+Current Version: `v1.57.0`
 
 For personal interest in the latest *major* changes made to the website (starting on 05/15/2024):
 
+* `v1.57`: New year updates, Kapitza project, major updates to CV, licensing updates.
 * `v1.56`: Stricter and clearer licensing.
 * `v1.55`: Changelog overhaul.
 * `v1.54`: Updated for 2025. Added redirect timers for Github and LinkedIn icons. Updated back buttons.

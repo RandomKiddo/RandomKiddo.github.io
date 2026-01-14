@@ -1,4 +1,4 @@
-© 2020-2025 Neil Ghugare, All Rights Reserved
+© 2020-2026 Neil Ghugare, All Rights Reserved
 
 You are welcome to reuse components of this website that are licensed under open-source software, including, but not limited to, Jekyll, Poole/Hyde, Lunr.js, and MathJax. These components retain their original licenses, and any use must comply with those respective terms. 
 

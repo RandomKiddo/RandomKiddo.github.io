@@ -4,13 +4,57 @@
  <title>Hyde</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2025-09-26T22:52:36-04:00</updated>
+ <updated>2026-01-13T23:42:17-05:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Mark Otto</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Kapitza Pendulum Analysis</title>
+   <link href="http://localhost:4000/2025/12/09/kapitza/"/>
+   <updated>2025-12-09T00:00:00-05:00</updated>
+   <id>http://localhost:4000/2025/12/09/kapitza</id>
+   <content type="html">&lt;script src=&quot;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot; type=&quot;text/javascript&quot;&gt;
+&lt;/script&gt;
+
+&lt;div class=&quot;message&quot;&gt;
+  The following project involves the numerical analysis and manim animation of a Kapitza pendulum system as a part of a theoretical mechanics course final project. Specifically, we use Manim animations and Hopf bifurcation analysis to inspect the stability of the inverted position of the pendulum in the high-driving, low-amplitude regime. This is done with a mix of analytical and numerical methods. 
+&lt;/div&gt;
+
+&lt;h3 id=&quot;implementations&quot;&gt;Implementations&lt;/h3&gt;
+
+&lt;p&gt;Reading the &lt;a href=&quot;https://github.com/RandomKiddo/KapitzaPendulumAnalysis/blob/master/src/Project.ipynb&quot;&gt;Project notebook file&lt;/a&gt; provides a comprehensive step-by-step breakdown of the project. Inspecting the various &lt;code&gt;.py&lt;/code&gt; files shows the different numerical solving methods used to solve this system.&lt;/p&gt;
+
+&lt;p&gt;The project does the following:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Derives the Lagrangian, equations of motion, and effective potential for the Kapitza pendulum system, while inspecting the high-driving, low-amplitude regime.&lt;/li&gt;
+  &lt;li&gt;Implements numerical methods to solve the system and check that turning off the driving components recovers the simple pendulum.&lt;/li&gt;
+  &lt;li&gt;Dynamic widget analysis of the system with varying parameters.&lt;/li&gt;
+  &lt;li&gt;\(U(\phi,t)\) and \(U_{\rm eff}(\phi)\) comparisons for high-driving, low-amplitude regime, with separate PDF derivation.&lt;/li&gt;
+  &lt;li&gt;Manim animations of the system, with normalized state space axis as well.&lt;/li&gt;
+  &lt;li&gt;Chaos and bifurcation analysis: using Liapunov exponent to judge chaos. Manim animations of two pendula for chaos, with animated Liapunov exponent graph. Hopf bifurcation discrete analysis with checks on stability vs. instability of the vertical position using the bifurcation plot. Further analysis on the low-amplitude area, showing periodic motion but no chaos.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Included in the Github repository:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;All project files: the project Jupyter notebook, the PDF derivation file, any &lt;code&gt;.py&lt;/code&gt; numerical files, and the outputted images.&lt;/li&gt;
+  &lt;li&gt;The Conda environment used for the project, built for M-architecture OS.&lt;/li&gt;
+  &lt;li&gt;The presentation file given as a part of this project.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Manim animations are hosted in the releases, as they are big, hosted in the &lt;code&gt;videos.zip&lt;/code&gt; file in each release description. One example is shown below, but in order to get it to display, it has been converted to a gif, which greatly reduces its overall quality. It is recommended to download the zip for higher-fidelity animations. The zip file is &lt;a href=&quot;https://github.com/RandomKiddo/KapitzaPendulumAnalysis/releases/tag/beta1.1&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Here is the (low quality) gif: &lt;br /&gt;
+&lt;img src=&quot;/imgs/example.gif&quot; alt=&quot;Example Animation as Low-Quality Gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;See the full project on &lt;a href=&quot;https://github.com/RandomKiddo/KapitzaPendulumAnalysis&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>AI Docking Port Locator and Distance Regressor for the ISS</title>
