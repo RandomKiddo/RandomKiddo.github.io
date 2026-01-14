@@ -68,5 +68,8 @@ My personal projects are also licensed under their own licenses and have their o
 * ISS AI Docking and Distance Regression for the ISS
     - `© 2025 RandomKiddo, Nishanth-Kunchala, pranavmoola, Jacoube`
     - GNU GPLv3 License
+* Kapitza Pendulum Analysis
+    - `© 2025-2026 RandomKiddo`
+    - MIT License
 
 [Go Back](javascript:history.back())
