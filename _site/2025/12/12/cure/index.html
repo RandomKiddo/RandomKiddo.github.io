@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Neil Ghugare &middot; CURE: Crude Traceback of IC4665 Cluster
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body class="theme-base-0d"></body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="https://randomkiddo.github.io/">
+          Neil Ghugare
+        </a>
+      </h1>
+      <p class="lead">Honors Physics and Astrophysics Student and Research Assistant at The Ohio State University. Aspiring PhD student.</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="https://randomkiddo.github.io/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/about/">About</a>
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/cv/">CV and Coursework</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/photography/">Photography</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/projects/">Projects</a>
+          
+        
+      
+        
+          
+        
+      
+    </nav>
+
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="post">
+  <h1 class="post-title">CURE: Crude Traceback of IC4665 Cluster</h1>
+  <span class="post-date">12 Dec 2025</span>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+
+<div class="message">
+    <i>CURE: Class-based Undergraduate Research Experience</i>. <br />
+    <br />
+    Throughout this project, the traceback of the IC4665 star cluster was investigated to see the characteristics of the cluster millions of years ago. This was done primarily by leveraging Gaia SQL queries on proper motion and “rewinding” these proper motions in the opposite direction to find the right ascension and declination of where all the stars were previously located. We also make use of <a href="https://simbad.u-strasbg.fr/simbad/sim-basic?Ident=IC4665https://simbad.u-strasbg.fr/simbad/sim-basic?Ident=IC4665">Simbad</a> data to do this traceback analysis. Our initial prediction would be that the cluster members would be closer together in the past then they are today. We do not precisely see this, as we see that the cluster throughout time tends to stay together, but some members spread out slightly in the past. This, however, can be understood due to the constraints on our traceback calculations and the fact that we are not considering any gravitational forces. We also make an animation of the cluster traceback utilizing prior knowledge and open-source code from Drs. Furnstahl and Brandenburg for <a href="https://github.com/jdbrice/5300-JB/tree/mainhttps://github.com/jdbrice/5300-JB/tree/main">Physics 5300</a>.
+</div>
+
+<h3 id="description">Description</h3>
+
+<p>As a part of the Astronomy 3350 course (Methods of Astronomical Observation and Data Analysis), our last <em>computational essay</em> involved doing an actual research project (of our choosing) on the IC4665 cluster. Our group chose the “Traceback” project, which involved identifying cluster members by tracing back the motion of the cluster using Right Ascension and Declination values. Since this project was intended to be a small undergraduate research experience, the results and information was unknown.</p>
+
+<h3 id="theory">Theory</h3>
+
+<p>The traceback of the cluster elements was done very crudely. We used public Simbad data to bound data from Gaia to the rough area of the cluster using parallax, R.A., and Dec. We used an SQL query via</p>
+<pre><code class="language-py">top_n = 10000  # how many values we want to fetch from the data
+
+query = """SELECT TOP %d
+source_id, ra, ra_error, dec, dec_error, parallax, parallax_error, pmra, pmra_error, pmdec, pmdec_error 
+FROM gaiadr3.gaia_source
+where parallax &gt;= %.2f and parallax &lt;= %.2f and ra &gt;= %.2f
+and ra &lt;= %.2f and dec &gt;= %.2f and dec &lt;= %.2f
+""" % (top_n, parallax_min, parallax_max, ra_min, ra_max, dec_min, dec_max)
+query  # Let's see what the query looks like
+</code></pre>
+
+<p>Using Pandas, we manipulated the data, and defined how we were going to do the traceback. If \(q\) is the given R.A. or Dec. in degrees, and \(\mu_q\) is the <em>proper motion</em> R.A. or Dec. in mas/yr, and \(T\) is the time period in years, we can trace our result back for that coordinate value (R.A. or Dec. respectively) via the formula</p>
+
+\[{\rm Traced\ Result} = \frac{(3.6 \times10^6\ {\rm mas})q - \mu_q T}{3.6\times10^6\ {\rm mas}/1^{\circ}}\]
+
+<p>We created a Python function for this, where we can insert \(n\)-million years to trace the result. We then used Pandas Series analysis to create new columns of the traced motion, and also simultaneously traced the location of the cluster by using Simbad data and using the traceback function. We noted based on <a href="https://en.wikipedia.org/wiki/IC_4665">Wikipedia</a> data that IC4665 is expected to be roughly 55 million years old, so we recognize that we shouldn’t go past that amount, and that 1 million year timesteps are adequate time steps. After tracing back 10 million years, we used Pandas analysis to identify members close to the cluster center, and label those as being members of the cluster. This allowed us to create the animations in the next section, separating cluster members from non-members.</p>
+
+<h3 id="animations">Animations</h3>
+
+<p>We made animations of the system using the adapted code from <a href="https://github.com/jdbrice/5300-JB/tree/mainhttps://github.com/jdbrice/5300-JB/tree/main">Physics 5300</a> (Theoretical Mechanics). In doing so we can create two styles of animations of the cluster. One keeps the axes fixed, and one dynamically updates the axes to follow the cluster. The cyan elements are the cluster elements, while the rest are background elements. This is the animation with the fixed axes:</p>
+
+<video width="320" height="240" controls="">
+  <source src="/vid/animation.mp4" type="video/mp4" />
+</video>
+
+<p>The following is the dynamic axes animation:</p>
+
+<video width="320" height="240" controls="">
+  <source src="/vid/animation2.mp4" type="video/mp4" />
+</video>
+
+<h3 id="limitations">Limitations</h3>
+
+<p>From looking at the above animations, we can do some more official analysis. We see that the cluster, in general, moves together throughout time which <em>is</em> good and what we expect. From the first animation, we can see that the cluster is a bit more clustered, but it’s not as clustered as we would generally expect. Especially, with the second animation, some cluster elements appear to get much further apart as you go back in time. This, however, is due to the crude way we traced the cluster members back, and we also consider no gravitational impacts, which would help attract the objects together. Also, due to lack of Gaia data, did not consider measurements like radial velocity, as most Gaia data points did not have this value readily available. Despite that, by seeing that we do get the general cluster moves together, that is a good result for this loose analysis.</p>
+
+<h3 id="data-notice">Data Notice</h3>
+
+<p>Because this cluster and its data and properties are still actively being investigated, this project is <em>not</em> publicly hosted on Github or other hosting platforms. However, the project <code>.ipynb</code> file used for submission for the course may be distributed upon reasonable request.</p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2025/12/09/kapitza/">
+            Kapitza Pendulum Analysis
+            <small>09 Dec 2025</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2025/02/23/hackai25/">
+            AI Docking Port Locator and Distance Regressor for the ISS
+            <small>23 Feb 2025</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2024/12/12/goodreads/">
+            Book Recommendation System Using Goodreads Dataset
+            <small>12 Dec 2024</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+    </div>
+
+  </body>
+</html>
