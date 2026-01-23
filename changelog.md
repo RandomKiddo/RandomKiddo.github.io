@@ -5,7 +5,7 @@ title: Changelog
 
 # Changelog
 
-Current Version: `v1.57.2`
+Current Version: `v1.57.3`
 
 For personal interest in the latest *major* changes made to the website (starting on 05/15/2024):
 
