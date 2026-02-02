@@ -19,7 +19,7 @@ title: "Website Update Timeline"
 
 This website is currently being completely overhauled. This website has been made in Jekyll/Hyde, among other website pagination tools. This website will be completely revamped, being build from React/Typescript/TailwindCSS/Next.js/NPM. Here is the rough timeline of the project, with an expected finish date of *March 2026*:
 
-> As of January 22, 2026, the project status is ***on time***.
+> As of February 2, 2026, the project status is ***behind***. *We are trying to find workarounds to some critical issues. The estimated delay is a few weeks*.
 
 1. August 2025: Begin work on the project, map out the project and install and set up the React environment.
 2. September 2025 - November 2025: Finish preliminary pages of the website, pending final additions.
