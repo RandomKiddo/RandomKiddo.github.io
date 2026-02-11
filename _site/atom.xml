@@ -4,7 +4,7 @@
  <title>Hyde</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2026-02-02T23:24:42-05:00</updated>
+ <updated>2026-02-10T21:12:45-05:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Mark Otto</name>
@@ -111,10 +111,13 @@ query  # Let&apos;s see what the query looks like
   &lt;p&gt;Manim animations are hosted in the releases, as they are big, hosted in the &lt;code&gt;videos.zip&lt;/code&gt; file in each release description. One example is shown below, but in order to get it to display, it has been converted to a gif, which greatly reduces its overall quality. It is recommended to download the zip for higher-fidelity animations. The zip file is &lt;a href=&quot;https://github.com/RandomKiddo/KapitzaPendulumAnalysis/releases/tag/beta1.1&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Here is the (low quality) gif: &lt;br /&gt;
+&lt;p&gt;Here is an example system as a gif: &lt;br /&gt; &lt;br /&gt;
 &lt;img src=&quot;/imgs/example.gif&quot; alt=&quot;Example Animation as Low-Quality Gif&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;See the full project on &lt;a href=&quot;https://github.com/RandomKiddo/KapitzaPendulumAnalysis&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;And here is an example of the chaos animation as a gif: &lt;br /&gt; &lt;br /&gt;
+&lt;img src=&quot;/imgs/example_chaos.gif&quot; alt=&quot;Example Chaos Animation as Low-Quality Gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;See the full project on &lt;a href=&quot;https://github.com/RandomKiddo/KapitzaPendulumAnalysis&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
 </content>
  </entry>
  
