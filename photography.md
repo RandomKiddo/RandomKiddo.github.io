@@ -24,49 +24,6 @@ accordion:
       Sky-Watcher Star Adventurer GTi Mount Kit<br>
 ---
 
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-
-<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
-<script>
-addBackToTop({
-  diameter: 56,
-  backgroundColor: '#3d6f75',
-  textColor: 'rgb(225, 221, 214)'
-})
-</script> 
-
-<script>
-function loadSlickGallery() {
-  var $gallery = $('.slick-gallery');
-  if ($gallery.length) {
-    // If slick was already initialized, kill it first to avoid duplicates
-    if ($gallery.hasClass('slick-initialized')) {
-      $gallery.slick('unslick');
-    }
-    
-    $gallery.slick({
-      dots: true,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 1,
-      adaptiveHeight: false,
-      autoplay: true,
-      arrows: true
-    });
-  }
-}
-
-// Hydejack: Fired when the page transition is 100% complete
-document.addEventListener('hydejack:fullload', loadSlickGallery);
-
-// Standard: Fired on initial page landing/refresh
-$(document).ready(loadSlickGallery);
-</script>
 
 <style>
 /* Move dots inside the gallery so 'overflow: hidden' doesn't hide them */

@@ -12,47 +12,7 @@ addBackToTop({
 })
 </script> 
 
-<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
-<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/plug-ins/1.13.6/sorting/any-number.js"></script>
 
-<script>
-(function() {
-  function loadCubeTable() {
-    var $table = $('#cube-table');
-    // Ensure jQuery and DataTable plugin are available
-    if ($table.length && window.jQuery && $.fn.DataTable) {
-      if ($.fn.DataTable.isDataTable('#cube-table')) {
-        $table.DataTable().destroy();
-      }
-      $table.DataTable({
-        paging: false,
-        searching: false,
-        info: false,
-        autoWidth: false,
-        columnDefs: [
-          { type: "any-number", targets: [1, 2] },
-          { orderable: false, targets: [3, 4] },
-          { className: "dt-center", targets: "_all" }
-        ]
-      });
-    }
-  }
-
-  // 1. The Hydejack Way (for page transitions)
-  // We look for the _pushState element and listen for Hydejack's custom load event
-  var pushState = document.getElementById('_pushState');
-  if (pushState) {
-    pushState.addEventListener('hy-push-state-load', loadCubeTable);
-  }
-
-  // 2. The Initial Way (for the very first time the site loads)
-  // 'hydejack:fullload' is a higher-level event that works well for first landing
-  document.addEventListener('hydejack:fullload', loadCubeTable);
-
-})();
-</script>
 
 <style>
 /* 1. Center the container */

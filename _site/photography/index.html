@@ -101,7 +101,7 @@
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2026-03-17T15:56:34-04:00',
+    INDEX_KEY: 'index--2026-03-17T16:11:46-04:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -194,6 +194,19 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79,177,186,0.5);
 </ul></nav>
   
 
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/plug-ins/1.13.6/sorting/any-number.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<script src="/assets/js/hydejack-init.js"></script>
+
+
+
 <article class="page" role="article">
   <header>
     <h1 class="page-title">Photography</h1>
@@ -206,53 +219,7 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79,177,186,0.5);
 
   </header>
 
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-
-<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
-
-<script>
-addBackToTop({
-  diameter: 56,
-  backgroundColor: '#3d6f75',
-  textColor: 'rgb(225, 221, 214)'
-})
-</script>
-
-<script>
-function loadSlickGallery() {
-  var $gallery = $('.slick-gallery');
-  if ($gallery.length) {
-    // If slick was already initialized, kill it first to avoid duplicates
-    if ($gallery.hasClass('slick-initialized')) {
-      $gallery.slick('unslick');
-    }
-    
-    $gallery.slick({
-      dots: true,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 1,
-      adaptiveHeight: false,
-      autoplay: true,
-      arrows: true
-    });
-  }
-}
-
-// Hydejack: Fired when the page transition is 100% complete
-document.addEventListener('hydejack:fullload', loadSlickGallery);
-
-// Standard: Fired on initial page landing/refresh
-$(document).ready(loadSlickGallery);
-</script>
-
-<style>
+  <style>
 /* Move dots inside the gallery so 'overflow: hidden' doesn't hide them */
 .slick-dots {
   bottom: 15px !important; /* Positions them 15px up from the bottom edge */

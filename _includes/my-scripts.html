@@ -5,6 +5,17 @@ CloudFlare will inject this on every page, but due to Hydejack's push state appr
 it will only run on the initial page.
 The snippet below will run the code on every `hy-push-state-load` event instead.
 -->
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/plug-ins/1.13.6/sorting/any-number.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+<script src="/assets/js/hydejack-init.js"></script>
 
 <script>
   document.getElementById('_pushState').addEventListener('hy-push-state-load', function (e) {
