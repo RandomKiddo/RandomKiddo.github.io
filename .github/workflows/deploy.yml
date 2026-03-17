@@ -1,7 +1,7 @@
 name: Deploy Hydejack
 on:
   push:
-    branches: ["main"] # Double-check if your branch is named 'main' or 'master'
+    branches: ["master"] # Double-check if your branch is named 'main' or 'master'
   workflow_dispatch:
 
 permissions:

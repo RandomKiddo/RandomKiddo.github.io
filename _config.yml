@@ -16,6 +16,8 @@
 # ---------------------------------------------------------------------------------------
 
 repository: RandomKiddo/RandomKiddo.github.io
+url: "https://www.neilghugare.com" # Use your actual custom domain here
+baseurl: ""                       # This MUST be empty for custom domains
 
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
