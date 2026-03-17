@@ -1,144 +1,159 @@
 ---
-layout: page
-title: Photography
+layout: default
+title: "Photography"
+accordion: 
+  - title: "Photography Equipment"
+    content: |
+      **Cameras:**<br>
+      Canon Powershot G7X Mark II<br>
+      Sony α6000 Mirrorless<br>
+
+      **Lenses:**<br>
+      Sony Zoom Lens (Details Unknown)<br>
+      Rokinon 14mm f/2.8 Lens<br>
+
+      **Other:**<br>
+      Neewer 72mm ND100000 Filter<br>
+  - title: "Astrophotography Equipment"
+    content: |
+      **The Rig:**<br>
+      Sony α6000 Mirrorless<br>
+      Sky-Watcher EvoStar 72 APO Doublet Refractor<br>
+      Sky-Watcher 0.85x Focal Reducer/Flattener for EvoStar 72<br>
+      Oumij M48x0.75mm T-Mount Adapter for NEX<br>
+      Sky-Watcher Star Adventurer GTi Mount Kit<br>
 ---
 
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
-<script>addBackToTop({
+<script>
+addBackToTop({
   diameter: 56,
-  backgroundColor: 'rgb(106, 159, 181)',
-  textColor: '#fff'
-})</script>
+  backgroundColor: '#3d6f75',
+  textColor: 'rgb(225, 221, 214)'
+})
+</script> 
 
-The landing page for my photography! (Sorry in advance if this page loads slowly; The photo files are big, and I didn't want to reduce their quality). For astrophotography relating to DSOs, see the <a href="/astrophotography/index.html">Astrophotography page</a>. 
+<script>
+function loadSlickGallery() {
+  var $gallery = $('.slick-gallery');
+  if ($gallery.length) {
+    // If slick was already initialized, kill it first
+    if ($gallery.hasClass('slick-initialized')) {
+      $gallery.slick('unslick');
+    }
+    
+    $gallery.slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      adaptiveHeight: false,
+      autoplay: true,
+      arrows: true // Ensure arrows are on
+    });
+  }
+}
 
-This page contains my "critics picks" (a.k.a. the photos I thought were the best and have a lot of diversity). There are other special landing pages containing more photos from specific trips. The page to access these landing pages is currently *under construction*. 
+// Handle Hydejack's page transitions
+document.addEventListener('hydejack:mount', loadSlickGallery);
 
-My equipment: <br />
+// Initial load
+$(document).ready(loadSlickGallery);
+</script>
 
-Cameras: <br />
-Canon Powershot G7X Mark II <br />
-Sony α6000 Mirrorless <br />
+<style>
+/* Move dots inside the gallery so 'overflow: hidden' doesn't hide them */
+.slick-dots {
+  bottom: 15px !important; /* Positions them 15px up from the bottom edge */
+  z-index: 10 !important;   /* Ensures they sit above the image layer */
+}
 
-Lenses: <br />
-Zoom Lens (details unknown) <br />
-Rokinon 14mm f/2.8 Lens <br />
+/* Make the dots white and more visible against photos */
+.slick-dots li button:before {
+  font-size: 12px !important;
+  color: white !important;
+  opacity: 0.5;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8); /* Shadow helps on light photos */
+}
 
-Other: <br />
-Neewer 72mm ND100000 Filter
+/* Highlight the active dot */
+.slick-dots li.slick-active button:before {
+  color: white !important;
+  opacity: 1;
+}
 
+/* 1. Set the fixed container size */
+.slick-gallery {
+  margin: 40px auto;
+  max-width: 1000px; /* Or whatever width fits your layout */
+  height: 700px;    /* Force a fixed height */
+  overflow: hidden;
+  border-radius: 12px;
+  background: #000; /* Black bars behind if an image is somehow too small */
+}
 
-<br />
+/* 2. Force the images to fill that container and crop the excess */
+.slick-gallery img {
+  width: 100% !important;
+  height: 700px !important; /* Must match the container height above */
+  object-fit: cover;        /* This is the magic: it crops instead of stretching */
+  object-position: center;  /* Keeps the middle of the photo visible */
+}
 
-<center>
-    <img src="/PFW/DSC02794.JPG" width="50%"/>
-    Description: A nice waterfall. <br />
-    Equipment/Location: Sony α6000 [Costa Rica] <br />
-</center>
+/* Ensure the container allows the arrows to be seen */
+.slick-list {
+  z-index: 1;
+}
 
-<br />
+/* Position arrows inside the frame so 'overflow: hidden' doesn't clip them */
+.slick-prev {
+  left: 25px !important;
+  z-index: 10 !important; /* Higher than the image */
+}
 
-<center>
-    <img src="/PFW/IMG_5528.JPG" width="50%"/>
-    Description: A beautiful hummingbird. <br />
-    Equipment/Location: Sony α6000 w/ Zoom Lens [Costa Rica] <br />
-</center>
+.slick-next {
+  right: 40px !important; /* Extra 15px to account for the default 20px offset */
+  z-index: 10 !important;
+}
 
-<br />
+/* Make sure the arrow icons are large and bright */
+.slick-prev:before, .slick-next:before {
+  font-size: 40px !important;
+  color: white !important;
+  opacity: 0.8;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8); /* Crucial for seeing white arrows on light photos */
+}
 
-<center>
-    <img src="/PFW/IMG_2711.JPG" width="50%"/>
-    Description: A nice mountain photo with a streaking sun. <br />
-    Equipment/Location: Canon Powershot G7X Mark II [Hawai'i] <br />
-</center>
+/* Optional: Hide the default "Next/Previous" text if it's bleeding out */
+.slick-prev, .slick-next {
+  width: 40px;
+  height: 40px;
+}
 
-<br />
+.slick-slide.slick-active {
+  opacity: 1 !important;
+  z-index: 2 !important;
+}
 
-<center>
-    <img src="/PFW/IMG_2738.JPG" width="50%"/>
-    Description: A nice photo atop a mountain. <br />
-    Equipment/Location: Canon Powershot G7X Mark II [Hawai'i] <br />
-</center>
+/* Ensure the background slides are fully hidden so they don't bleed through */
+.slick-slide {
+  opacity: 0 !important;
+  transition: opacity 500ms ease-in-out;
+}
+</style>
 
-<br />
+{% include accordion.html %}
 
-<center>
-    <img src="/PFW/IMG_2771.JPG" width="50%"/>
-    Description: Small portion of milky way galaxy. <br />
-    Equipment/Location: Canon Powershot G7X Mark II [Hawai'i] <br />
-</center>
-
-<br />
-
-<center>
-    <img src="/PFW/IMG_2868.JPG" width="50%"/>
-    Description: A turtle sunbathing on a beach. <br />
-    Equipment/Location: Canon Powershot G7X Mark II [Hawai'i] <br />
-</center>
-
-<br />
-
-<center>
-    <img src="/PFW/IMG_2902.JPG" width="50%"/>
-    Description: The large 'Akaka waterfall. <br />
-    Equipment/Location: Canon Powershot G7X Mark II [Hawai'i] <br />
-</center>
-
-<br />
-
-<center>
-    <video width="400" controls>
-    <source src="/PFW/MVI_2736.MP4" type="video/mp4">
-    Your browser does not support the video tag.
-    </video> <br />
-    Description: Sunset atop a mountain. <br />
-    Equipment/Location: Canon Powershot G7X Mark II [Hawai'i] <br />
-</center>
-
-<br />
-
-<center>
-    <img src="/PFW/DSC03063.JPG" width="50%"/>
-    Description: Large portion of milky way galaxy. <br />
-    Equipment/Location: Sony α6000 w/ Rokinon 14mm f/2.8 Lens [Hocking Hills] <br />
-</center>
-
-<br />
-
-<center>
-    <img src="/PFW/NAZZ7335.JPG" width="50%"/>
-    Description: Raw image of the moon. <br />
-    Equipment/Location: Canon Powershot G7x Mark II [Location Unknown] <br />
-</center>
-
-<br />
-
-<center>
-    <img src="/PFW/DSC03111.JPG" width="50%"/>
-    Description: Total solar eclipse, shot leading up to the eclipse. <br />
-    Equipment/Location: Sony α6000 w/ Neewer ND100000 Filter [Ohio]<br />
-</center>
-
-<br />
-
-<center>
-    <img src="/PFW/DSC031052.JPG" width="50%"/>
-    Description: Total solar eclipse. <br />
-    Equipment/Location: Sony α6000 w/ Neewer ND100000 Filter [Ohio]<br />
-</center>
-
-<br />
-
-<center>
-    <img src="/PFW/DSC03215.JPG" width="50%"/>
-    Description: Chichén Itzá. <br />
-    Equipment/Location: Sony α6000 [Yucatán]<br />
-</center>
-
-<br />
-
-<center>
-    <img src="/PFW/DSC03244.JPG" width="50%"/>
-    Description: Mayan temple of the god of wind. <br />
-    Equipment/Location: Sony α6000 [Tulum]<br />
-</center>
+<div class="slick-gallery">
+  {% assign images = site.static_files | where_exp: "item", "item.path contains 'assets/img/scrs/'" %}
+  {% for image in images %}
+    <div><img src="{{ image.path | relative_url }}" style="width:100%;"></div>
+  {% endfor %}
+</div>

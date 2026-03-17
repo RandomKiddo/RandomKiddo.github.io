@@ -1,21 +1,17 @@
 ---
-layout: default
-title: Changelog
+layout: plain
+sitemap: false
 ---
 
-# Changelog
+# CHANGELOG
+{:.no_toc}
 
-Current Version: `v1.57.9`
+* this list will be replaced by the toc
+{:toc .large-only}
 
-For personal interest in the latest *major* changes made to the website (starting on 05/15/2024):
+## v2.0.0
+Mar 14 2026
+{:.heading.post-date}
 
-* `v1.57`: New year updates, Kapitza project, major updates to CV, licensing updates.
-* `v1.56`: Stricter and clearer licensing.
-* `v1.55`: Changelog overhaul.
-* `v1.54`: Updated for 2025. Added redirect timers for Github and LinkedIn icons. Updated back buttons.
-* `v1.53`: Started creating astrophotography page. 
-* `v1.52`: Added "back to top" buttons; Updated notice to accomodate; 
-* `v1.51`: Updated licensing; Creation of photography page (in progress); Updated footer and sidebar.
-* `v1.50`: Created the changelog page; Updated about page, footer, and license.
+* Updated old version of website to this one! Hello, 2.0!
 
-[Go Back](javascript:history.back())

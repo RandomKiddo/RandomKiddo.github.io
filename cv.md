@@ -17,24 +17,22 @@ accordion:
 ---
 
 <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
-<script>addBackToTop({
+<script>
+addBackToTop({
   diameter: 56,
-  backgroundColor: 'rgb(106, 159, 181)',
-  textColor: '#fff'
-})</script>
-
-<br />
+  backgroundColor: '#3d6f75',
+  textColor: 'rgb(225, 221, 214)'
+})
+</script> 
 
 <p class="message">Below is my CV, last updated on 01/13/2026: </p>
 
-<iframe src="/pdfs/CV__Obscured_Copy_.pdf" width="100%" height="910px"></iframe>
+<iframe src="/assets/pdf/cv.pdf" width="100%" height="910px"></iframe>
 <sub>For personal safety, contact information has been removed. If contact is required, please message me on <a href="https://linkedin.com/in/neilghugare" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</sub>
-
-<br>
 
 <p class="message">Brief information on my Physics Coursework, last updated on 01/13/2026 (up to but not including SP26 semester): </p>
 
-<iframe src="/pdfs/ClassList.pdf" width="100%" height="910px"></iframe>
+<iframe src="/assets/pdf/ClassList.pdf" width="100%" height="910px"></iframe>
 
 <br>
 
@@ -42,3 +40,5 @@ accordion:
 <br>
 <sub>Any personal things I've learned are not included. These are classes I've taken at an university or community college, or classes attained by AP credit.</sub>
 </p>
+
+{% include accordion.html %}

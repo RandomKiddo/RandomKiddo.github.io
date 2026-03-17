@@ -1,2 +1,9 @@
-.DS_Store
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+
+# MacOS
+*.DS_Store
 */.DS_Store
