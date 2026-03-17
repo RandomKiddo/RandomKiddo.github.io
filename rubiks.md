@@ -21,6 +21,7 @@ addBackToTop({
 (function() {
   function loadCubeTable() {
     var $table = $('#cube-table');
+    // Ensure jQuery and DataTable plugin are available
     if ($table.length && window.jQuery && $.fn.DataTable) {
       if ($.fn.DataTable.isDataTable('#cube-table')) {
         $table.DataTable().destroy();
@@ -39,9 +40,17 @@ addBackToTop({
     }
   }
 
+  // 1. The Hydejack Way (for page transitions)
+  // We look for the _pushState element and listen for Hydejack's custom load event
+  var pushState = document.getElementById('_pushState');
+  if (pushState) {
+    pushState.addEventListener('hy-push-state-load', loadCubeTable);
+  }
+
+  // 2. The Initial Way (for the very first time the site loads)
+  // 'hydejack:fullload' is a higher-level event that works well for first landing
   document.addEventListener('hydejack:fullload', loadCubeTable);
-  // Using a slight timeout ensures Hydejack is actually finished with the DOM
-  setTimeout(loadCubeTable, 50);
+
 })();
 </script>
 
