@@ -101,7 +101,7 @@
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2026-03-17T15:40:29-04:00',
+    INDEX_KEY: 'index--2026-03-17T15:46:04-04:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -234,32 +234,31 @@ addBackToTop({
 <script src="https://cdn.datatables.net/plug-ins/1.13.6/sorting/any-number.js"></script>
 
 <script>
-function loadCubeTable() {
-  var $table = $('#cube-table');
-  
-  if ($table.length) {
-    if ($.fn.DataTable.isDataTable('#cube-table')) {
-      $table.DataTable().destroy();
+(function() {
+  function loadCubeTable() {
+    var $table = $('#cube-table');
+    if ($table.length && window.jQuery && $.fn.DataTable) {
+      if ($.fn.DataTable.isDataTable('#cube-table')) {
+        $table.DataTable().destroy();
+      }
+      $table.DataTable({
+        paging: false,
+        searching: false,
+        info: false,
+        autoWidth: false,
+        columnDefs: [
+          { type: "any-number", targets: [1, 2] },
+          { orderable: false, targets: [3, 4] },
+          { className: "dt-center", targets: "_all" }
+        ]
+      });
     }
-
-    $table.DataTable({
-      paging: false,
-      searching: false,
-      info: false,
-      // Force the table to auto-detect the width
-      autoWidth: false,
-      columnDefs: [
-        // Ensure column 0, 1, and 2 are sortable, and 3, 4 are not
-        { type: "any-number", targets: [1, 2] }, 
-        { orderable: false, targets: [3, 4] },
-        { className: "dt-center", targets: "_all" } // Centers text in all cells
-      ]
-    });
   }
-}
 
-document.addEventListener('hydejack:fullload', loadCubeTable);
-$(document).ready(loadCubeTable);
+  document.addEventListener('hydejack:fullload', loadCubeTable);
+  // Using a slight timeout ensures Hydejack is actually finished with the DOM
+  setTimeout(loadCubeTable, 50);
+})();
 </script>
 
 <style>
