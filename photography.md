@@ -44,7 +44,7 @@ addBackToTop({
 function loadSlickGallery() {
   var $gallery = $('.slick-gallery');
   if ($gallery.length) {
-    // If slick was already initialized, kill it first
+    // If slick was already initialized, kill it first to avoid duplicates
     if ($gallery.hasClass('slick-initialized')) {
       $gallery.slick('unslick');
     }
@@ -56,15 +56,15 @@ function loadSlickGallery() {
       slidesToShow: 1,
       adaptiveHeight: false,
       autoplay: true,
-      arrows: true // Ensure arrows are on
+      arrows: true
     });
   }
 }
 
-// Handle Hydejack's page transitions
-document.addEventListener('hydejack:mount', loadSlickGallery);
+// Hydejack: Fired when the page transition is 100% complete
+document.addEventListener('hydejack:fullload', loadSlickGallery);
 
-// Initial load
+// Standard: Fired on initial page landing/refresh
 $(document).ready(loadSlickGallery);
 </script>
 

@@ -13,70 +13,75 @@ addBackToTop({
 </script> 
 
 <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
-
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/plug-ins/2.3.7/sorting/any-number.js"></script>
+<script src="https://cdn.datatables.net/plug-ins/1.13.6/sorting/any-number.js"></script>
 
 <script>
 function loadCubeTable() {
-  // Check if the table exists on the current page
-  if ($('#cube-table').length) {
-    $('#cube-table').DataTable({
+  var $table = $('#cube-table');
+  
+  if ($table.length) {
+    if ($.fn.DataTable.isDataTable('#cube-table')) {
+      $table.DataTable().destroy();
+    }
+
+    $table.DataTable({
       paging: false,
       searching: false,
       info: false,
+      // Force the table to auto-detect the width
+      autoWidth: false,
       columnDefs: [
+        // Ensure column 0, 1, and 2 are sortable, and 3, 4 are not
         { type: "any-number", targets: [1, 2] }, 
-        { orderable: false, targets: [3, 4] }
+        { orderable: false, targets: [3, 4] },
+        { className: "dt-center", targets: "_all" } // Centers text in all cells
       ]
     });
   }
 }
 
-// Handle Hydejack's page transitions
-document.addEventListener('hydejack:mount', loadCubeTable);
-
-// Initial load
+document.addEventListener('hydejack:fullload', loadCubeTable);
 $(document).ready(loadCubeTable);
 </script>
 
 <style>
-/* Center the entire DataTable container */
+/* 1. Center the container */
 .dataTables_wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%; /* Adjust this percentage as needed */
-  max-width: 1000px; /* Prevents it from getting too wide on desktop */
+  margin: 2em auto !important;
+  width: 95%;
+  max-width: 1000px;
+  text-align: center;
 }
 
-/* Ensure the table itself takes up the full width of that centered container */
+/* 2. Fix the table display */
 table#cube-table {
   width: 100% !important;
-  margin: 0 auto;
+  margin: 0 auto !important;
+  border-collapse: collapse !important;
+  display: table !important; /* Forces it to behave as a table for centering */
 }
 
-/* Style the header row */
+/* 3. Header Styling - Fixed the color quote bug */
 #cube-table thead th {
-  background-color: #3d6f75; /* Change this to your preferred hex color */
-  color: 'rgb(225, 221, 214)';            /* Text color (white) */
-  border-bottom: 2px solid #1a252f;
-  text-align: center;        /* Centers the text inside the header cells */
+  background-color: #3d6f75 !important;
+  color: rgb(225, 221, 214) !important; /* Removed quotes */
+  text-align: center !important;
+  padding: 12px 10px !important;
+  cursor: pointer;
 }
 
-/* Optional: Change the color when you hover over a sortable header */
-#cube-table thead th:hover {
-  background-color: #34495e;
+/* 4. Sorting Arrows - Ensure they are visible against the dark background */
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc {
+  background-image: none !important; /* Optional: hides default arrows if they look bad */
+  position: relative;
 }
 
-table.dataTable.no-footer {
-  border-bottom: none !important;
-}
-
-table.dataTable thead th, 
-table.dataTable thead td {
-  border-bottom: none !important;
-}
+/* Cleanup borders */
+table.dataTable.no-footer { border-bottom: none !important; }
 </style>
 
 The (slightly hidden) landing page about my speedcubing! 
@@ -96,8 +101,6 @@ While I solve multiple different kinds of Rubik's cubes, I only speedsolve a few
 | Square-1 | 43.72 | 54.33 | (1:02) 59.53 48.60 (43.72) 54.85 | <center>-</center> |
 {: #cube-table }
 
-<br />
-
-<sup>&dagger;</sup> For calculation of averages, such as the average-of-5 (AO5) or average-of-12 (AO12), the standard World Cube Association (WCA) guidelines are used. As such, the average is calculated by excluding the fastest and slowest times, and then averaging the remaining solve times. The parenthetical terms are the ones excluded. For more information, see item 9f8 of the [WCA regulations](https://www.worldcubeassociation.org/regulations/). For a generic $$N$$ average, the formula is:
+<sup>&dagger;</sup>For calculation of averages, such as the average-of-5 (AO5) or average-of-12 (AO12), the standard World Cube Association (WCA) guidelines are used. As such, the average is calculated by excluding the fastest and slowest times, and then averaging the remaining solve times. The parenthetical terms are the ones excluded. For more information, see item 9f8 of the [WCA regulations](https://www.worldcubeassociation.org/regulations/). For a generic $$N$$ average, the formula is:
 
 $$\langle t_N\rangle = \frac{\sum_{j=1}^{N} t_j - \min{(t_j)} - \max{(t_j)}}{N-2}$$
