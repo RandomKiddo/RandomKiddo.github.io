@@ -25,6 +25,10 @@ Some icons used come from the Phosphor icons package, licensed under the MIT Lic
 `© 2020 Phosphor Icons` <br>
 Found [here](https://github.com/phosphor-icons/homepage).
 
+And, of course, special thanks to the HydeJack theme, licensed under the GNU GPLv3 License (for free version) <br>
+`© 2020 Florian Klampfer` <br>
+Found [here](https://github.com/hydecorp/hydejack).
+
 My personal projects are also licensed under their own licenses and have their own attributions: <br>
 * PandoraPvP
 * Hemoglobin Binding Project 
