@@ -25,7 +25,7 @@ addBackToTop({
 })
 </script> 
 
-<p class="message">Below is my CV, last updated on 01/13/2026: </p>
+<p class="message">Below is my CV, last updated on 03/24/2026: </p>
 
 <iframe src="/assets/pdf/cv.pdf" width="100%" height="910px"></iframe>
 <sub>For personal safety, contact information has been removed. If contact is required, please message me on <a href="https://linkedin.com/in/neilghugare" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</sub>
