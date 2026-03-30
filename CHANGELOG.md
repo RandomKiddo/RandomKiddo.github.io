@@ -9,6 +9,12 @@ sitemap: false
 * this list will be replaced by the toc
 {:toc .large-only}
 
+## v2.0.2
+Mar 29 2026
+{:.heading.post-date}
+
+* Updated project page to include a list of current projects in the description. 
+
 ## v2.0.1
 Mar 24 2026
 {:.heading.post-date}
