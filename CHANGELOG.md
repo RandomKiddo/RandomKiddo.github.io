@@ -9,6 +9,12 @@ sitemap: false
 * this list will be replaced by the toc
 {:toc .large-only}
 
+## v2.0.3
+Apr 10 2026
+{:.heading.post-date}
+
+* Added MHD on isothermal `Athena++` winds project to projects tab.
+
 ## v2.0.2
 Mar 29 2026
 {:.heading.post-date}
