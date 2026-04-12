@@ -1,6 +1,6 @@
 ---
 layout: project
-title: 'MHN Regression for the ISS'
+title: 'MHN Regression for the ISS 🥉'
 caption: Multi-headed network built on MobileNetV3Small to regress ISS docking port location, with STL visualization.
 description: >
   Utilizing the data, a multi-headed network (MHN) was built on the top layer of the MobileNetV3Small architecture. The MHN had three heads, each head regressing one of three values: the distance to the ISS, the x-coordinate of the docking port, or the y-coordinate of the docking port. After training, the best model was saved and then used to create a three-dimensional visualization showing the line the SpaceX Dragon capsule would need to take to dock with the ISS. An animation was made of this visualization. This visualization utilized public-access STL files of the ISS and Dragon capsule. 
