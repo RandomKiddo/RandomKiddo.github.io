@@ -30,7 +30,7 @@ addBackToTop({
 <iframe src="/assets/pdf/cv.pdf" width="100%" height="910px"></iframe>
 <sub>For personal safety, contact information has been removed. If contact is required, please message me on <a href="https://linkedin.com/in/neilghugare" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</sub>
 
-<p class="message">Brief information on my Physics Coursework, last updated on 01/13/2026 (up to but not including SP26 semester): </p>
+<p class="message">Brief information on my undergraduate coursework, last updated on 04/18/2026: </p>
 
 <iframe src="/assets/pdf/ClassList.pdf" width="100%" height="910px"></iframe>
 

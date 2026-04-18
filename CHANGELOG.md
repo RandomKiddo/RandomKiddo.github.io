@@ -9,6 +9,12 @@ sitemap: false
 * this list will be replaced by the toc
 {:toc .large-only}
 
+## v2.0.5
+Apr 18 2026
+{:.heading.post-date}
+
+* Coursework updates through SP26.
+
 ## v2.0.4
 Apr 17 2026
 {:.heading.post-date}
