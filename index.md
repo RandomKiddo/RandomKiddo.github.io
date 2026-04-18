@@ -13,7 +13,7 @@ addBackToTop({
 })
 </script> 
 
-Hey there! My name is Neil! I am an Honors Physics and Astrophysics student and Undergraduate Research Assistant at The Ohio State University. I am also an aspiring PhD student in Astronomy for computational astrophysics of stellar and galactic winds and dynamics.
+Hey there! My name is Neil! I am an Honors Physics and Astronomy & Astrophysics student and Undergraduate Research Assistant at The Ohio State University. I am also going to be pursuing my PhD in Astronomy at the University of Florida this fall!
 
 <img src="assets/img/me.webp" style="width: 50%; display: block; margin: 0 auto;" alt="A picture of me in the forest." />
 

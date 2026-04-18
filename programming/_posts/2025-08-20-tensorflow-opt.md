@@ -21,6 +21,14 @@ While working on our [HackAI 2025 project](https://github.com/RandomKiddo/HackAI
 
 <!--more-->
 
+<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+<script>
+addBackToTop({
+  diameter: 56,
+  backgroundColor: '#3d6f75',
+  textColor: 'rgb(225, 221, 214)'
+})
+</script> 
 
 We split up the data loading process into ten steps, which each print the current memory usage using `psutil`:
 

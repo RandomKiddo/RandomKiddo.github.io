@@ -9,6 +9,14 @@ sitemap: false
 * this list will be replaced by the toc
 {:toc .large-only}
 
+## v2.0.4
+Apr 17 2026
+{:.heading.post-date}
+
+* New blog post about OoM.
+* Blog posts now have back-to-top buttons as well on expansion.
+* Florida PhD announcement updates. 
+
 ## v2.0.3
 Apr 10 2026
 {:.heading.post-date}
