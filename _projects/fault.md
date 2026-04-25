@@ -1,7 +1,7 @@
 ---
 layout: project
 title: 'Jet Engine Fault Detection'
-caption: Unsupervised LSTM autoencoder for jet engine fault detection.
+caption: Generalized unsupervised LSTM autoencoder for jet engine fault detection.
 description: >
   We created unsupervised LSTM autoencoder models to leverage the temporal nature of NASA jet engine data. We processed the data to remove sensors with no pertinent features, trimmed degradation data to only train on healthy, pre-fault bahvior, and normalized the data for model stability. We use K-Clustering to cluster by flight operating regime (like altitude), and then use the Spearman correlation along with a fault threshold to evaluate our model and check if a jet engine instance develops a fault.
 date: 21 Feb 2026

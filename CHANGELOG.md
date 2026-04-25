@@ -9,6 +9,14 @@ sitemap: false
 * this list will be replaced by the toc
 {:toc .large-only}
 
+## v2.0.6
+Apr 18 2026
+{:.heading.post-date}
+
+* LBM project additions and project page updates.
+* Updates for UF acceptance in authors and footers.
+* Stronger wording and agreement in projects.
+
 ## v2.0.5
 Apr 18 2026
 {:.heading.post-date}
