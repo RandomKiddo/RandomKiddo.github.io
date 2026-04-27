@@ -9,6 +9,12 @@ sitemap: false
 * this list will be replaced by the toc
 {:toc .large-only}
 
+## v2.0.7
+Apr 27 2026
+{:.heading.post-date}
+
+* Project grammar fixes.
+
 ## v2.0.6
 Apr 18 2026
 {:.heading.post-date}
