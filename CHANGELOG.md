@@ -9,6 +9,12 @@ sitemap: false
 * this list will be replaced by the toc
 {:toc .large-only}
 
+## v2.0.8
+Apr 30 2026
+{:.heading.post-date}
+
+* Physics 5700 blog post in "Writing" category.
+
 ## v2.0.7
 Apr 27 2026
 {:.heading.post-date}
