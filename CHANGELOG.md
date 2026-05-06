@@ -9,6 +9,12 @@ sitemap: false
 * this list will be replaced by the toc
 {:toc .large-only}
 
+## v2.0.9
+May 06 2026
+{:.heading.post-date}
+
+* Coursework updates after final semester (in accordion).
+
 ## v2.0.8
 Apr 30 2026
 {:.heading.post-date}
