@@ -9,6 +9,15 @@ sitemap: false
 * this list will be replaced by the toc
 {:toc .large-only}
 
+## v2.0.10
+May 12 2026
+{:.heading.post-date}
+
+* Graduation updates on home page.
+* Graduation updates for UF on sidebar.
+* Author footer update for B.S. degree information.
+* Home page research overview update.
+
 ## v2.0.9
 May 06 2026
 {:.heading.post-date}
