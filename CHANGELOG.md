@@ -9,6 +9,12 @@ sitemap: false
 * this list will be replaced by the toc
 {:toc .large-only}
 
+## v2.0.11
+June 06 2026
+{:.heading.post-date}
+
+* Updated about me home page with more direct research interests.
+
 ## v2.0.10
 May 12 2026
 {:.heading.post-date}

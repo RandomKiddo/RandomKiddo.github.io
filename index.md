@@ -13,7 +13,7 @@ addBackToTop({
 })
 </script> 
 
-Hey there! My name is Neil! I am a recent graduate of The Ohio State University with a B.S. in Physics and Astronomy & Astrophysics with minors in German and Mathematics, with Latin Honors and an Honors distinction. I was also an Undergraduate Research Assistant during my 4-year tenure at OSU. I am going to be pursuing my PhD in Astronomy at the University of Florida this fall! My research interests generally lie within theoretical and computational astrophysics, utilizing numerical methods and simulations to investigate the dynamics and evolution of astrophysical objects, such as stellar/galactic winds and formation.
+Hey there! My name is Neil! I am a recent graduate of The Ohio State University with a B.S. in Physics and Astronomy & Astrophysics with minors in German and Mathematics, with Latin Honors and an Honors distinction. I was also an Undergraduate Research Assistant during my 4-year tenure at OSU. I am going to be pursuing my PhD in Astronomy at the University of Florida this fall! My research interests generally lie within theoretical and computational astrophysics, utilizing numerical methods and simulations to investigate the dynamics and evolution of astrophysical objects. In particular, I worked in [Todd Thompson's group](https://www.astronomy.ohio-state.edu/thompson.1847/) working on numerical `Athena++` simulations of magnetar wind dynamics and ODEs of pressure-driven winds. I intend to join [Desika Narayanan's group](https://www.desikanarayanan.com/researchgroup) working on theoretical galaxy formation and evolution this fall.
 
 <img src="assets/img/me.webp" style="width: 50%; display: block; margin: 0 auto;" alt="A picture of me in the forest." />
 
