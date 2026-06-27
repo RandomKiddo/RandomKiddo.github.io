@@ -1,8 +1,7 @@
 ---
 layout: post
 description: > 
-  As a part of a two-semester undergraduate Order of Magnitude (OoM) astronomy course, the second semester culminated in a group project where we created our own OoM problems. Our group created a problem titled "A Positive Disaster", a problem about ripping electrons off the moon! <br />
-  <sub>An LLM was used to create this cover image.</sub>
+  As a part of a two-semester undergraduate Order of Magnitude (OoM) astronomy course, the second semester culminated in a group project where we created our own OoM problems. Our group created a problem titled "A Positive Disaster", a problem about ripping electrons off the moon!
 image: 
   path: /assets/img/blog/magnet.webp
   srcset: 

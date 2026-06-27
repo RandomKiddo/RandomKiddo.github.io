@@ -9,6 +9,12 @@ sitemap: false
 * this list will be replaced by the toc
 {:toc .large-only}
 
+## v2.0.12
+June 26 2026
+{:.heading.post-date}
+
+* Updated OoM blog post image and description.
+
 ## v2.0.11
 June 06 2026
 {:.heading.post-date}
